@@ -1,0 +1,1207 @@
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Form1.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmAuto.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBanco.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBarrio.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCiudad.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCliente.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad_prendaria.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmMarca.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAlertas.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAltaBasica.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAnularVenta.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAutos.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBorrarTablas.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscadorGenerico.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCuotas.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentos.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentosAnteriores.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroPrenda.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAuto.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaCLiente.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaMarca.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCosto.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleAuto.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranza.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranzaGeneral.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCuotasAnteriores.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldosEfectivosaPagar.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDocumentosAnteriores.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastos.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastosGenerales.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeCuentas.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeDeuda.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAlertas.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCheques.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequesaPagar.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranza.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranzasGenerales.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoComisiones.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoDocumentosAnteriores.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoEfectivosaPagar.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastos.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastosGenerales.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoInteresesPagados.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoMovimientos.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrenda.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrestamo.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoVentas.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmLogin.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensaje.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoComision.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoGastos.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoInteres.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistarEfectivosaPagar.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAlarma.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobranzaGeneral.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobroCobranzasGenerales.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarEfectivo.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoCheque.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoGastos.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPrestamo.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporte.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteListaPrecio.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldoCuotas.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmStockAuto.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmTest.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVenta.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVistaPrevia.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Principal.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Properties.Resources.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.cache
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.compiled
+D:\PROGRAMACION\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe.config
+D:\PROGRAMACION\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe
+D:\PROGRAMACION\Concesionaria\Concesionaria\bin\Debug\Concesionaria.pdb
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.exe
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.pdb
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAnotacion.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAnotaciones.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe.config
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.exe
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.pdb
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csprojResolveAssemblyReference.cache
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Form1.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmAuto.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBanco.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBarrio.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCiudad.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCliente.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad_prendaria.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmMarca.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAlertas.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAltaBasica.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAnularVenta.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAutos.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBorrarTablas.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscadorGenerico.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCuotas.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentos.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentosAnteriores.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroPrenda.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAuto.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaCLiente.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaMarca.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCosto.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleAuto.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranza.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranzaGeneral.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCuotasAnteriores.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldosEfectivosaPagar.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDocumentosAnteriores.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastos.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastosGenerales.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeCuentas.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeDeuda.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAlertas.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAnotaciones.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCheques.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequesaPagar.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranza.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranzasGenerales.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoComisiones.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoDocumentosAnteriores.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoEfectivosaPagar.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastos.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastosGenerales.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoInteresesPagados.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoMovimientos.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrenda.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrestamo.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoVentas.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmLogin.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensaje.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoComision.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoGastos.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoInteres.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistarEfectivosaPagar.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAlarma.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAnotacion.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobranzaGeneral.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobroCobranzasGenerales.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarEfectivo.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoCheque.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoGastos.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPrestamo.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporte.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteListaPrecio.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldoCuotas.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmStockAuto.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmTest.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVenta.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVistaPrevia.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Principal.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Properties.Resources.resources
+E:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csproj.GenerateResource.Cache
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajeEfectivo.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPreVenta.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmResumenGanancia.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCopia.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csproj.GenerateResource.Cache
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteVenta.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajesVentas.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCategoriaGastoRecepcion.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControl.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAgenda.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAgenda.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldarCuotas.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControlGeneralOperaciones.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmTarjeta.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoTarjeta.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmIngresoCheque.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequeCobrar.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque2.resources
+D:\PROGRAMACION\Concesionaria\Concesionaria\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\PROGRAMACION\Concesionaria\Concesionaria\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\PROGRAMACION\Concesionaria\Concesionaria\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+D:\PROGRAMACION\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csprojResolveAssemblyReference.cache
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe.config
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\bin\Debug\Concesionaria.pdb
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Form1.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmAuto.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBanco.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBarrio.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCategoriaGastoRecepcion.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCiudad.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCliente.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad_prendaria.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmMarca.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmPapeles.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmTarjeta.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAlertas.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAltaBasica.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAnularVenta.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAutos.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBorrarTablas.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscadorGenerico.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque2.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCuotas.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentos.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentosAnteriores.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroPrenda.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAgenda.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAuto.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaCLiente.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaMarca.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControl.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControlGeneralOperaciones.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCopia.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCosto.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleAuto.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranza.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranzaGeneral.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCuotasAnteriores.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldosEfectivosaPagar.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDocumentosAnteriores.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastos.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastosGenerales.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeCuentas.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeDeuda.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmIngresoCheque.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAlertas.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAnotaciones.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAvisos.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequeCobrar.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCheques.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequesaPagar.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranza.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranzasGenerales.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoComisiones.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCompra.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoDocumentosAnteriores.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoEfectivosaPagar.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastos.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastosGenerales.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoInteresesPagados.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoMovimientos.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrenda.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrestamo.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPreVenta.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoTarjeta.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoVentas.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmLogin.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensaje.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajeEfectivo.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajesVentas.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoComision.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoGastos.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoInteres.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.fRMpRUEBA.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistarEfectivosaPagar.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAgenda.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAlarma.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAnotacion.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobranzaGeneral.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobroCobranzasGenerales.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarEfectivo.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoCheque.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoGastos.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPrestamo.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporte.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteListaPrecio.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteVenta.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmResumenGanancia.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldarCuotas.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldoCuotas.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSql.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmStockAuto.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmTest.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVenta.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVerFotos.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVistaPrevia.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Principal.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Properties.Resources.resources
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csproj.GenerateResource.Cache
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.cache
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.compiled
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.exe
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.pdb
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csprojResolveAssemblyReference.cache
+D:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGestoria.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe.config
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.exe
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.pdb
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\bin\Debug\Concesionaria.pdb
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Form1.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmAuto.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBanco.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBarrio.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCategoriaGastoRecepcion.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCiudad.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCliente.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad_prendaria.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmMarca.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmPapeles.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmTarjeta.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAlertas.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAltaBasica.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAnularVenta.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAutos.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBorrarTablas.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscadorGenerico.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque2.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCuotas.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentos.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentosAnteriores.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroPrenda.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAgenda.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAuto.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaCLiente.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaMarca.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControl.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControlGeneralOperaciones.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCopia.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCosto.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleAuto.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranza.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranzaGeneral.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCuotasAnteriores.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldosEfectivosaPagar.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDocumentosAnteriores.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastos.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastosGenerales.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGestoria.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeCuentas.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeDeuda.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmIngresoCheque.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAlertas.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAnotaciones.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAvisos.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequeCobrar.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCheques.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequesaPagar.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranza.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranzasGenerales.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoComisiones.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCompra.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoDocumentosAnteriores.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoEfectivosaPagar.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastos.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastosGenerales.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoInteresesPagados.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoMovimientos.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrenda.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrestamo.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPreVenta.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoTarjeta.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoVentas.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmLogin.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensaje.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajeEfectivo.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajesVentas.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoComision.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoGastos.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoInteres.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.fRMpRUEBA.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistarEfectivosaPagar.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAgenda.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAlarma.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAnotacion.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobranzaGeneral.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobroCobranzasGenerales.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarEfectivo.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoCheque.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoGastos.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPrestamo.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporte.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteListaPrecio.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteVenta.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmResumenGanancia.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldarCuotas.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldoCuotas.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSql.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmStockAuto.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmTest.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVenta.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVerFotos.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVistaPrevia.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Principal.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Properties.Resources.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csproj.GenerateResource.Cache
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.cache
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.compiled
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVerCliente.resources
+F:\PROGRAMACION\COMERCIAL\AG\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csprojResolveAssemblyReference.cache
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe.config
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.exe
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.pdb
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\bin\Debug\Concesionaria.pdb
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csprojResolveAssemblyReference.cache
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Form1.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmAuto.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBanco.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBarrio.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCategoriaGastoRecepcion.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCiudad.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCliente.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad_prendaria.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmMarca.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmPapeles.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmTarjeta.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAlertas.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAltaBasica.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAnularVenta.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAutos.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBorrarTablas.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscadorGenerico.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque2.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCuotas.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentos.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentosAnteriores.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroPrenda.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAgenda.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAuto.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaCLiente.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaMarca.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControl.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControlGeneralOperaciones.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCopia.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCosto.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleAuto.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranza.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranzaGeneral.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCuotasAnteriores.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldosEfectivosaPagar.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDocumentosAnteriores.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastos.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastosGenerales.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGestoria.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeCuentas.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeDeuda.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmIngresoCheque.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAlertas.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAnotaciones.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAvisos.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequeCobrar.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCheques.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequesaPagar.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranza.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranzasGenerales.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoComisiones.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCompra.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoDocumentosAnteriores.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoEfectivosaPagar.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastos.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastosGenerales.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoInteresesPagados.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoMovimientos.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrenda.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrestamo.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPreVenta.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoTarjeta.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoVentas.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmLogin.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensaje.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajeEfectivo.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajesVentas.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoComision.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoGastos.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoInteres.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.fRMpRUEBA.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistarEfectivosaPagar.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAgenda.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAlarma.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAnotacion.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobranzaGeneral.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobroCobranzasGenerales.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarEfectivo.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoCheque.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoGastos.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPrestamo.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporte.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteListaPrecio.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteVenta.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmResumenGanancia.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldarCuotas.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldoCuotas.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSql.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmStockAuto.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmTest.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVenta.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVerCliente.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVerFotos.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVistaPrevia.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Principal.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Properties.Resources.resources
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csproj.GenerateResource.Cache
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.cache
+F:\PROGRAMACION\TRAUTBORRADOR\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.compiled
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe.config
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\Concesionaria.pdb
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Form1.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FormularioBase.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmAuto.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBanco.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBarrio.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCategoriaGastoRecepcion.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCiudad.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCliente.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad_prendaria.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmMarca.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmPapeles.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmTarjeta.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAlertas.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAltaBasica.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAnularVenta.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAutos.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBorrarTablas.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscadorGenerico.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscarAuto.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque2.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCuotas.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentos.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentosAnteriores.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroPrenda.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAgenda.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAuto.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaCLiente.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaMarca.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControl.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControlGeneralOperaciones.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCopia.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCosto.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleAuto.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranza.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranzaGeneral.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCuotasAnteriores.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldosEfectivosaPagar.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDocumentosAnteriores.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastos.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastosGenerales.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGestoria.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeCuentas.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeDeuda.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmIngresoCheque.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAlertas.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAnotaciones.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAvisos.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequeCobrar.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCheques.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequesaPagar.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranza.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranzasGenerales.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoComisiones.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCompra.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoDocumentosAnteriores.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoEfectivosaPagar.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastos.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastosGenerales.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoInteresesPagados.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoMovimientos.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrenda.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrestamo.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPresupuesto.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPreVenta.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoTarjeta.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoVentas.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmLogin.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensaje.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajeEfectivo.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajesVentas.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoComision.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoGastos.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoInteres.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.fRMpRUEBA.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistarEfectivosaPagar.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAgenda.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAlarma.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAnotacion.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobranzaGeneral.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobroCobranzasGenerales.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarEfectivo.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoCheque.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoGastos.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPrestamo.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporte.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteListaPrecio.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReportePresupuesto.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteVenta.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmResumenGanancia.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldarCuotas.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldoCuotas.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSql.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmStockAuto.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmTest.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVenta.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVerCliente.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVerFotos.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVistaPrevia.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Principal.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Properties.Resources.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csproj.GenerateResource.Cache
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.cache
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.compiled
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.exe
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.pdb
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe.config
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.exe
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.pdb
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\bin\Debug\Concesionaria.pdb
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csprojResolveAssemblyReference.cache
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Form1.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FormularioBase.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmAuto.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBanco.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBarrio.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCategoriaGastoRecepcion.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCiudad.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCliente.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad_prendaria.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmMarca.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmPapeles.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmTarjeta.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAlertas.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAltaBasica.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAnularVenta.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAutos.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBorrarTablas.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscadorGenerico.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscarAuto.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque2.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCuotas.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentos.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentosAnteriores.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroPrenda.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAgenda.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAuto.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaCLiente.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaMarca.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControl.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControlGeneralOperaciones.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCopia.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCosto.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleAuto.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranza.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranzaGeneral.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCuotasAnteriores.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldosEfectivosaPagar.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDocumentosAnteriores.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastos.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastosGenerales.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGestoria.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeCuentas.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeDeuda.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmIngresoCheque.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAlertas.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAnotaciones.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAvisos.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequeCobrar.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCheques.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequesaPagar.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranza.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranzasGenerales.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoComisiones.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCompra.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoDocumentosAnteriores.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoEfectivosaPagar.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastos.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastosGenerales.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoInteresesPagados.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoMovimientos.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrenda.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrestamo.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPresupuesto.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPreVenta.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoTarjeta.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoVentas.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmLogin.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensaje.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajeEfectivo.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajesVentas.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoComision.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoGastos.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoInteres.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.fRMpRUEBA.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistarEfectivosaPagar.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAgenda.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAlarma.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAnotacion.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobranzaGeneral.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobroCobranzasGenerales.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarEfectivo.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoCheque.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoGastos.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPrestamo.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporte.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteListaPrecio.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReportePresupuesto.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReportePresupuesto2.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteVenta.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmResumenGanancia.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldarCuotas.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldoCuotas.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSql.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmStockAuto.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmTest.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVenta.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVerCliente.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVerFotos.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVistaPrevia.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Principal.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Properties.Resources.resources
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csproj.GenerateResource.Cache
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.cache
+C:\Users\ZABALA\GIT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.compiled
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAbm.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmTipoFinanciacion.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmColor.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csprojResolveAssemblyReference.cache
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteRecibo.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCategoriaGasto.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRecibo.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoRecibo.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscadorCliente.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCliente.resources
+F:\PROGRAMACION 2\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteCliente.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe.config
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.exe
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.pdb
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csprojResolveAssemblyReference.cache
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Form1.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FormularioBase.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmAuto.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBanco.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBarrio.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCategoriaGasto.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCategoriaGastoRecepcion.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCiudad.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCliente.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmColor.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad_prendaria.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmMarca.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmPapeles.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmTarjeta.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmTipoFinanciacion.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAlertas.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAltaBasica.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAnularVenta.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAutos.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBorrarTablas.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscadorCliente.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscadorGenerico.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscarAuto.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque2.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCuotas.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentos.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentosAnteriores.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroPrenda.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAgenda.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAuto.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaCLiente.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaMarca.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControl.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControlGeneralOperaciones.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCopia.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCosto.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleAuto.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranza.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranzaGeneral.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCuotasAnteriores.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldosEfectivosaPagar.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDocumentosAnteriores.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastos.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastosGenerales.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGestoria.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeCuentas.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeDeuda.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmIngresoCheque.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAbm.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAlertas.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAnotaciones.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAvisos.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequeCobrar.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCheques.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequesaPagar.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCliente.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranza.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranzasGenerales.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoComisiones.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCompra.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoDocumentosAnteriores.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoEfectivosaPagar.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastos.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastosGenerales.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoInteresesPagados.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoMovimientos.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrenda.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteCliente.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrestamo.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPresupuesto.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPreVenta.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoRecibo.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoTarjeta.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoVentas.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmLogin.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensaje.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajeEfectivo.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajesVentas.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoComision.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoGastos.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoInteres.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.fRMpRUEBA.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRecibo.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistarEfectivosaPagar.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAgenda.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAlarma.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAnotacion.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobranzaGeneral.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobroCobranzasGenerales.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarEfectivo.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoCheque.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoGastos.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPrestamo.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporte.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteListaPrecio.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReportePresupuesto.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteRecibo.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteVenta.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmResumenGanancia.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldarCuotas.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldoCuotas.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSql.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmStockAuto.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmTest.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVenta.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVerCliente.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVerFotos.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVistaPrevia.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Principal.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Properties.Resources.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csproj.GenerateResource.Cache
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.cache
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.compiled
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\bin\Debug\Concesionaria.pdb
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajeCobranzas.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmProveedor.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FRMcUENTApROVEEDOR.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscadorCuentaProveedor.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCrearDeudaProveedor.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoDeudaProveedor.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCuentasProveedor.resources
+F:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoCuentaProveedor.resources
+E:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe.config
+E:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.exe
+E:\PROGRAMACION 2\TRAUT2\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.pdb
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe.config
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.exe
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.pdb
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\bin\Debug\Concesionaria.pdb
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csprojResolveAssemblyReference.cache
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Form1.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FormularioBase.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmAuto.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBanco.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBarrio.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCategoriaGasto.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCategoriaGastoRecepcion.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCiudad.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCliente.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmColor.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad_prendaria.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmMarca.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmPapeles.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmProveedor.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmTarjeta.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmTipoFinanciacion.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAlertas.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAltaBasica.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAnularVenta.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAutos.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBoletoTraut.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBorrarTablas.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscadorCliente.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscadorCuentaProveedor.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscadorGenerico.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscarAuto.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscarCheque.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque2.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCuotas.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentos.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentosAnteriores.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroPrenda.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAgenda.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAuto.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaCLiente.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaMarca.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControl.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControlGeneralOperaciones.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCopia.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCosto.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCrearDeudaProveedor.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FRMcUENTApROVEEDOR.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleAuto.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranza.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranzaGeneral.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCuotasAnteriores.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldosEfectivosaPagar.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDocumentosAnteriores.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastos.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastosGenerales.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGestoria.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeCuentas.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeDeuda.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmIngresoCheque.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAbm.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAlertas.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAnotaciones.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAvisos.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequeCobrar.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCheques.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequesaPagar.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCliente.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranza.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranzasGenerales.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoComisiones.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCompra.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCuentasProveedor.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoDeudaProveedor.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoDocumentosAnteriores.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoEfectivosaPagar.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastos.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastosGenerales.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoInteresesPagados.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoMovimientos.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPagoProveedor.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrenda.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajeCobranzas.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoCuentaProveedor.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarChequePagar.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteCliente.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteResponsabilidadCivil.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteResumenProveedor.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmResumenCuentaProveedor.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrestamo.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPresupuesto.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPreVenta.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoRecibo.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoTarjeta.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoVentas.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmLogin.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensaje.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajeEfectivo.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajesVentas.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoComision.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoGastos.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoInteres.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.fRMpRUEBA.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRecibo.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistarEfectivosaPagar.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAgenda.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAlarma.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAnotacion.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobranzaGeneral.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobroCobranzasGenerales.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarEfectivo.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoCheque.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoGastos.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPrestamo.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporte.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteListaPrecio.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReportePresupuesto.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteRecibo.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteVenta.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmResumenGanancia.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldarCuotas.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldoCuotas.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSql.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmStockAuto.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmTest.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVencimiento.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVenta.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVerCliente.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVerFotos.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVistaPrevia.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Principal.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Properties.Resources.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Prueba.resources
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csproj.GenerateResource.Cache
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.cache
+D:\PABLO\PR\TRA\Tra\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.compiled
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Form1.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FormularioBase.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmAuto.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBanco.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmBarrio.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCategoriaCliente.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCategoriaGasto.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCategoriaGastoRecepcion.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCiudad.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmCliente.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmColor.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad_prendaria.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmEntidad.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmMarca.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmPapeles.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmProveedor.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmTarjeta.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmTipoFinanciacion.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAlertas.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAltaBasica.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAnularVenta.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAperturaCaja.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAutos.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBoletoTraut.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBorrarTablas.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscadorCliente.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscadorCuentaProveedor.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscadorGenerico.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscarAuto.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscarCheque.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCambioClave.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCheque2.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroCuotas.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentos.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroDocumentosAnteriores.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCobroPrenda.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConceptoCaja.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAgenda.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaAuto.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaCLiente.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaMarca.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaMovimientoCaja.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControl.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmControlGeneralOperaciones.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCopia.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCosto.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmCrearDeudaProveedor.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FRMcUENTApROVEEDOR.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleAuto.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranza.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCobranzaGeneral.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldoCuotasAnteriores.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleSaldosEfectivosaPagar.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDocumentosAnteriores.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastos.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGastosGenerales.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmGestoria.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeCuentas.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmInformeDeuda.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmIngresoCaja.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmIngresoCheque.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAbm.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAlertas.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAnotaciones.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoAvisos.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequeCobrar.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCheques.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoChequesaPagar.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCliente.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranza.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCobranzasGenerales.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoComisiones.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCompra.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoCuentasProveedor.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoDeudaProveedor.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoDocumentosAnteriores.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoEfectivosaPagar.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastos.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoGastosGenerales.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoInteresesPagados.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoMovimientos.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPagoProveedor.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrenda.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajeCobranzas.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoCuentaProveedor.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarChequePagar.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteCaja.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteCliente.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteResponsabilidadCivil.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteResumenProveedor.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmResumenCaja.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmResumenCuentaProveedor.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPrestamo.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPresupuesto.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoPreVenta.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoRecibo.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoTarjeta.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoVentas.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmLogin.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensaje.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajeEfectivo.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajesVentas.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoComision.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoGastos.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPagoInteres.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRecibo.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistarEfectivosaPagar.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAgenda.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAlarma.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarAnotacion.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobranzaGeneral.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarCobroCobranzasGenerales.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarEfectivo.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoCheque.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPagoGastos.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPrestamo.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporte.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteListaPrecio.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReportePresupuesto.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteRecibo.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteVenta.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmResumenGanancia.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldarCuotas.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSaldoCuotas.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmSql.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmStockAuto.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmTest.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVencimiento.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVenta.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVerCliente.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVerFotos.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVistaPrevia.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Principal.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Properties.Resources.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Prueba.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csproj.GenerateResource.cache
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe.config
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\Concesionaria.exe
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\Concesionaria.pdb
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.exe
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.pdb
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajesGastosTransferencia.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteGastosTransferencia.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteEfectivoPagar.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReportedeEfectivoaPagar.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteControlOperaciones.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDeudaCobranzaGeneral.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmResumenDeuda.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteDeudaCliente.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDetalleDeudaxCliente.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoDeudaCoibranzaxCliente.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBase.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteClientes.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoProveedor.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmPersonal.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmRubro.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMail.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmMensajeCliente.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmVendedor.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarGastosTransferencia.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDistanciaFletes.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaDistancia.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPreciopFlete.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarViaje.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscarDistancias.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultarViajes.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmChofer.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteViaje.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAdjuntarArchivo.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmTipoPago.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmRegistrarPago.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultarPago.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmConcepto.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoConceptos.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csprojResolveAssemblyReference.cache
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.cache
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.compiled
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmImportarPrecioAutos.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmTipoUtilitario.resources
+D:\PROGRAMACION\TRAUT\Tra\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteExcel.resources
