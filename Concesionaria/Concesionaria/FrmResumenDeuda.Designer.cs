@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.CmbVendedor = new System.Windows.Forms.ComboBox();
             this.btnMensaje = new System.Windows.Forms.Button();
             this.cmbMoneda = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,8 +46,6 @@
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.Grilla = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.CmbVendedor = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
@@ -76,6 +76,24 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Listado de Deudas de Clientes";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(282, 24);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 17);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Responsable";
+            // 
+            // CmbVendedor
+            // 
+            this.CmbVendedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbVendedor.FormattingEnabled = true;
+            this.CmbVendedor.Location = new System.Drawing.Point(285, 44);
+            this.CmbVendedor.Name = "CmbVendedor";
+            this.CmbVendedor.Size = new System.Drawing.Size(269, 24);
+            this.CmbVendedor.TabIndex = 16;
             // 
             // btnMensaje
             // 
@@ -149,6 +167,7 @@
             this.txtTotalPesos.Location = new System.Drawing.Point(633, 488);
             this.txtTotalPesos.Name = "txtTotalPesos";
             this.txtTotalPesos.ReadOnly = true;
+            this.txtTotalPesos.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtTotalPesos.Size = new System.Drawing.Size(132, 23);
             this.txtTotalPesos.TabIndex = 7;
             // 
@@ -166,6 +185,7 @@
             this.txtTotalDolares.Location = new System.Drawing.Point(828, 488);
             this.txtTotalDolares.Name = "txtTotalDolares";
             this.txtTotalDolares.ReadOnly = true;
+            this.txtTotalDolares.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtTotalDolares.Size = new System.Drawing.Size(132, 23);
             this.txtTotalDolares.TabIndex = 5;
             // 
@@ -212,24 +232,6 @@
             this.label1.Size = new System.Drawing.Size(51, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cliente";
-            // 
-            // CmbVendedor
-            // 
-            this.CmbVendedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbVendedor.FormattingEnabled = true;
-            this.CmbVendedor.Location = new System.Drawing.Point(285, 44);
-            this.CmbVendedor.Name = "CmbVendedor";
-            this.CmbVendedor.Size = new System.Drawing.Size(269, 24);
-            this.CmbVendedor.TabIndex = 16;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(282, 24);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 17);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Responsable";
             // 
             // FrmResumenDeuda
             // 

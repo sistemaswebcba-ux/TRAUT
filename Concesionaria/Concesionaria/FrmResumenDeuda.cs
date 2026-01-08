@@ -17,8 +17,7 @@ namespace Concesionaria
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            
+        {           
             cCobranzaGeneral cob = new Clases.cCobranzaGeneral();
             int? CodMoneda = null;
             if (cmbMoneda.SelectedIndex > 0)
@@ -58,6 +57,8 @@ namespace Concesionaria
                 Tipo = cob.GetTipo(CodCliente);
                 FechaVto = GetFechaCompromiso(CodCliente);
                 Responsable = cli.GetVendedorxCodCliente(CodCliente);
+                if (Responsable.Length >2)
+                    Responsable = Responsable.Substring(0, 1);
                 SaldoPesos = GetSaldo(CodCliente, "Pesos", trdo);
                 SaldoDolares = GetSaldo(CodCliente, "Dolares", trdo);
                 UltimaFecha = GetUltimaFecha(CodCliente);
@@ -83,10 +84,11 @@ namespace Concesionaria
             txtTotalDolares.Text = fun.FormatoEnteroMiles(Dolares.ToString());
             tbDeudores = fun.TablaaMiles(tbDeudores, "Pesos");
             tbDeudores = fun.TablaaMiles(tbDeudores, "Dolares");
-            string AnchoCol = "0;15;0;15;10;15;15;10;10;10";
+            string AnchoCol = "0;36;0;10;10;7;7;10;10;10";
             Grilla.DataSource = tbDeudores;
             fun.AnchoColumnas(Grilla, AnchoCol);
-            Grilla.Columns[8].HeaderText = "Contacto ";
+            Grilla.Columns[8].HeaderText = "Contacto";
+            Grilla.Columns[6].HeaderText = "Resp.";
             PintarGrilla();
         }
 
