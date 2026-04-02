@@ -5,6 +5,7 @@ using System.Text;
 using System.Data;
 using System.Windows.Forms;
 using Microsoft.ApplicationBlocks.Data;
+using System.Data.SqlClient;
 
 namespace Concesionaria.Clases
 {
@@ -128,8 +129,7 @@ namespace Concesionaria.Clases
             return cDb.ExecuteDataTable(sql);  
         }
 
-      
-
+     
         public Double GetCostosTotalesxCodStock(Int32 CodStock)
         {
             Double Total = 0;
@@ -269,6 +269,12 @@ namespace Concesionaria.Clases
             cDb.ExecutarNonQuery(sql);
         }
 
-
+        public void ActualizarComision (SqlConnection con ,SqlTransaction tran, int CodVenta, Double Comision)
+        {
+            string sql = "update Venta ";
+            sql = sql + " set ImporteComision =" + Comision.ToString().Replace(",", ".");
+            sql = sql + " where CodVenta =" + CodVenta.ToString();
+            cDb.EjecutarNonQueryTransaccion(con, tran, sql);
+        }
     }
 }

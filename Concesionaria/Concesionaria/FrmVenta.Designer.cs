@@ -78,6 +78,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnPersonal = new System.Windows.Forms.Button();
             this.btnAgregarCliente = new System.Windows.Forms.Button();
             this.label91 = new System.Windows.Forms.Label();
             this.cmbEstadoCivil = new System.Windows.Forms.ComboBox();
@@ -364,7 +365,8 @@
             this.btnAnular = new System.Windows.Forms.Button();
             this.btnGrabarPreVenta = new System.Windows.Forms.Button();
             this.btnPresupuesto = new System.Windows.Forms.Button();
-            this.btnPersonal = new System.Windows.Forms.Button();
+            this.txtImporteFijoComision = new System.Windows.Forms.TextBox();
+            this.btnGrabarComision = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -970,6 +972,16 @@
             this.groupBox1.Size = new System.Drawing.Size(826, 179);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
+            // 
+            // btnPersonal
+            // 
+            this.btnPersonal.Image = global::Concesionaria.Properties.Resources.clie1;
+            this.btnPersonal.Location = new System.Drawing.Point(373, 37);
+            this.btnPersonal.Name = "btnPersonal";
+            this.btnPersonal.Size = new System.Drawing.Size(40, 28);
+            this.btnPersonal.TabIndex = 82;
+            this.btnPersonal.UseVisualStyleBackColor = true;
+            this.btnPersonal.Click += new System.EventHandler(this.btnPersonal_Click);
             // 
             // btnAgregarCliente
             // 
@@ -1653,6 +1665,8 @@
             // tabPage15
             // 
             this.tabPage15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.tabPage15.Controls.Add(this.btnGrabarComision);
+            this.tabPage15.Controls.Add(this.txtImporteFijoComision);
             this.tabPage15.Controls.Add(this.txtComisionVendedor);
             this.tabPage15.Controls.Add(this.label29);
             this.tabPage15.Controls.Add(this.lblApellidoVendedor);
@@ -1672,10 +1686,11 @@
             // 
             // txtComisionVendedor
             // 
-            this.txtComisionVendedor.Location = new System.Drawing.Point(480, 33);
+            this.txtComisionVendedor.Location = new System.Drawing.Point(358, 91);
             this.txtComisionVendedor.Name = "txtComisionVendedor";
-            this.txtComisionVendedor.Size = new System.Drawing.Size(161, 22);
+            this.txtComisionVendedor.Size = new System.Drawing.Size(77, 22);
             this.txtComisionVendedor.TabIndex = 41;
+            this.txtComisionVendedor.Visible = false;
             this.txtComisionVendedor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtComisionVendedor_KeyPress);
             this.txtComisionVendedor.Leave += new System.EventHandler(this.txtComisionVendedor_Leave);
             // 
@@ -3865,15 +3880,23 @@
             this.btnPresupuesto.UseVisualStyleBackColor = true;
             this.btnPresupuesto.Click += new System.EventHandler(this.btnPresupuesto_Click);
             // 
-            // btnPersonal
+            // txtImporteFijoComision
             // 
-            this.btnPersonal.Image = global::Concesionaria.Properties.Resources.clie1;
-            this.btnPersonal.Location = new System.Drawing.Point(373, 37);
-            this.btnPersonal.Name = "btnPersonal";
-            this.btnPersonal.Size = new System.Drawing.Size(40, 28);
-            this.btnPersonal.TabIndex = 82;
-            this.btnPersonal.UseVisualStyleBackColor = true;
-            this.btnPersonal.Click += new System.EventHandler(this.btnPersonal_Click);
+            this.txtImporteFijoComision.Location = new System.Drawing.Point(487, 33);
+            this.txtImporteFijoComision.Name = "txtImporteFijoComision";
+            this.txtImporteFijoComision.Size = new System.Drawing.Size(161, 22);
+            this.txtImporteFijoComision.TabIndex = 42;
+            this.txtImporteFijoComision.Leave += new System.EventHandler(this.txtImporteFijoComision_Leave);
+            // 
+            // btnGrabarComision
+            // 
+            this.btnGrabarComision.Image = global::Concesionaria.Properties.Resources.disk;
+            this.btnGrabarComision.Location = new System.Drawing.Point(654, 33);
+            this.btnGrabarComision.Name = "btnGrabarComision";
+            this.btnGrabarComision.Size = new System.Drawing.Size(34, 24);
+            this.btnGrabarComision.TabIndex = 72;
+            this.btnGrabarComision.UseVisualStyleBackColor = true;
+            this.btnGrabarComision.Click += new System.EventHandler(this.btnGrabarComision_Click);
             // 
             // FrmVenta
             // 
@@ -4311,5 +4334,7 @@
         private System.Windows.Forms.CheckBox chkPatentamiento;
         private System.Windows.Forms.CheckBox chkNoIncluyeGastos;
         private System.Windows.Forms.Button btnPersonal;
+        private System.Windows.Forms.TextBox txtImporteFijoComision;
+        private System.Windows.Forms.Button btnGrabarComision;
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 using Microsoft.ApplicationBlocks.Data;
 
 namespace Concesionaria.Clases
@@ -100,6 +101,30 @@ namespace Concesionaria.Clases
                 Importe = Convert.ToDouble(trdo.Rows[0]["Importe"]);
             }
             return Importe;
+        }
+
+        public void InsertarCostoComision(SqlConnection con, SqlTransaction Transaccion, int CodStock,int CodVenta,string Descripcon, Double Importe , DateTime Fecha)
+        {
+            string sql = "insert into Costo(";
+            sql = sql + " CodStock, CodVenta, Descripcion, Importe , Fecha ) ";
+            sql = sql + " values (" + CodStock.ToString();
+            sql = sql + "," + CodVenta.ToString();
+            sql = sql + "," + "'" + Descripcon + "'";
+            sql = sql + "," + Importe.ToString().Replace(",", "0");
+            sql = sql + "," + "'" + Fecha.ToShortDateString() + "'";
+            sql = sql + ")";
+            SqlCommand comand = new SqlCommand();
+            comand.Connection = con;
+            comand.Transaction = Transaccion;
+            comand.CommandText = sql;
+            comand.ExecuteNonQuery();
+        }
+
+        public void BorrarCostoxCodVenta(SqlConnection con, SqlTransaction Transaccion, int CodVenta)
+        {
+            string sql = " delete from Costo ";
+            sql = sql + " where CodVenta =" + CodVenta.ToString();
+            cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
         }
     }
 }

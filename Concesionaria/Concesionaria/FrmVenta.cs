@@ -98,8 +98,11 @@ namespace Concesionaria
             string ColResponsable = "CodResponsable;Nombre;Apellido;Concepto;Telefono";
             tbResponsable = fun.CrearTabla(ColResponsable);
             tbCliente = fun.CrearTabla("CodCliente;TipoDoc;NroDoc;Apellido;Nombre");
+            btnGrabarComision.Enabled = false;
             if (Principal.CodigoPrincipalAbm != null)
             {
+                btnGrabarComision.Enabled = true;
+
                 txtCodVenta.Text = Principal.CodigoPrincipalAbm;
                 string Cod = Principal.CodigoPrincipalAbm;
                 BuscarVenta(Convert.ToInt32(Cod));
@@ -807,7 +810,7 @@ namespace Concesionaria
             {
                 AnularVenta(txtCodVenta.Text);
             }
-           // cFunciones fun = new Clases.cFunciones();
+            cFunciones fun = new Clases.cFunciones();
             Clases.cVenta objVenta = new Clases.cVenta();
             double GastosTotalxAuto = objVenta.GetCostosTotalesxCodStock(Convert.ToInt32(txtCodStock.Text));
            
@@ -822,6 +825,11 @@ namespace Concesionaria
             string sqlCLiente = "";
             string sqlIngresarAuto = "";
             double ImporteSenia = 0;
+
+            Double ImporteComision = 0;
+
+            if (txtImporteFijoComision.Text != "")
+                ImporteComision = fun.ToDouble(txtImporteFijoComision.Text);
 
             if (txtCodPreVenta.Text != "")
                 ImporteSenia = GetTotalSenia(Convert.ToInt32(txtCodPreVenta.Text));
@@ -860,7 +868,7 @@ namespace Concesionaria
                         string sqlInsertStock = "";
                         for (int k = 0; k < GrillaVehiculos.Rows.Count - 1; k++)
                         {
-                            Clases.cFunciones fun = new Clases.cFunciones();
+                           // Clases.cFunciones fun = new Clases.cFunciones();
                             string codAuto = GrillaVehiculos.Rows[k].Cells[0].Value.ToString();
                             string ImporteCompra = GrillaVehiculos.Rows[k].Cells[4].Value.ToString();
                             string AutoPartePago = txtPatente.Text + " " + txtDescripcion.Text;
@@ -938,6 +946,20 @@ namespace Concesionaria
                     }
                 }
 
+                //inserto el costo de la comision
+
+                if (txtImporteFijoComision.Text !="")
+                {
+                    if (txtImporteFijoComision.Text != "0")
+                    {
+                        cCosto costo = new cCosto();
+                        int CodStock = Convert.ToInt32(txtCodStock.Text);
+                        ImporteComision = fun.ToDouble(txtImporteFijoComision.Text);
+                        string Descripcion = "Comisión por venta ";
+                        costo.InsertarCostoComision(con, Transaccion, CodStock,Convert.ToInt32 (CodVenta), Descripcion, ImporteComision , dpFecha.Value);
+                    }
+                }
+
                 //grabos los autos que entrego como parte de pago
 
                 if (txtTotalVehiculoPartePago.Text != "")
@@ -947,7 +969,7 @@ namespace Concesionaria
                         string sqlVentaxAuto = "";
                         for (int k = 0; k < GrillaVehiculos.Rows.Count - 1; k++)
                         {
-                            Clases.cFunciones fun = new Clases.cFunciones();
+                          //  Clases.cFunciones fun = new Clases.cFunciones();
                             string CodStockAu = GrillaVehiculos.Rows[k].Cells[5].Value.ToString();
                             string codAutok = GrillaVehiculos.Rows[k].Cells[0].Value.ToString();
                             string sImporte = GrillaVehiculos.Rows[k].Cells[4].Value.ToString();
@@ -985,7 +1007,7 @@ namespace Concesionaria
                 //grabo los gatos de transferencia
                 for (int k = 0; k < GrillaGastos.Rows.Count - 1; k++)
                 {
-                    Clases.cFunciones fun = new Clases.cFunciones();
+                   // Clases.cFunciones fun = new Clases.cFunciones();
                     string CodGastoTransferencia = GrillaGastos.Rows[k].Cells[0].Value.ToString();
                     Double Importe = fun.ToDouble(GrillaGastos.Rows[k].Cells[3].Value.ToString());
                     string sqlGastosTransferencia = "";
@@ -1006,7 +1028,7 @@ namespace Concesionaria
 
                 for (int k = 0; k < GrillaGastosRecepcion.Rows.Count - 1; k++)
                 {
-                    Clases.cFunciones fun = new Clases.cFunciones();
+                   // Clases.cFunciones fun = new Clases.cFunciones();
                     string CodGastoRecepcion = GrillaGastosRecepcion.Rows[k].Cells[0].Value.ToString();
                     Double Importe = fun.ToDouble(GrillaGastosRecepcion.Rows[k].Cells[3].Value.ToString());
                     string CodAuto = GrillaGastosRecepcion.Rows[k].Cells[4].Value.ToString();
@@ -1029,7 +1051,7 @@ namespace Concesionaria
                 {
                     if (txtTotalCheque.Text != "0")
                     {
-                        Clases.cFunciones fun = new Clases.cFunciones();
+                      //  Clases.cFunciones fun = new Clases.cFunciones();
                         for (int j = 0; j < GrillaCheques.Rows.Count - 1; j++)
                         {
                             string sImporteCheque = GrillaCheques.Rows[j].Cells[1].Value.ToString();
@@ -1058,7 +1080,7 @@ namespace Concesionaria
                 if (txtTotalCobranza.Text != "")
                     if (txtTotalCobranza.Text != "0")
                     {
-                        Clases.cFunciones fun = new Clases.cFunciones();
+                       // Clases.cFunciones fun = new Clases.cFunciones();
                         string sqlCobranza = "";
                         string FechaCompromisoPago = "";
                         string Cuota = "";
@@ -1231,7 +1253,7 @@ namespace Concesionaria
                     if (tbTransferencia.Rows[0]["CodBanco"].ToString ()!="")
                     {
                         DateTime Fecha = Convert.ToDateTime(dpFecha.Value);
-                        cFunciones fun = new Clases.cFunciones();
+                     //   cFunciones fun = new Clases.cFunciones();
                         cTransferencia transfer = new cTransferencia();
                         for (int i = 0; i < tbTransferencia.Rows.Count  ; i++)
                         {
@@ -1538,8 +1560,13 @@ namespace Concesionaria
             double ImporteCobranza = 0;
             double ImporteBanco = 0;
             double PrecioSenia = 0;
-
+            Double ImporteComision = 0;
             Clases.cFunciones fun = new Clases.cFunciones();
+
+            if (txtImporteFijoComision.Text != "")
+                ImporteComision = fun.ToDouble(txtImporteFijoComision.Text);
+
+          
             if (txtPrecioVenta.Text != "")
                 ImporteVenta = fun.ToDouble(txtPrecioVenta.Text);
 
@@ -1570,7 +1597,7 @@ namespace Concesionaria
             //Principal.CodUsuarioLogueado 
             sql = "insert into Venta(Fecha,CodUsuario,CodCliente";
             sql = sql + ",CodAutoVendido,CodAutoPartePago,ImporteVenta,";
-            sql = sql + "ImporteAutoPartePago,ImporteCredito,ImporteEfectivo,ImportePrenda,ImporteCobranza,ImporteBanco,CodVendedor,CodStock,PrecioSenia,Titulares)";
+            sql = sql + "ImporteAutoPartePago,ImporteCredito,ImporteEfectivo,ImportePrenda,ImporteCobranza,ImporteBanco,CodVendedor,CodStock,PrecioSenia,Titulares,ImporteComision)";
             sql = sql + "values(" + "'" + Fecha.ToShortDateString() + "'";
             sql = sql + "," + Principal.CodUsuarioLogueado.ToString();
             sql = sql + "," + CodCliente.ToString();
@@ -1590,6 +1617,7 @@ namespace Concesionaria
             sql = sql + "," + CodStock.ToString();
             sql = sql + "," + PrecioSenia.ToString();
             sql = sql + "," + "'" + Titulares + "'";
+            sql = sql + "," + ImporteComision.ToString();
             sql = sql + ")";
             return sql;
         }
@@ -3357,7 +3385,13 @@ namespace Concesionaria
                 else
                     txtEfectivo.Text = tVenta.Rows[0]["ImporteEfectivo"].ToString();
 
-                if (tVenta.Rows[0]["ImporteAutoPartePago"].ToString() != "")
+                if (tVenta.Rows[0]["ImporteComision"].ToString() != "")
+                {
+                    txtImporteFijoComision.Text = tVenta.Rows[0]["ImporteComision"].ToString();
+                    txtImporteFijoComision.Text = fun.SepararDecimales(txtImporteFijoComision.Text);
+                }
+
+                    if (tVenta.Rows[0]["ImporteAutoPartePago"].ToString() != "")
                 {
                     string sImporte = tVenta.Rows[0]["ImporteAutoPartePago"].ToString().Replace(",", ".");
                     vec = sImporte.Split('.');
@@ -6745,6 +6779,52 @@ namespace Concesionaria
             Principal.CodCliente = Convert.ToInt32(txtCodCLiente.Text);
             FrmPersonal frm = new FrmPersonal();
             frm.Show();
+        }
+
+        private void btnGrabarComision_Click(object sender, EventArgs e)
+        {
+            if (txtImporteFijoComision.Text =="")
+            {
+                MessageBox.Show("Debe ingresar un importe");
+                return;
+            }
+            cFunciones fun = new cFunciones();
+            Double Importe = fun.ToDouble(txtImporteFijoComision.Text);
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = Clases.cConexion.Cadenacon();
+            con.Open();
+            SqlTransaction Transaccion;
+            Transaccion = con.BeginTransaction();
+            Int32 CodVenta = Convert.ToInt32(txtCodVenta.Text);
+            Int32 CodStock = Convert.ToInt32(txtCodStock.Text);
+            string Descripcion = "Comisión por venta ";
+            cVenta venta = new cVenta();
+            cCosto costo = new cCosto();
+            try
+            {
+                venta.ActualizarComision(con, Transaccion, CodVenta, Importe);
+                costo.BorrarCostoxCodVenta(con, Transaccion, CodVenta);
+                costo.InsertarCostoComision(con, Transaccion, CodStock, CodVenta, Descripcion, Importe, dpFecha.Value);
+                Transaccion.Commit();
+                con.Close();
+                MessageBox.Show("Datos grabados correctamente ");
+            }
+            catch (Exception ex)
+            {
+                Transaccion.Rollback();
+                MessageBox.Show("Hubo un error en el proceso de grabación", Clases.cMensaje.Mensaje());
+            }
+        }
+
+        private void txtImporteFijoComision_Leave(object sender, EventArgs e)
+        {
+            cFunciones fun = new cFunciones();
+            if (txtImporteFijoComision.Text !="")
+            {
+                txtImporteFijoComision.Text = fun.FormatoEnteroMiles(txtImporteFijoComision.Text);
+              //  txtImporteFijoComision.Text = fun.FormatoEnteroMiles(txtImporteFijoComision.ToString());
+            }
+            
         }
     }
 }
