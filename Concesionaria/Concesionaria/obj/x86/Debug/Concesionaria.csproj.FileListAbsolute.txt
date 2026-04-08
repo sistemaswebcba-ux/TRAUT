@@ -1222,7 +1222,6 @@ D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\bin\Debug\pt\Microsoft
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
-D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csprojResolveAssemblyReference.cache
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.Form1.resources
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FormularioBase.resources
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmAuto.resources

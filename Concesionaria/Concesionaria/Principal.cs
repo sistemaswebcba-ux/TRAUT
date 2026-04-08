@@ -576,10 +576,11 @@ namespace Concesionaria
 
         private void rentabilidadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmResumenGanancia childForm = new FrmResumenGanancia();
-            childForm.MdiParent = this;
+            // FrmResumenGanancia frm = new FrmResumenGanancia();
+            FrmRentabilidad frm = new FrmRentabilidad();
+            frm.MdiParent = this;
             //childForm.Text = "Formulario de Listado de documentos";
-            childForm.Show();
+            frm.Show();
         }
 
         private void btnAnularVenta_Click(object sender, EventArgs e)
