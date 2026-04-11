@@ -285,5 +285,23 @@ namespace Concesionaria.Clases
             sql = sql + " where CodGasto=" + CodGasto.ToString();
             cDb.ExecutarNonQuery(sql);
         }
+
+        public Double GetGastosPagarRealizadosxCodVenta(Int32 CodVenta)
+        {
+            Double Total = 0;
+            string sql = "select (isnull(Importe,0) - isnull(ImportePagado,0)) as ImportePagado  ";
+            sql = sql + " from GastosPagar ";
+            sql = sql + " where CodVenta=" + CodVenta.ToString();
+            sql = sql + " and FechaTramite is not null ";
+            DataTable trdo = cDb.ExecuteDataTable(sql);
+            if (trdo.Rows.Count >0)
+            {
+                if (trdo.Rows[0]["ImportePagado"].ToString ()!="")
+                {
+                    Total = Convert.ToDouble(trdo.Rows[0]["ImportePagado"].ToString());
+                }
+            }
+            return Total;
+        }
     }
 }

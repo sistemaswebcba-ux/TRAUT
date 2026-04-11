@@ -27,33 +27,43 @@ namespace Concesionaria
         {
             DateTime Hoy = DateTime.Now;
             dpFechaHasta.Value = Hoy;
-            dpFechaDesde.Value = Hoy.AddMonths(-1);  
+            dpFechaDesde.Value = Hoy.AddMonths(-1);
+            cFunciones fun = new cFunciones();
+            fun.LlenarCombo(cmbMarca, "Marca", "Nombre", "CodMarca");
         }
 
         private void Buscar()
         {
-
+            string PatenteBuscar = "";
             string cliente = "";
+            Int32? CodMarcaBuscar = null;
+
             if (txtNombre.Text !="")
                 cliente = txtNombre.Text;
+            if (txtPatente.Text != "")
+                PatenteBuscar = txtPatente.Text;
+            if (cmbMarca.SelectedIndex > 0)
+                CodMarcaBuscar = Convert.ToInt32(cmbMarca.SelectedValue);
             cFunciones fun = new cFunciones();
-            string Col = "Nombre;Venta;Gasto;Rentabilidad";
+            string Col = "Nombre;Patente;Marca;Venta;Gasto;Rentabilidad";
             string Val = "";
             DataTable tbRenta;
             tbRenta = fun.CrearTabla(Col);
             DateTime Desde = dpFechaDesde.Value;
             DateTime Hasta = dpFechaHasta.Value;
             cVenta venta = new cVenta();
-            DataTable trdo = venta.GetVentaRentabilidadxFecha(Desde, Hasta, "", cliente, cliente, null, "", 1);
+            DataTable trdo = venta.GetVentaRentabilidadxFecha(Desde, Hasta, PatenteBuscar , cliente, cliente,CodMarcaBuscar, "", 1);
          //   trdo = fun.TablaaMiles(trdo, "Ganancia");
             string Apellido = "";
             string Nombre = "";
             string NomApe = "";
+            string Patente = "";
+            string Marca = "";
             Double  Ganancia = 0;
             Int32 CodVenta = 0;
             Double GananciaGastos = 0;
             Double Rentabilidad = 0;
-
+            cGastosPagar gastos = new cGastosPagar();
           
 
             for (int i = 0; i < trdo.Rows.Count ; i++)
@@ -61,18 +71,31 @@ namespace Concesionaria
                 CodVenta = Convert.ToInt32(trdo.Rows[i]["CodVenta"].ToString());
                 Apellido = trdo.Rows[i]["Apellido"].ToString();
                 Nombre = trdo.Rows[i]["Nombre"].ToString();
+                Patente = trdo.Rows[i]["Patente"].ToString();
+                Marca = trdo.Rows[i]["Marca"].ToString();
                 Ganancia = Convert.ToDouble(trdo.Rows[i]["GananciaBruta"].ToString());
                 NomApe = Nombre + " " + Apellido;
-                GananciaGastos = GetGastoxCodVenta(CodVenta);
+                GananciaGastos = gastos.GetGastosPagarRealizadosxCodVenta(CodVenta);
                 Rentabilidad = Ganancia + GananciaGastos;
-                Val = NomApe + ";" + Ganancia + ";" + GananciaGastos.ToString() + ";" + Rentabilidad.ToString();
+                Val = NomApe + ";" + Patente + ";" + Marca +";" + Ganancia + ";" + GananciaGastos.ToString() + ";" + Rentabilidad.ToString();
                 tbRenta = fun.AgregarFilas(tbRenta, Val);
             }
+          
             tbRenta = fun.TablaaMiles(tbRenta, "Venta");
             tbRenta = fun.TablaaMiles(tbRenta, "Gasto");
             tbRenta = fun.TablaaMiles(tbRenta, "Rentabilidad");
             Grilla.DataSource = tbRenta;
-            fun.AnchoColumnas(Grilla, "40;20;20;20");
+            Double TotalVentas = 0;
+            Double TotalGastos = 0;
+            Double TotalRentabilidad = 0;
+
+            TotalVentas = fun.TotalizarColumna(tbRenta, "Venta");
+            txtTotalVentas.Text =fun.SepararDecimales (TotalVentas.ToString());
+            TotalGastos = fun.TotalizarColumna(tbRenta, "Gasto");
+            txtTotalGastos.Text =fun.SepararDecimales (TotalGastos.ToString());
+            TotalRentabilidad = fun.TotalizarColumna(tbRenta, "Rentabilidad");
+            txtTotalRentabilidad.Text = fun.SepararDecimales(TotalRentabilidad.ToString());
+            fun.AnchoColumnas(Grilla, "30;20;20;10;10;10");
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
