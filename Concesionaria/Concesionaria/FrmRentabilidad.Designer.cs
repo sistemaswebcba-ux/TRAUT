@@ -43,12 +43,24 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Grilla = new System.Windows.Forms.DataGridView();
+            this.cmbMarca = new System.Windows.Forms.ComboBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtPatente = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmbMarca);
+            this.groupBox1.Controls.Add(this.txtNombre);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txtPatente);
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.btnResponsabilidadCivil);
             this.groupBox1.Controls.Add(this.dpFechaHasta);
             this.groupBox1.Controls.Add(this.dpFechaDesde);
@@ -66,7 +78,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(697, 504);
+            this.groupBox1.Size = new System.Drawing.Size(948, 504);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informe  de Rentabilidad";
@@ -169,7 +181,7 @@
             // btnBuscar
             // 
             this.btnBuscar.Image = global::Concesionaria.Properties.Resources.zoom2;
-            this.btnBuscar.Location = new System.Drawing.Point(298, 28);
+            this.btnBuscar.Location = new System.Drawing.Point(810, 25);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(40, 27);
             this.btnBuscar.TabIndex = 40;
@@ -203,11 +215,64 @@
             this.Grilla.Size = new System.Drawing.Size(674, 420);
             this.Grilla.TabIndex = 8;
             // 
+            // cmbMarca
+            // 
+            this.cmbMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMarca.FormattingEnabled = true;
+            this.cmbMarca.Location = new System.Drawing.Point(672, 26);
+            this.cmbMarca.Name = "cmbMarca";
+            this.cmbMarca.Size = new System.Drawing.Size(121, 24);
+            this.cmbMarca.TabIndex = 81;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtNombre.Location = new System.Drawing.Point(349, 32);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(133, 22);
+            this.txtNombre.TabIndex = 80;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(294, 36);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(49, 16);
+            this.label6.TabIndex = 79;
+            this.label6.Text = "Cliente";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(624, 33);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 20);
+            this.label3.TabIndex = 78;
+            this.label3.Text = "Marca";
+            this.label3.UseCompatibleTextRendering = true;
+            // 
+            // txtPatente
+            // 
+            this.txtPatente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtPatente.Location = new System.Drawing.Point(544, 29);
+            this.txtPatente.Name = "txtPatente";
+            this.txtPatente.Size = new System.Drawing.Size(74, 22);
+            this.txtPatente.TabIndex = 77;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(488, 35);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 16);
+            this.label4.TabIndex = 76;
+            this.label4.Text = "Dominio";
+            // 
             // FrmRentabilidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(710, 518);
+            this.ClientSize = new System.Drawing.Size(986, 518);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmRentabilidad";
             this.Text = "Rentabilidad";
@@ -236,5 +301,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView Grilla;
+        private System.Windows.Forms.ComboBox cmbMarca;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtPatente;
+        private System.Windows.Forms.Label label4;
     }
 }

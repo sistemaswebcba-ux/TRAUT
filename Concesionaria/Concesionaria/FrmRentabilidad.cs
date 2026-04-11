@@ -32,6 +32,10 @@ namespace Concesionaria
 
         private void Buscar()
         {
+
+            string cliente = "";
+            if (txtNombre.Text !="")
+                cliente = txtNombre.Text;
             cFunciones fun = new cFunciones();
             string Col = "Nombre;Venta;Gasto;Rentabilidad";
             string Val = "";
@@ -40,7 +44,7 @@ namespace Concesionaria
             DateTime Desde = dpFechaDesde.Value;
             DateTime Hasta = dpFechaHasta.Value;
             cVenta venta = new cVenta();
-            DataTable trdo = venta.GetVentasxFecha(Desde, Hasta, "", "", "", null, "", 1);
+            DataTable trdo = venta.GetVentaRentabilidadxFecha(Desde, Hasta, "", cliente, cliente, null, "", 1);
          //   trdo = fun.TablaaMiles(trdo, "Ganancia");
             string Apellido = "";
             string Nombre = "";
@@ -49,13 +53,15 @@ namespace Concesionaria
             Int32 CodVenta = 0;
             Double GananciaGastos = 0;
             Double Rentabilidad = 0;
-           
+
+          
+
             for (int i = 0; i < trdo.Rows.Count ; i++)
             {
                 CodVenta = Convert.ToInt32(trdo.Rows[i]["CodVenta"].ToString());
                 Apellido = trdo.Rows[i]["Apellido"].ToString();
                 Nombre = trdo.Rows[i]["Nombre"].ToString();
-                Ganancia = Convert.ToDouble(trdo.Rows[i]["Ganancia"].ToString());
+                Ganancia = Convert.ToDouble(trdo.Rows[i]["GananciaBruta"].ToString());
                 NomApe = Nombre + " " + Apellido;
                 GananciaGastos = GetGastoxCodVenta(CodVenta);
                 Rentabilidad = Ganancia + GananciaGastos;

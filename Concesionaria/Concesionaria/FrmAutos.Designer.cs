@@ -77,6 +77,7 @@
             this.cmbDocumento = new System.Windows.Forms.ComboBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnPersonal = new System.Windows.Forms.Button();
             this.btnBuscarCliente = new System.Windows.Forms.Button();
             this.lblGuion2 = new System.Windows.Forms.Label();
             this.lblGuion1 = new System.Windows.Forms.Label();
@@ -193,7 +194,6 @@
             this.label44 = new System.Windows.Forms.Label();
             this.TxtSubTotal = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
-            this.btnPersonal = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaCliente)).BeginInit();
@@ -662,7 +662,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(382, 22);
+            this.label7.Location = new System.Drawing.Point(392, 21);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 16);
             this.label7.TabIndex = 8;
@@ -745,6 +745,16 @@
             this.groupBox2.Text = "Información del Cliente";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // btnPersonal
+            // 
+            this.btnPersonal.Image = global::Concesionaria.Properties.Resources.clie1;
+            this.btnPersonal.Location = new System.Drawing.Point(650, 13);
+            this.btnPersonal.Name = "btnPersonal";
+            this.btnPersonal.Size = new System.Drawing.Size(40, 28);
+            this.btnPersonal.TabIndex = 81;
+            this.btnPersonal.UseVisualStyleBackColor = true;
+            this.btnPersonal.Click += new System.EventHandler(this.btnPersonal_Click);
+            // 
             // btnBuscarCliente
             // 
             this.btnBuscarCliente.Image = global::Concesionaria.Properties.Resources.carpeta;
@@ -767,11 +777,12 @@
             // lblGuion1
             // 
             this.lblGuion1.AutoSize = true;
-            this.lblGuion1.Location = new System.Drawing.Point(497, 22);
+            this.lblGuion1.Location = new System.Drawing.Point(443, 44);
             this.lblGuion1.Name = "lblGuion1";
             this.lblGuion1.Size = new System.Drawing.Size(12, 16);
             this.lblGuion1.TabIndex = 67;
             this.lblGuion1.Text = "-";
+            this.lblGuion1.Visible = false;
             // 
             // button4
             // 
@@ -814,7 +825,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(379, 67);
+            this.label41.Location = new System.Drawing.Point(392, 67);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(42, 16);
             this.label41.TabIndex = 38;
@@ -879,7 +890,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(382, 91);
+            this.label37.Location = new System.Drawing.Point(392, 88);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(64, 16);
             this.label37.TabIndex = 32;
@@ -941,7 +952,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(402, 118);
+            this.label14.Location = new System.Drawing.Point(402, 121);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(44, 16);
             this.label14.TabIndex = 23;
@@ -1022,7 +1033,7 @@
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(379, 44);
+            this.lblApellido.Location = new System.Drawing.Point(392, 44);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(58, 16);
             this.lblApellido.TabIndex = 10;
@@ -1895,16 +1906,6 @@
             this.label45.Size = new System.Drawing.Size(60, 17);
             this.label45.TabIndex = 55;
             this.label45.Text = "Subtotal";
-            // 
-            // btnPersonal
-            // 
-            this.btnPersonal.Image = global::Concesionaria.Properties.Resources.clie1;
-            this.btnPersonal.Location = new System.Drawing.Point(650, 13);
-            this.btnPersonal.Name = "btnPersonal";
-            this.btnPersonal.Size = new System.Drawing.Size(40, 28);
-            this.btnPersonal.TabIndex = 81;
-            this.btnPersonal.UseVisualStyleBackColor = true;
-            this.btnPersonal.Click += new System.EventHandler(this.btnPersonal_Click);
             // 
             // FrmAutos
             // 
