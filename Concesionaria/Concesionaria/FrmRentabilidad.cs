@@ -88,6 +88,7 @@ namespace Concesionaria
             Double TotalVentas = 0;
             Double TotalGastos = 0;
             Double TotalRentabilidad = 0;
+            txtCantidad.Text = tbRenta.Rows.Count.ToString();
 
             TotalVentas = fun.TotalizarColumna(tbRenta, "Venta");
             txtTotalVentas.Text =fun.SepararDecimales (TotalVentas.ToString());

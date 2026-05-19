@@ -55,12 +55,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Grilla = new System.Windows.Forms.DataGridView();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtCantidad);
+            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txtTotalRentabilidad);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtTotalVentas);
@@ -331,11 +335,30 @@
             // Grilla
             // 
             this.Grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Grilla.Location = new System.Drawing.Point(9, 81);
+            this.Grilla.Location = new System.Drawing.Point(9, 61);
             this.Grilla.Name = "Grilla";
             this.Grilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Grilla.Size = new System.Drawing.Size(947, 373);
+            this.Grilla.Size = new System.Drawing.Size(947, 393);
             this.Grilla.TabIndex = 8;
+            // 
+            // txtCantidad
+            // 
+            this.txtCantidad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtCantidad.Location = new System.Drawing.Point(193, 469);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.ReadOnly = true;
+            this.txtCantidad.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtCantidad.Size = new System.Drawing.Size(133, 22);
+            this.txtCantidad.TabIndex = 90;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(125, 469);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 16);
+            this.label9.TabIndex = 89;
+            this.label9.Text = "Cantidad";
             // 
             // FrmRentabilidad
             // 
@@ -382,5 +405,7 @@
         private System.Windows.Forms.TextBox txtTotalVentas;
         private System.Windows.Forms.TextBox txtTotalGastos;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtCantidad;
+        private System.Windows.Forms.Label label9;
     }
 }

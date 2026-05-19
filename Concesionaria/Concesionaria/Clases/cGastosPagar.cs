@@ -296,10 +296,14 @@ namespace Concesionaria.Clases
             DataTable trdo = cDb.ExecuteDataTable(sql);
             if (trdo.Rows.Count >0)
             {
-                if (trdo.Rows[0]["ImportePagado"].ToString ()!="")
+                for (int i = 0; i < trdo.Rows.Count ; i++)
                 {
-                    Total = Convert.ToDouble(trdo.Rows[0]["ImportePagado"].ToString());
+                    if (trdo.Rows[i]["ImportePagado"].ToString() != "")
+                    {
+                        Total = Total + Convert.ToDouble(trdo.Rows[i]["ImportePagado"].ToString());
+                    }
                 }
+               
             }
             return Total;
         }
