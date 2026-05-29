@@ -74,5 +74,10 @@ namespace Concesionaria
             FrmResumenCuentaProveedor frm = new FrmResumenCuentaProveedor();
             frm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

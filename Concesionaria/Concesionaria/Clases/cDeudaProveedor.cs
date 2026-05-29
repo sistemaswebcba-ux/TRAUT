@@ -9,10 +9,10 @@ namespace Concesionaria.Clases
     public class cDeudaProveedor
     {
         public Int32 Insertar (Int32 CodCuentaProveedor, string COncepto,
-            DateTime Fecha, DateTime FechaVto, Double Importe, string Observacion, Int32? CodStock)
+            DateTime Fecha, DateTime FechaVto, Double Importe, string Observacion, Int32? CodStock, Int32? CodTipoDeuda, Int32? CodTipoPersonal, int CodEmpleado)
         {
             string sql = "Insert into DeudaProveedor(";
-            sql = sql + "CodCuentaProveedor,COncepto,Fecha,FechaVto,Importe,Observacion,Saldo,CodStock)";
+            sql = sql + "CodCuentaProveedor,COncepto,Fecha,FechaVto,Importe,Observacion,Saldo,CodStock,CodTipoDeuda,CodTipoPersonal,CodEmpleado)";
             sql = sql + " values(" + CodCuentaProveedor.ToString();
             sql = sql + "," + "'" + COncepto + "'";
             sql = sql + "," + "'" + Fecha.ToShortDateString() + "'";
@@ -24,6 +24,11 @@ namespace Concesionaria.Clases
                 sql = sql + "," + CodStock.ToString();
             else
                 sql = sql + ",null";
+            if (CodTipoDeuda != null)
+                sql = sql + "," + CodTipoDeuda.ToString();
+            if (CodTipoPersonal !=null)
+                sql = sql + "," + CodTipoPersonal.ToString();
+            sql = sql + "," + CodEmpleado.ToString();
             sql = sql + ")";
             return cDb.EjecutarEscalar(sql);
         }

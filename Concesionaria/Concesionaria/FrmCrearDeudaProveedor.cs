@@ -59,6 +59,15 @@ namespace Concesionaria
                 MessageBox.Show("Debe ingresar un concepto ");
                 return;
             }
+
+           if (cmbEmpleado.SelectedIndex<1)
+            {
+                MessageBox.Show("Debe seleccionar un empleado para continuar");
+                return;
+            }
+
+            Int32 CodEmopñeado = Convert.ToInt32(cmbEmpleado.SelectedValue);
+
             cCosto Costo = new cCosto();
 
             Int32 CodDeuda = 0;
@@ -73,15 +82,25 @@ namespace Concesionaria
             DateTime FechaVto = Convert.ToDateTime(dpFechaVencimiento.Value);
             Double Importe = 0;
             Int32? CodStock = null;
-            if(txtCodStock.Text !="")
+            Int32? CodTipoDeuda = null;
+            Int32? CodTipoPersonal = null;
+            if (txtCodStock.Text !="")
             {
                 CodStock = Convert.ToInt32(txtCodStock.Text);
             }
+
+            if (cmbTipo.SelectedIndex > 0)
+                CodTipoDeuda = Convert.ToInt32(cmbTipo.SelectedValue);
+
+            if (cmbTipoPersonal.SelectedIndex >0)
+                CodTipoPersonal = Convert.ToInt32(cmbTipoPersonal.SelectedValue);
+
+
             string Observacion = txtDescripcion.Text;
             cFunciones fun = new cFunciones();
             Importe = fun.ToDouble(txtImporte.Text);
             CodDeuda = Deuda.Insertar(CodCuentaProveedor, COncepto,
-             Fecha, FechaVto, Importe, Observacion, CodStock);
+             Fecha, FechaVto, Importe, Observacion, CodStock, CodTipoDeuda, CodTipoPersonal, CodEmopñeado);
             Double SaldoAnterior = Saldo;
             Saldo = Saldo + Importe;
             mov.Insertar(CodCuentaProveedor, Fecha, COncepto, Importe, 0, Saldo, CodDeuda, 0, SaldoAnterior);
@@ -106,6 +125,15 @@ namespace Concesionaria
             txtDescripcion.Text = "";
             txtVehiculo.Text = "";
             txtCodStock.Text = "";
+            txtPatente.Text = "";
+            if (cmbEmpleado.SelectedIndex > 0)
+                cmbEmpleado.SelectedIndex = 0;
+
+            if (cmbTipoPersonal.SelectedIndex > 0)
+                cmbTipoPersonal.SelectedIndex = 0;
+            
+            if (cmbTipo.SelectedIndex > 0)
+                cmbTipo.SelectedIndex = 0;
         }
 
         private void FrmCrearDeudaProveedor_Load(object sender, EventArgs e)
@@ -115,6 +143,23 @@ namespace Concesionaria
                 Int32 CodDeuda = Convert.ToInt32(Principal.Codigo);
                 BuscarDeuda(CodDeuda);
             }
+            Inicializar ();
+        }
+
+        private void CargarEmpleado()
+        {
+            Clases.cVendedor ven = new Clases.cVendedor();
+            DataTable tvend = ven.GetVendedores();
+            Clases.cFunciones fun = new Clases.cFunciones();
+            fun.LlenarComboDatatable(cmbEmpleado, tvend, "Apellido", "CodVendedor");
+        }
+
+        private void Inicializar()
+        {
+            CargarEmpleado();
+            cFunciones fun = new cFunciones();
+            fun.LlenarCombo(cmbTipo, "TipoDeuda", "Nombre", "CodTipoDeuda");
+            fun.LlenarCombo(cmbTipoPersonal, "TipoPersonal", "Nombre", "CodTipoPersonal");
         }
 
         private void BuscarDeuda(Int32 CodDeuda)

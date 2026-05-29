@@ -45,6 +45,10 @@
             this.txtCodCuenta = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cmbTipoPersonal = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.txtCodAuto = new System.Windows.Forms.TextBox();
             this.txtPatente = new System.Windows.Forms.TextBox();
             this.txtCodStock = new System.Windows.Forms.TextBox();
@@ -53,6 +57,8 @@
             this.txtVehiculo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtConcepto = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cmbEmpleado = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +81,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(119, 393);
+            this.btnGuardar.Location = new System.Drawing.Point(119, 435);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 37);
             this.btnGuardar.TabIndex = 6;
@@ -95,7 +101,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(39, 259);
+            this.label3.Location = new System.Drawing.Point(39, 317);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 17);
             this.label3.TabIndex = 23;
@@ -104,10 +110,10 @@
             // txtDescripcion
             // 
             this.txtDescripcion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtDescripcion.Location = new System.Drawing.Point(119, 256);
+            this.txtDescripcion.Location = new System.Drawing.Point(119, 329);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(305, 131);
+            this.txtDescripcion.Size = new System.Drawing.Size(305, 100);
             this.txtDescripcion.TabIndex = 5;
             // 
             // txtProveedor
@@ -183,9 +189,9 @@
             // 
             this.txtCodCuenta.BackColor = System.Drawing.Color.Red;
             this.txtCodCuenta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCodCuenta.Location = new System.Drawing.Point(306, 34);
+            this.txtCodCuenta.Location = new System.Drawing.Point(6, 66);
             this.txtCodCuenta.Name = "txtCodCuenta";
-            this.txtCodCuenta.Size = new System.Drawing.Size(71, 23);
+            this.txtCodCuenta.Size = new System.Drawing.Size(23, 23);
             this.txtCodCuenta.TabIndex = 79;
             this.txtCodCuenta.Visible = false;
             // 
@@ -201,6 +207,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.cmbEmpleado);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.cmbTipoPersonal);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.cmbTipo);
             this.groupBox1.Controls.Add(this.txtCodAuto);
             this.groupBox1.Controls.Add(this.txtPatente);
             this.groupBox1.Controls.Add(this.txtCodStock);
@@ -228,10 +240,46 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(25, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(477, 450);
+            this.groupBox1.Size = new System.Drawing.Size(477, 495);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "RegistrarDeuda Proveedor";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(229, 196);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 17);
+            this.label9.TabIndex = 94;
+            this.label9.Text = "Caracter";
+            // 
+            // cmbTipoPersonal
+            // 
+            this.cmbTipoPersonal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipoPersonal.FormattingEnabled = true;
+            this.cmbTipoPersonal.Location = new System.Drawing.Point(303, 193);
+            this.cmbTipoPersonal.Name = "cmbTipoPersonal";
+            this.cmbTipoPersonal.Size = new System.Drawing.Size(121, 24);
+            this.cmbTipoPersonal.TabIndex = 93;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(43, 193);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(36, 17);
+            this.label7.TabIndex = 92;
+            this.label7.Text = "Tipo";
+            // 
+            // cmbTipo
+            // 
+            this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Location = new System.Drawing.Point(121, 193);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(98, 24);
+            this.cmbTipo.TabIndex = 91;
             // 
             // txtCodAuto
             // 
@@ -247,7 +295,7 @@
             // 
             this.txtPatente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPatente.Enabled = false;
-            this.txtPatente.Location = new System.Drawing.Point(119, 227);
+            this.txtPatente.Location = new System.Drawing.Point(331, 41);
             this.txtPatente.Name = "txtPatente";
             this.txtPatente.ReadOnly = true;
             this.txtPatente.Size = new System.Drawing.Size(93, 23);
@@ -266,7 +314,7 @@
             // btnAbrirStock
             // 
             this.btnAbrirStock.Image = global::Concesionaria.Properties.Resources.carpeta;
-            this.btnAbrirStock.Location = new System.Drawing.Point(430, 227);
+            this.btnAbrirStock.Location = new System.Drawing.Point(430, 39);
             this.btnAbrirStock.Name = "btnAbrirStock";
             this.btnAbrirStock.Size = new System.Drawing.Size(40, 27);
             this.btnAbrirStock.TabIndex = 87;
@@ -276,7 +324,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(45, 227);
+            this.label6.Location = new System.Drawing.Point(268, 42);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(57, 17);
             this.label6.TabIndex = 86;
@@ -286,7 +334,7 @@
             // 
             this.txtVehiculo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtVehiculo.Enabled = false;
-            this.txtVehiculo.Location = new System.Drawing.Point(225, 229);
+            this.txtVehiculo.Location = new System.Drawing.Point(227, 70);
             this.txtVehiculo.Name = "txtVehiculo";
             this.txtVehiculo.ReadOnly = true;
             this.txtVehiculo.Size = new System.Drawing.Size(197, 23);
@@ -295,7 +343,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(45, 198);
+            this.label5.Location = new System.Drawing.Point(39, 257);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 17);
             this.label5.TabIndex = 84;
@@ -304,16 +352,35 @@
             // txtConcepto
             // 
             this.txtConcepto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtConcepto.Location = new System.Drawing.Point(119, 198);
+            this.txtConcepto.Location = new System.Drawing.Point(121, 257);
+            this.txtConcepto.Multiline = true;
             this.txtConcepto.Name = "txtConcepto";
-            this.txtConcepto.Size = new System.Drawing.Size(305, 23);
+            this.txtConcepto.Size = new System.Drawing.Size(305, 66);
             this.txtConcepto.TabIndex = 83;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(39, 230);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(71, 17);
+            this.label11.TabIndex = 96;
+            this.label11.Text = "Empleado";
+            // 
+            // cmbEmpleado
+            // 
+            this.cmbEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEmpleado.FormattingEnabled = true;
+            this.cmbEmpleado.Location = new System.Drawing.Point(121, 230);
+            this.cmbEmpleado.Name = "cmbEmpleado";
+            this.cmbEmpleado.Size = new System.Drawing.Size(298, 24);
+            this.cmbEmpleado.TabIndex = 95;
             // 
             // FrmCrearDeudaProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(527, 474);
+            this.ClientSize = new System.Drawing.Size(534, 519);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmCrearDeudaProveedor";
             this.Text = "";
@@ -351,5 +418,11 @@
         private System.Windows.Forms.TextBox txtCodStock;
         private System.Windows.Forms.TextBox txtPatente;
         private System.Windows.Forms.TextBox txtCodAuto;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cmbTipo;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cmbTipoPersonal;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox cmbEmpleado;
     }
 }
