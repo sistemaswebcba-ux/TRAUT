@@ -128,7 +128,7 @@
             // btnVerResumen
             // 
             this.btnVerResumen.Image = global::Concesionaria.Properties.Resources.Folder1;
-            this.btnVerResumen.Location = new System.Drawing.Point(829, 23);
+            this.btnVerResumen.Location = new System.Drawing.Point(829, 25);
             this.btnVerResumen.Name = "btnVerResumen";
             this.btnVerResumen.Size = new System.Drawing.Size(40, 31);
             this.btnVerResumen.TabIndex = 75;
@@ -158,7 +158,7 @@
             // btnCobroCheque
             // 
             this.btnCobroCheque.Image = global::Concesionaria.Properties.Resources.money_euro;
-            this.btnCobroCheque.Location = new System.Drawing.Point(783, 22);
+            this.btnCobroCheque.Location = new System.Drawing.Point(783, 25);
             this.btnCobroCheque.Name = "btnCobroCheque";
             this.btnCobroCheque.Size = new System.Drawing.Size(40, 31);
             this.btnCobroCheque.TabIndex = 48;
@@ -177,7 +177,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(702, 23);
+            this.btnBuscar.Location = new System.Drawing.Point(702, 27);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 28);
             this.btnBuscar.TabIndex = 44;

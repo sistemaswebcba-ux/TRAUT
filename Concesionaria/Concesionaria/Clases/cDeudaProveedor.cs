@@ -26,8 +26,12 @@ namespace Concesionaria.Clases
                 sql = sql + ",null";
             if (CodTipoDeuda != null)
                 sql = sql + "," + CodTipoDeuda.ToString();
-            if (CodTipoPersonal !=null)
+            else
+                sql = sql + ",null";
+            if (CodTipoPersonal != null)
                 sql = sql + "," + CodTipoPersonal.ToString();
+            else
+                sql = sql + ",null";
             sql = sql + "," + CodEmpleado.ToString();
             sql = sql + ")";
             return cDb.EjecutarEscalar(sql);

@@ -32,8 +32,6 @@
             this.txtImporte = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtProveedor = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dpFecha = new System.Windows.Forms.DateTimePicker();
@@ -45,10 +43,14 @@
             this.txtCodCuenta = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.cmbTipoPersonal = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cmbTipo = new System.Windows.Forms.ComboBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.radioNegocio = new System.Windows.Forms.RadioButton();
+            this.radioPersonal = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.RadioVariable = new System.Windows.Forms.RadioButton();
+            this.RadioFijo = new System.Windows.Forms.RadioButton();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cmbEmpleado = new System.Windows.Forms.ComboBox();
             this.txtCodAuto = new System.Windows.Forms.TextBox();
             this.txtPatente = new System.Windows.Forms.TextBox();
             this.txtCodStock = new System.Windows.Forms.TextBox();
@@ -57,9 +59,9 @@
             this.txtVehiculo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtConcepto = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.cmbEmpleado = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -81,7 +83,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(119, 435);
+            this.btnGuardar.Location = new System.Drawing.Point(119, 452);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 37);
             this.btnGuardar.TabIndex = 6;
@@ -98,28 +100,10 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Fecha";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(39, 317);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 17);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "Descripción";
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtDescripcion.Location = new System.Drawing.Point(119, 329);
-            this.txtDescripcion.Multiline = true;
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(305, 100);
-            this.txtDescripcion.TabIndex = 5;
-            // 
             // txtProveedor
             // 
             this.txtProveedor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtProveedor.Location = new System.Drawing.Point(119, 105);
+            this.txtProveedor.Location = new System.Drawing.Point(119, 95);
             this.txtProveedor.Name = "txtProveedor";
             this.txtProveedor.Size = new System.Drawing.Size(305, 23);
             this.txtProveedor.TabIndex = 2;
@@ -127,7 +111,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(39, 105);
+            this.label4.Location = new System.Drawing.Point(39, 95);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 17);
             this.label4.TabIndex = 26;
@@ -144,7 +128,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(43, 169);
+            this.label8.Location = new System.Drawing.Point(43, 153);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(72, 17);
             this.label8.TabIndex = 72;
@@ -153,7 +137,7 @@
             // dpFechaVencimiento
             // 
             this.dpFechaVencimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dpFechaVencimiento.Location = new System.Drawing.Point(121, 163);
+            this.dpFechaVencimiento.Location = new System.Drawing.Point(121, 153);
             this.dpFechaVencimiento.Name = "dpFechaVencimiento";
             this.dpFechaVencimiento.Size = new System.Drawing.Size(87, 23);
             this.dpFechaVencimiento.TabIndex = 73;
@@ -161,7 +145,7 @@
             // txtCuentaProveedor
             // 
             this.txtCuentaProveedor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCuentaProveedor.Location = new System.Drawing.Point(119, 134);
+            this.txtCuentaProveedor.Location = new System.Drawing.Point(121, 124);
             this.txtCuentaProveedor.Name = "txtCuentaProveedor";
             this.txtCuentaProveedor.Size = new System.Drawing.Size(305, 23);
             this.txtCuentaProveedor.TabIndex = 76;
@@ -169,7 +153,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(43, 134);
+            this.label10.Location = new System.Drawing.Point(43, 124);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(53, 17);
             this.label10.TabIndex = 77;
@@ -198,7 +182,7 @@
             // button1
             // 
             this.button1.Image = global::Concesionaria.Properties.Resources.email;
-            this.button1.Location = new System.Drawing.Point(225, 163);
+            this.button1.Location = new System.Drawing.Point(225, 153);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(40, 29);
             this.button1.TabIndex = 82;
@@ -207,12 +191,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.groupBox3);
+            this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.cmbEmpleado);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.cmbTipoPersonal);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.cmbTipo);
             this.groupBox1.Controls.Add(this.txtCodAuto);
             this.groupBox1.Controls.Add(this.txtPatente);
             this.groupBox1.Controls.Add(this.txtCodStock);
@@ -231,8 +213,6 @@
             this.groupBox1.Controls.Add(this.dpFecha);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtProveedor);
-            this.groupBox1.Controls.Add(this.txtDescripcion);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Controls.Add(this.txtImporte);
@@ -245,47 +225,95 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "RegistrarDeuda Proveedor";
             // 
-            // label9
+            // groupBox3
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(229, 196);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 17);
-            this.label9.TabIndex = 94;
-            this.label9.Text = "Caracter";
+            this.groupBox3.Controls.Add(this.radioNegocio);
+            this.groupBox3.Controls.Add(this.radioPersonal);
+            this.groupBox3.Location = new System.Drawing.Point(239, 188);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(194, 55);
+            this.groupBox3.TabIndex = 100;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Caracter";
             // 
-            // cmbTipoPersonal
+            // radioNegocio
             // 
-            this.cmbTipoPersonal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTipoPersonal.FormattingEnabled = true;
-            this.cmbTipoPersonal.Location = new System.Drawing.Point(303, 193);
-            this.cmbTipoPersonal.Name = "cmbTipoPersonal";
-            this.cmbTipoPersonal.Size = new System.Drawing.Size(121, 24);
-            this.cmbTipoPersonal.TabIndex = 93;
+            this.radioNegocio.AutoSize = true;
+            this.radioNegocio.Checked = true;
+            this.radioNegocio.Location = new System.Drawing.Point(107, 16);
+            this.radioNegocio.Name = "radioNegocio";
+            this.radioNegocio.Size = new System.Drawing.Size(78, 21);
+            this.radioNegocio.TabIndex = 100;
+            this.radioNegocio.TabStop = true;
+            this.radioNegocio.Text = "Negocio";
+            this.radioNegocio.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // radioPersonal
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(43, 193);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(36, 17);
-            this.label7.TabIndex = 92;
-            this.label7.Text = "Tipo";
+            this.radioPersonal.AutoSize = true;
+            this.radioPersonal.Location = new System.Drawing.Point(19, 16);
+            this.radioPersonal.Name = "radioPersonal";
+            this.radioPersonal.Size = new System.Drawing.Size(82, 21);
+            this.radioPersonal.TabIndex = 99;
+            this.radioPersonal.Text = "Personal";
+            this.radioPersonal.UseVisualStyleBackColor = true;
             // 
-            // cmbTipo
+            // groupBox2
             // 
-            this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTipo.FormattingEnabled = true;
-            this.cmbTipo.Location = new System.Drawing.Point(121, 193);
-            this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(98, 24);
-            this.cmbTipo.TabIndex = 91;
+            this.groupBox2.Controls.Add(this.RadioVariable);
+            this.groupBox2.Controls.Add(this.RadioFijo);
+            this.groupBox2.Location = new System.Drawing.Point(39, 182);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(194, 55);
+            this.groupBox2.TabIndex = 99;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Tipo De Costo";
+            // 
+            // RadioVariable
+            // 
+            this.RadioVariable.AutoSize = true;
+            this.RadioVariable.Location = new System.Drawing.Point(102, 22);
+            this.RadioVariable.Name = "RadioVariable";
+            this.RadioVariable.Size = new System.Drawing.Size(78, 21);
+            this.RadioVariable.TabIndex = 100;
+            this.RadioVariable.Text = "Variable";
+            this.RadioVariable.UseVisualStyleBackColor = true;
+            // 
+            // RadioFijo
+            // 
+            this.RadioFijo.AutoSize = true;
+            this.RadioFijo.Checked = true;
+            this.RadioFijo.Location = new System.Drawing.Point(22, 22);
+            this.RadioFijo.Name = "RadioFijo";
+            this.RadioFijo.Size = new System.Drawing.Size(48, 21);
+            this.RadioFijo.TabIndex = 99;
+            this.RadioFijo.TabStop = true;
+            this.RadioFijo.Text = "Fijo";
+            this.RadioFijo.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(36, 246);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(71, 17);
+            this.label11.TabIndex = 96;
+            this.label11.Text = "Empleado";
+            // 
+            // cmbEmpleado
+            // 
+            this.cmbEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEmpleado.FormattingEnabled = true;
+            this.cmbEmpleado.Location = new System.Drawing.Point(121, 243);
+            this.cmbEmpleado.Name = "cmbEmpleado";
+            this.cmbEmpleado.Size = new System.Drawing.Size(298, 24);
+            this.cmbEmpleado.TabIndex = 95;
             // 
             // txtCodAuto
             // 
             this.txtCodAuto.BackColor = System.Drawing.Color.Red;
             this.txtCodAuto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCodAuto.Location = new System.Drawing.Point(348, 169);
+            this.txtCodAuto.Location = new System.Drawing.Point(351, 159);
             this.txtCodAuto.Name = "txtCodAuto";
             this.txtCodAuto.Size = new System.Drawing.Size(71, 23);
             this.txtCodAuto.TabIndex = 90;
@@ -305,7 +333,7 @@
             // 
             this.txtCodStock.BackColor = System.Drawing.Color.Red;
             this.txtCodStock.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCodStock.Location = new System.Drawing.Point(271, 169);
+            this.txtCodStock.Location = new System.Drawing.Point(271, 159);
             this.txtCodStock.Name = "txtCodStock";
             this.txtCodStock.Size = new System.Drawing.Size(71, 23);
             this.txtCodStock.TabIndex = 88;
@@ -334,7 +362,7 @@
             // 
             this.txtVehiculo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtVehiculo.Enabled = false;
-            this.txtVehiculo.Location = new System.Drawing.Point(227, 70);
+            this.txtVehiculo.Location = new System.Drawing.Point(225, 66);
             this.txtVehiculo.Name = "txtVehiculo";
             this.txtVehiculo.ReadOnly = true;
             this.txtVehiculo.Size = new System.Drawing.Size(197, 23);
@@ -343,7 +371,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(39, 257);
+            this.label5.Location = new System.Drawing.Point(39, 273);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 17);
             this.label5.TabIndex = 84;
@@ -352,41 +380,27 @@
             // txtConcepto
             // 
             this.txtConcepto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtConcepto.Location = new System.Drawing.Point(121, 257);
+            this.txtConcepto.Location = new System.Drawing.Point(119, 273);
             this.txtConcepto.Multiline = true;
             this.txtConcepto.Name = "txtConcepto";
-            this.txtConcepto.Size = new System.Drawing.Size(305, 66);
+            this.txtConcepto.Size = new System.Drawing.Size(305, 173);
             this.txtConcepto.TabIndex = 83;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(39, 230);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(71, 17);
-            this.label11.TabIndex = 96;
-            this.label11.Text = "Empleado";
-            // 
-            // cmbEmpleado
-            // 
-            this.cmbEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbEmpleado.FormattingEnabled = true;
-            this.cmbEmpleado.Location = new System.Drawing.Point(121, 230);
-            this.cmbEmpleado.Name = "cmbEmpleado";
-            this.cmbEmpleado.Size = new System.Drawing.Size(298, 24);
-            this.cmbEmpleado.TabIndex = 95;
             // 
             // FrmCrearDeudaProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(534, 519);
+            this.ClientSize = new System.Drawing.Size(515, 519);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmCrearDeudaProveedor";
             this.Text = "";
             this.Load += new System.EventHandler(this.FrmCrearDeudaProveedor_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -397,8 +411,6 @@
         private System.Windows.Forms.TextBox txtImporte;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtProveedor;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dpFecha;
@@ -418,11 +430,13 @@
         private System.Windows.Forms.TextBox txtCodStock;
         private System.Windows.Forms.TextBox txtPatente;
         private System.Windows.Forms.TextBox txtCodAuto;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox cmbTipo;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox cmbTipoPersonal;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox cmbEmpleado;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton radioNegocio;
+        private System.Windows.Forms.RadioButton radioPersonal;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton RadioVariable;
+        private System.Windows.Forms.RadioButton RadioFijo;
     }
 }

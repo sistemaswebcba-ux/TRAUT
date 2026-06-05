@@ -70,7 +70,8 @@ namespace Concesionaria.Clases
             sql = sql + ",0 as CodDeuda ,0 as CodPago ,0 as CodMovimiento ";
             sql = sql + " union ";
            // string sql = "";
-            sql = sql + " select CodCuentaProveedor,Fecha,Concepto,Debe,Haber, Saldo,CodDeuda,CodPago,CodMovimiento";
+           //saco el union y la 
+            sql =  " select CodCuentaProveedor,Fecha,Concepto,Debe,Haber, Saldo,CodDeuda,CodPago,CodMovimiento";
             sql = sql + " from MovimientoProveedor "; 
             sql = sql + " where CodCuentaProveedor=" + CodCuentaProveedor.ToString();
             sql = sql + " and Fecha >=" + "'" + FechaDesde.ToShortDateString() + "'";
@@ -89,8 +90,8 @@ namespace Concesionaria.Clases
             sql = " select CodMovimiento,SaldoAnterior ";
             sql = sql + " from MovimientoProveedor ";
             sql = sql + " where CodCuentaProveedor=" + CodCuentaProveedor.ToString();
-            sql = sql + " and Fecha >=" + "'" + FechaDesde.ToShortDateString() + "'";
-            sql = sql + " and Fecha <=" + "'" + FechaHasta.ToShortDateString() + "'";
+           // sql = sql + " and Fecha >=" + "'" + FechaDesde.ToShortDateString() + "'";
+           // sql = sql + " and Fecha <=" + "'" + FechaHasta.ToShortDateString() + "'";
             sql = sql + " order by CodMovimiento asc ";
             DataTable trdo = cDb.ExecuteDataTable(sql);
             if (trdo.Rows.Count >0)

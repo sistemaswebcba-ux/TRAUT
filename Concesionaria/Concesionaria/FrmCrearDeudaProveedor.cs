@@ -89,14 +89,30 @@ namespace Concesionaria
                 CodStock = Convert.ToInt32(txtCodStock.Text);
             }
 
-            if (cmbTipo.SelectedIndex > 0)
-                CodTipoDeuda = Convert.ToInt32(cmbTipo.SelectedValue);
+          
 
-            if (cmbTipoPersonal.SelectedIndex >0)
-                CodTipoPersonal = Convert.ToInt32(cmbTipoPersonal.SelectedValue);
+            if (RadioFijo.Checked == true)
+            {
+                CodTipoDeuda = 1;
+            }
+
+            if (RadioVariable.Checked == true)
+            {
+                CodTipoDeuda = 2;
+            }
+            
+            if (radioNegocio.Checked == true)
+            {
+                CodTipoPersonal = 2;
+            }
+
+            if (radioPersonal.Checked == true)
+            {
+                CodTipoPersonal = 1;
+            }
 
 
-            string Observacion = txtDescripcion.Text;
+            string Observacion = ""; 
             cFunciones fun = new cFunciones();
             Importe = fun.ToDouble(txtImporte.Text);
             CodDeuda = Deuda.Insertar(CodCuentaProveedor, COncepto,
@@ -122,18 +138,14 @@ namespace Concesionaria
         {
             txtConcepto.Text = "";
             txtImporte.Text = "";
-            txtDescripcion.Text = "";
+          
             txtVehiculo.Text = "";
             txtCodStock.Text = "";
             txtPatente.Text = "";
             if (cmbEmpleado.SelectedIndex > 0)
                 cmbEmpleado.SelectedIndex = 0;
 
-            if (cmbTipoPersonal.SelectedIndex > 0)
-                cmbTipoPersonal.SelectedIndex = 0;
-            
-            if (cmbTipo.SelectedIndex > 0)
-                cmbTipo.SelectedIndex = 0;
+          
         }
 
         private void FrmCrearDeudaProveedor_Load(object sender, EventArgs e)
@@ -156,10 +168,7 @@ namespace Concesionaria
 
         private void Inicializar()
         {
-            CargarEmpleado();
-            cFunciones fun = new cFunciones();
-            fun.LlenarCombo(cmbTipo, "TipoDeuda", "Nombre", "CodTipoDeuda");
-            fun.LlenarCombo(cmbTipoPersonal, "TipoPersonal", "Nombre", "CodTipoPersonal");
+            CargarEmpleado();       
         }
 
         private void BuscarDeuda(Int32 CodDeuda)
@@ -168,7 +177,7 @@ namespace Concesionaria
             cDeudaProveedor Deuda = new Clases.cDeudaProveedor();
             DataTable trdo = Deuda.GetDeudaxCodigo(CodDeuda);
             txtConcepto.Text = trdo.Rows[0]["Concepto"].ToString();
-            txtDescripcion.Text = trdo.Rows[0]["Observacion"].ToString();
+            //txtDescripcion.Text = trdo.Rows[0]["Observacion"].ToString();
             Double Importe = Convert.ToDouble(trdo.Rows[0]["Importe"].ToString());
             txtImporte.Text = Importe.ToString();
             txtImporte.Text = fun.FormatoEnteroMiles(Importe.ToString());
@@ -223,14 +232,14 @@ namespace Concesionaria
             String NombreAuto = "";
             DataTable trdo = auto.GetAutoxCodigo(CodAuto);
             if (trdo.Rows.Count >0)
-            {
+            {  
                 string Patente = trdo.Rows[0]["Patente"].ToString();
                 string Descripcion = trdo.Rows[0]["Descripcion"].ToString();
                 txtPatente.Text = Patente;
                 txtVehiculo.Text = Descripcion;
                 string Anio = trdo.Rows[0]["NombreAnio"].ToString();
                 NombreAuto = Patente + " " + Descripcion + " " + Anio;
-                txtDescripcion.Text = NombreAuto;
+                txtConcepto.Text = NombreAuto;
             }
 
             DataTable tstock = stock.GetStockUltimo(CodAuto);
