@@ -128,7 +128,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(43, 153);
+            this.label8.Location = new System.Drawing.Point(39, 153);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(72, 17);
             this.label8.TabIndex = 72;
@@ -153,7 +153,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(43, 124);
+            this.label10.Location = new System.Drawing.Point(39, 124);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(53, 17);
             this.label10.TabIndex = 77;
@@ -229,9 +229,9 @@
             // 
             this.groupBox3.Controls.Add(this.radioNegocio);
             this.groupBox3.Controls.Add(this.radioPersonal);
-            this.groupBox3.Location = new System.Drawing.Point(239, 188);
+            this.groupBox3.Location = new System.Drawing.Point(239, 182);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(194, 55);
+            this.groupBox3.Size = new System.Drawing.Size(194, 43);
             this.groupBox3.TabIndex = 100;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Caracter";
@@ -240,7 +240,7 @@
             // 
             this.radioNegocio.AutoSize = true;
             this.radioNegocio.Checked = true;
-            this.radioNegocio.Location = new System.Drawing.Point(107, 16);
+            this.radioNegocio.Location = new System.Drawing.Point(6, 22);
             this.radioNegocio.Name = "radioNegocio";
             this.radioNegocio.Size = new System.Drawing.Size(78, 21);
             this.radioNegocio.TabIndex = 100;
@@ -251,7 +251,7 @@
             // radioPersonal
             // 
             this.radioPersonal.AutoSize = true;
-            this.radioPersonal.Location = new System.Drawing.Point(19, 16);
+            this.radioPersonal.Location = new System.Drawing.Point(90, 22);
             this.radioPersonal.Name = "radioPersonal";
             this.radioPersonal.Size = new System.Drawing.Size(82, 21);
             this.radioPersonal.TabIndex = 99;
@@ -262,9 +262,9 @@
             // 
             this.groupBox2.Controls.Add(this.RadioVariable);
             this.groupBox2.Controls.Add(this.RadioFijo);
-            this.groupBox2.Location = new System.Drawing.Point(39, 182);
+            this.groupBox2.Location = new System.Drawing.Point(30, 182);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(194, 55);
+            this.groupBox2.Size = new System.Drawing.Size(164, 55);
             this.groupBox2.TabIndex = 99;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tipo De Costo";
@@ -272,7 +272,7 @@
             // RadioVariable
             // 
             this.RadioVariable.AutoSize = true;
-            this.RadioVariable.Location = new System.Drawing.Point(102, 22);
+            this.RadioVariable.Location = new System.Drawing.Point(64, 22);
             this.RadioVariable.Name = "RadioVariable";
             this.RadioVariable.Size = new System.Drawing.Size(78, 21);
             this.RadioVariable.TabIndex = 100;
@@ -283,7 +283,7 @@
             // 
             this.RadioFijo.AutoSize = true;
             this.RadioFijo.Checked = true;
-            this.RadioFijo.Location = new System.Drawing.Point(22, 22);
+            this.RadioFijo.Location = new System.Drawing.Point(10, 22);
             this.RadioFijo.Name = "RadioFijo";
             this.RadioFijo.Size = new System.Drawing.Size(48, 21);
             this.RadioFijo.TabIndex = 99;
@@ -294,7 +294,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(36, 246);
+            this.label11.Location = new System.Drawing.Point(39, 235);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(71, 17);
             this.label11.TabIndex = 96;
@@ -304,9 +304,9 @@
             // 
             this.cmbEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEmpleado.FormattingEnabled = true;
-            this.cmbEmpleado.Location = new System.Drawing.Point(121, 243);
+            this.cmbEmpleado.Location = new System.Drawing.Point(119, 235);
             this.cmbEmpleado.Name = "cmbEmpleado";
-            this.cmbEmpleado.Size = new System.Drawing.Size(298, 24);
+            this.cmbEmpleado.Size = new System.Drawing.Size(305, 24);
             this.cmbEmpleado.TabIndex = 95;
             // 
             // txtCodAuto
@@ -342,7 +342,7 @@
             // btnAbrirStock
             // 
             this.btnAbrirStock.Image = global::Concesionaria.Properties.Resources.carpeta;
-            this.btnAbrirStock.Location = new System.Drawing.Point(430, 39);
+            this.btnAbrirStock.Location = new System.Drawing.Point(430, 37);
             this.btnAbrirStock.Name = "btnAbrirStock";
             this.btnAbrirStock.Size = new System.Drawing.Size(40, 27);
             this.btnAbrirStock.TabIndex = 87;
@@ -371,7 +371,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(39, 273);
+            this.label5.Location = new System.Drawing.Point(39, 264);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 17);
             this.label5.TabIndex = 84;
@@ -380,7 +380,7 @@
             // txtConcepto
             // 
             this.txtConcepto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtConcepto.Location = new System.Drawing.Point(119, 273);
+            this.txtConcepto.Location = new System.Drawing.Point(119, 261);
             this.txtConcepto.Multiline = true;
             this.txtConcepto.Name = "txtConcepto";
             this.txtConcepto.Size = new System.Drawing.Size(305, 173);

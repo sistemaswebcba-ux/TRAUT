@@ -84,12 +84,11 @@ namespace Concesionaria
             Int32? CodStock = null;
             Int32? CodTipoDeuda = null;
             Int32? CodTipoPersonal = null;
+
             if (txtCodStock.Text !="")
             {
                 CodStock = Convert.ToInt32(txtCodStock.Text);
             }
-
-          
 
             if (RadioFijo.Checked == true)
             {
@@ -111,7 +110,6 @@ namespace Concesionaria
                 CodTipoPersonal = 1;
             }
 
-
             string Observacion = ""; 
             cFunciones fun = new cFunciones();
             Importe = fun.ToDouble(txtImporte.Text);
@@ -127,8 +125,7 @@ namespace Concesionaria
                 CodStock = Convert.ToInt32(txtCodStock.Text);
                 Int32 CodAuto = Convert.ToInt32(txtCodAuto.Text);
                 Costo.InsertarCosto(CodAuto, Patente, Importe, Fecha.ToShortDateString(), COncepto, CodStock, Convert.ToInt32(CodDeuda),null,null);
-            }
-            
+            }           
             cuentaProv.ActuaizarSaldo(CodCuentaProveedor, Saldo);
             MessageBox.Show("Datos Grabados Correctamente");
             Limpiar();
