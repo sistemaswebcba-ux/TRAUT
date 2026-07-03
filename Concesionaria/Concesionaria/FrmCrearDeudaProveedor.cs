@@ -147,12 +147,13 @@ namespace Concesionaria
 
         private void FrmCrearDeudaProveedor_Load(object sender, EventArgs e)
         {
+            Inicializar();
             if (Principal.Codigo!=null)
             {
                 Int32 CodDeuda = Convert.ToInt32(Principal.Codigo);
                 BuscarDeuda(CodDeuda);
             }
-            Inicializar ();
+           
         }
 
         private void CargarEmpleado()
@@ -186,6 +187,12 @@ namespace Concesionaria
                 dpFechaVencimiento.Value = FechaVto;
             }
 
+            if (trdo.Rows[0]["CodEmpleado"].ToString() != "")
+            {
+                Int32 CodEmpleado = Convert.ToInt32(trdo.Rows[0]["CodEmpleado"].ToString());
+                cmbEmpleado.SelectedValue = CodEmpleado.ToString();
+            }
+            
             if (trdo.Rows[0]["CodStock"].ToString() != "")
             {
                 Int32 CodStock = Convert.ToInt32(trdo.Rows[0]["CodStock"].ToString());
