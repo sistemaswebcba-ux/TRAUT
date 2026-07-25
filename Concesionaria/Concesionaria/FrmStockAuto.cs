@@ -250,6 +250,7 @@ namespace Concesionaria
             string Ubicacion = "";
             string Color = "";
             string Anio = "";
+            string Tipo = "";
             string sql = "";
 
             Clases.cFunciones fun = new Clases.cFunciones();
@@ -274,10 +275,16 @@ namespace Concesionaria
                 // Ubicacion = Grilla.Rows[i].Cells[11].Value.ToString();
                 Descripcion = Grilla.Rows[i].Cells[4].Value.ToString();
                 Marca = Grilla.Rows[i].Cells[3].Value.ToString();
-                Color = Grilla.Rows[i].Cells[6].Value.ToString();
+                Color = Grilla.Rows[i].Cells[7].Value.ToString();
                 Anio = Grilla.Rows[i].Cells[8].Value.ToString();
+                Tipo = Grilla.Rows[i].Cells[9].Value.ToString();
+                if (Color.Length > 1)
+                    Color = Color.Substring(0, 1);
 
-                sql = "Insert into ReporteAuto(Extra1,Descripcion,Marca,Modelo,Precio,Kilometros,Combustible,Extra2,Extra3)";
+                if (Combustible.Length > 1)
+                    Combustible = Combustible.Substring(0, 1);
+
+                sql = "Insert into ReporteAuto(Extra1,Descripcion,Marca,Modelo,Precio,Kilometros,Combustible,Extra2,Extra3,Extra4)";
                 sql = sql + "values(" + "'" + Patente + "'";
                 sql = sql + "," + "'" + Descripcion + "'";
                 sql = sql + "," + "'" + Marca + "'";
@@ -287,6 +294,7 @@ namespace Concesionaria
                 sql = sql + "," + "'" + Combustible + "'";
                 sql = sql + "," + "'" + Anio + "'";
                 sql = sql + "," + "'" + Color + "'";
+                sql = sql + "," + "'" + Tipo + "'";
                 sql = sql + ")";
                 Clases.cDb.ExecutarNonQuery(sql);
             }
