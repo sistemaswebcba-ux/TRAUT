@@ -23,7 +23,7 @@
               <Width>2.02375cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.52646cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>4.29229cm</Width>
@@ -62,6 +62,7 @@
                             <TextRun>
                               <Value>Patente</Value>
                               <Style>
+                                <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -94,6 +95,7 @@
                             <TextRun>
                               <Value>Marca</Value>
                               <Style>
+                                <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -126,6 +128,7 @@
                             <TextRun>
                               <Value>Modelo</Value>
                               <Style>
+                                <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -158,6 +161,7 @@
                             <TextRun>
                               <Value>Año</Value>
                               <Style>
+                                <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -190,6 +194,7 @@
                             <TextRun>
                               <Value>C.</Value>
                               <Style>
+                                <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -222,6 +227,7 @@
                             <TextRun>
                               <Value>Col</Value>
                               <Style>
+                                <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -254,6 +260,7 @@
                             <TextRun>
                               <Value>Km</Value>
                               <Style>
+                                <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -286,6 +293,7 @@
                             <TextRun>
                               <Value>Tipo</Value>
                               <Style>
+                                <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -318,6 +326,7 @@
                             <TextRun>
                               <Value>Precio</Value>
                               <Style>
+                                <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -337,6 +346,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -354,7 +364,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Extra1.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -384,7 +396,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Marca.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -414,7 +428,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Descripcion.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -444,7 +460,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Chasis.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -474,7 +492,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Combustible.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -504,7 +524,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Extra3.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -534,7 +556,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Kilometros.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -564,7 +588,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Extra4.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -594,7 +620,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Precio.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -645,7 +673,7 @@
         <Top>4.12433cm</Top>
         <Left>0.94933cm</Left>
         <Height>1.2cm</Height>
-        <Width>17.15729cm</Width>
+        <Width>17.18375cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>

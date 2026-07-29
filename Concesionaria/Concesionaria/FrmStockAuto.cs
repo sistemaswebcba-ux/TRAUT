@@ -253,6 +253,7 @@ namespace Concesionaria
             string Tipo = "";
             string Chasis = "";
             string sql = "";
+            int orden = 1;
 
             Clases.cFunciones fun = new Clases.cFunciones();
             Clases.cDb.ExecutarNonQuery("delete from ReporteAuto");
@@ -285,7 +286,7 @@ namespace Concesionaria
                 if (Combustible.Length > 1)
                     Combustible = Combustible.Substring(0, 1);
 
-                sql = "Insert into ReporteAuto(Extra1,Descripcion,Marca,Modelo,Precio,Kilometros,Combustible,Extra2,Extra3,Extra4,Chasis)";
+                sql = "Insert into ReporteAuto(Extra1,Descripcion,Marca,Modelo,Precio,Kilometros,Combustible,Extra2,Extra3,Extra4,Chasis,Orden)";
                 sql = sql + "values(" + "'" + Patente + "'";
                 sql = sql + "," + "'" + Descripcion + "'";
                 sql = sql + "," + "'" + Marca + "'";
@@ -297,8 +298,10 @@ namespace Concesionaria
                 sql = sql + "," + "'" + Color + "'";
                 sql = sql + "," + "'" + Tipo + "'";
                 sql = sql + "," + "'" + Chasis + "'";
+                sql = sql + "," + orden.ToString();
                 sql = sql + ")";
                 Clases.cDb.ExecutarNonQuery(sql);
+                orden = orden + 1;
             }
             FrmReporteListaPrecio form = new FrmReporteListaPrecio();
             form.Show();
