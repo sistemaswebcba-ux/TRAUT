@@ -251,6 +251,7 @@ namespace Concesionaria
             string Color = "";
             string Anio = "";
             string Tipo = "";
+            string Chasis = "";
             string sql = "";
 
             Clases.cFunciones fun = new Clases.cFunciones();
@@ -267,8 +268,8 @@ namespace Concesionaria
                     Precio = fun.SepararDecimales(Precio);
                     Precio = fun.FormatoEnteroMiles(Precio);
                 }
-
-
+                //chasis guarda el anio
+                Chasis = Grilla.Rows[i].Cells[5].Value.ToString();
                 Patente = Grilla.Rows[i].Cells[2].Value.ToString();
                 NumeroInterno = GetNumeroInternoxPatente(Patente);
                 //  Ubicacion = GetUbicacion (Patente);
@@ -284,7 +285,7 @@ namespace Concesionaria
                 if (Combustible.Length > 1)
                     Combustible = Combustible.Substring(0, 1);
 
-                sql = "Insert into ReporteAuto(Extra1,Descripcion,Marca,Modelo,Precio,Kilometros,Combustible,Extra2,Extra3,Extra4)";
+                sql = "Insert into ReporteAuto(Extra1,Descripcion,Marca,Modelo,Precio,Kilometros,Combustible,Extra2,Extra3,Extra4,Chasis)";
                 sql = sql + "values(" + "'" + Patente + "'";
                 sql = sql + "," + "'" + Descripcion + "'";
                 sql = sql + "," + "'" + Marca + "'";
@@ -295,6 +296,7 @@ namespace Concesionaria
                 sql = sql + "," + "'" + Anio + "'";
                 sql = sql + "," + "'" + Color + "'";
                 sql = sql + "," + "'" + Tipo + "'";
+                sql = sql + "," + "'" + Chasis + "'";
                 sql = sql + ")";
                 Clases.cDb.ExecutarNonQuery(sql);
             }
