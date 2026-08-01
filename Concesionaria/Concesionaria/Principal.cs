@@ -948,5 +948,11 @@ namespace Concesionaria
             FrmAbmTipoUtilitario frm = new FrmAbmTipoUtilitario();
             frm.Show();
         }
+
+        private void prooveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAbmProveedorAccdesorio frm = new FrmAbmProveedorAccdesorio();
+            frm.Show();
+        }
     }
 }

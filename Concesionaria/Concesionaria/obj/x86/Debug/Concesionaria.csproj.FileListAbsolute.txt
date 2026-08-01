@@ -1399,3 +1399,4 @@ D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\bin\Debug\zh-Hant\Micr
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.csprojResolveAssemblyReference.cache
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.cache
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\RdlCompile.compiled
+D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmProveedorAccdesorio.resources

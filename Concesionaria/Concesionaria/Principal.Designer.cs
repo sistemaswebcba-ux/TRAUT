@@ -118,6 +118,10 @@
             this.resumenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.accesorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
@@ -135,9 +139,7 @@
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.ButtonResumenDewuda = new System.Windows.Forms.ToolStripButton();
             this.btnDistancia = new System.Windows.Forms.ToolStripButton();
-            this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.prooveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -148,6 +150,7 @@
             this.menuStrip.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileMenu,
+            this.accesorioToolStripMenuItem,
             this.editMenu,
             this.viewMenu,
             this.mnuMovimientos,
@@ -156,7 +159,7 @@
             this.salirToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(632, 25);
+            this.menuStrip.Size = new System.Drawing.Size(763, 25);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -873,10 +876,34 @@
             this.btnDistancia});
             this.toolStrip.Location = new System.Drawing.Point(0, 25);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(632, 39);
+            this.toolStrip.Size = new System.Drawing.Size(763, 39);
             this.toolStrip.Stretch = true;
             this.toolStrip.TabIndex = 1;
             this.toolStrip.Text = "ToolStrip";
+            // 
+            // statusStrip
+            // 
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel});
+            this.statusStrip.Location = new System.Drawing.Point(0, 431);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(763, 22);
+            this.statusStrip.TabIndex = 2;
+            this.statusStrip.Text = "StatusStrip";
+            // 
+            // toolStripStatusLabel
+            // 
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
+            this.toolStripStatusLabel.Text = "Status";
+            // 
+            // accesorioToolStripMenuItem
+            // 
+            this.accesorioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.prooveedorToolStripMenuItem});
+            this.accesorioToolStripMenuItem.Name = "accesorioToolStripMenuItem";
+            this.accesorioToolStripMenuItem.Size = new System.Drawing.Size(91, 21);
+            this.accesorioToolStripMenuItem.Text = "Accesorio";
             // 
             // newToolStripButton
             // 
@@ -1053,27 +1080,18 @@
             this.btnDistancia.Text = "toolStripButton7";
             this.btnDistancia.Click += new System.EventHandler(this.btnDistancia_Click);
             // 
-            // statusStrip
+            // prooveedorToolStripMenuItem
             // 
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 431);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(632, 22);
-            this.statusStrip.TabIndex = 2;
-            this.statusStrip.Text = "StatusStrip";
-            // 
-            // toolStripStatusLabel
-            // 
-            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
-            this.toolStripStatusLabel.Text = "Status";
+            this.prooveedorToolStripMenuItem.Name = "prooveedorToolStripMenuItem";
+            this.prooveedorToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.prooveedorToolStripMenuItem.Text = "Prooveedor";
+            this.prooveedorToolStripMenuItem.Click += new System.EventHandler(this.prooveedorToolStripMenuItem_Click);
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 453);
+            this.ClientSize = new System.Drawing.Size(763, 453);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.menuStrip);
@@ -1204,6 +1222,8 @@
         private System.Windows.Forms.ToolStripMenuItem registrarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cONCEPTOSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tipoUtilitarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem accesorioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem prooveedorToolStripMenuItem;
     }
 }
 
