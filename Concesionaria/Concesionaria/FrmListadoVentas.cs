@@ -226,12 +226,21 @@ namespace Concesionaria
             string Telefono = GetTelefonoAdherente(CodVenta);
             string Campo5 = "RESERVA / PEDIDO DE UNIDAD Nº " + CodVenta.ToString();
             string Campo7 = "";
+            string Fecha = Grilla.CurrentRow.Cells[1].Value.ToString();
+            string sFecha = "Fecha: ";
+            if (Fecha.Length > 10)
+            {
+                Fecha = Fecha.Substring(0, 10);
+                sFecha = sFecha + " " + Fecha.ToString();
+            }
+                
+             
             string ListadoAutoPartePago = GetAutosxPartePago(CodVenta);
             if (ListadoAutoPartePago !="")
             {
                 Campo7 = "Datos de la unidad que entrega en parte de pago";
             }
-            boleto.Insertar(CodVenta, Domicilio, Adherente, NrodocAdehrente, Telefono, Campo5, Titular, Campo7, ListadoAutoPartePago);
+            boleto.Insertar(CodVenta, Domicilio, Adherente, NrodocAdehrente, Telefono, Campo5, Titular, Campo7, ListadoAutoPartePago, Fecha);
         }
         
         public string GetDomicilio(Int32 CodVenta)

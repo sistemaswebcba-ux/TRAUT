@@ -285,6 +285,12 @@
     <Compile Include="FrmAbmPapeles.Designer.cs">
       <DependentUpon>FrmAbmPapeles.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAbmProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbmProducto.Designer.cs">
+      <DependentUpon>FrmAbmProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAbmProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -417,6 +423,12 @@
     <Compile Include="FrmBuscarDistancias.Designer.cs">
       <DependentUpon>FrmBuscarDistancias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBuscarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarProducto.Designer.cs">
+      <DependentUpon>FrmBuscarProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCambioClave.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -458,6 +470,12 @@
     </Compile>
     <Compile Include="FrmCobroPrenda.Designer.cs">
       <DependentUpon>FrmCobroPrenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCompraPrducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompraPrducto.Designer.cs">
+      <DependentUpon>FrmCompraPrducto.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmConceptoCaja.cs">
       <SubType>Form</SubType>
@@ -1274,6 +1292,9 @@
     <EmbeddedResource Include="FrmAbmPapeles.resx">
       <DependentUpon>FrmAbmPapeles.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAbmProducto.resx">
+      <DependentUpon>FrmAbmProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAbmProveedor.resx">
       <DependentUpon>FrmAbmProveedor.cs</DependentUpon>
     </EmbeddedResource>
@@ -1340,6 +1361,9 @@
     <EmbeddedResource Include="FrmBuscarDistancias.resx">
       <DependentUpon>FrmBuscarDistancias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarProducto.resx">
+      <DependentUpon>FrmBuscarProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCambioClave.resx">
       <DependentUpon>FrmCambioClave.cs</DependentUpon>
     </EmbeddedResource>
@@ -1360,6 +1384,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCobroPrenda.resx">
       <DependentUpon>FrmCobroPrenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCompraPrducto.resx">
+      <DependentUpon>FrmCompraPrducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConceptoCaja.resx">
       <DependentUpon>FrmConceptoCaja.cs</DependentUpon>

@@ -48,6 +48,8 @@
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.accesorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.prooveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.anularVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAgregarCosto = new System.Windows.Forms.ToolStripMenuItem();
@@ -121,7 +123,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.accesorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
@@ -139,7 +141,7 @@
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.ButtonResumenDewuda = new System.Windows.Forms.ToolStripButton();
             this.btnDistancia = new System.Windows.Forms.ToolStripButton();
-            this.prooveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.comprarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -302,6 +304,23 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(292, 22);
             this.exitToolStripMenuItem.Text = "Salir";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolsStripMenuItem_Click);
+            // 
+            // accesorioToolStripMenuItem
+            // 
+            this.accesorioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.comprarToolStripMenuItem,
+            this.prooveedorToolStripMenuItem,
+            this.productoToolStripMenuItem});
+            this.accesorioToolStripMenuItem.Name = "accesorioToolStripMenuItem";
+            this.accesorioToolStripMenuItem.Size = new System.Drawing.Size(91, 21);
+            this.accesorioToolStripMenuItem.Text = "Accesorio";
+            // 
+            // prooveedorToolStripMenuItem
+            // 
+            this.prooveedorToolStripMenuItem.Name = "prooveedorToolStripMenuItem";
+            this.prooveedorToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.prooveedorToolStripMenuItem.Text = "Prooveedor";
+            this.prooveedorToolStripMenuItem.Click += new System.EventHandler(this.prooveedorToolStripMenuItem_Click);
             // 
             // editMenu
             // 
@@ -897,13 +916,12 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // accesorioToolStripMenuItem
+            // productoToolStripMenuItem
             // 
-            this.accesorioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.prooveedorToolStripMenuItem});
-            this.accesorioToolStripMenuItem.Name = "accesorioToolStripMenuItem";
-            this.accesorioToolStripMenuItem.Size = new System.Drawing.Size(91, 21);
-            this.accesorioToolStripMenuItem.Text = "Accesorio";
+            this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
+            this.productoToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.productoToolStripMenuItem.Text = "Producto";
+            this.productoToolStripMenuItem.Click += new System.EventHandler(this.productoToolStripMenuItem_Click);
             // 
             // newToolStripButton
             // 
@@ -1080,12 +1098,12 @@
             this.btnDistancia.Text = "toolStripButton7";
             this.btnDistancia.Click += new System.EventHandler(this.btnDistancia_Click);
             // 
-            // prooveedorToolStripMenuItem
+            // comprarToolStripMenuItem
             // 
-            this.prooveedorToolStripMenuItem.Name = "prooveedorToolStripMenuItem";
-            this.prooveedorToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.prooveedorToolStripMenuItem.Text = "Prooveedor";
-            this.prooveedorToolStripMenuItem.Click += new System.EventHandler(this.prooveedorToolStripMenuItem_Click);
+            this.comprarToolStripMenuItem.Name = "comprarToolStripMenuItem";
+            this.comprarToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.comprarToolStripMenuItem.Text = "Comprar";
+            this.comprarToolStripMenuItem.Click += new System.EventHandler(this.comprarToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -1224,6 +1242,8 @@
         private System.Windows.Forms.ToolStripMenuItem tipoUtilitarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem accesorioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem prooveedorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem productoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem comprarToolStripMenuItem;
     }
 }
 

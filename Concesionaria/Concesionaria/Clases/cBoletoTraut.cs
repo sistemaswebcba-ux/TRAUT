@@ -13,7 +13,7 @@ namespace Concesionaria.Clases
             cDb.ExecutarNonQuery(sql);
         }
         public void Insertar(Int32 CodVenta,string Campo1, string Campo2,string  Campo3, 
-            string Campo4, string Campo5, string Campo6, string Campo7, string  Campo8)
+            string Campo4, string Campo5, string Campo6, string Campo7, string  Campo8, string Campo9)
         {
             //Campo1 domicilio , campo2 nombre aderente
             //Campo3 aderente , campo4 telefono adherente
@@ -22,7 +22,7 @@ namespace Concesionaria.Clases
             //Campo 8 el nombre de los autos en parte de pago
             string sql = "Insert into BoletoTraut (";
             sql = sql + "CodVenta,Campo1, Campo2, Campo3 , Campo4 ,Campo5,Campo6";
-            sql = sql + ",Campo7,Campo8";
+            sql = sql + ",Campo7,Campo8,Campo9";
             sql = sql + ")";
             sql = sql + " values (" + CodVenta.ToString();
             sql = sql + "," + "'" + Campo1 + "'";
@@ -33,7 +33,7 @@ namespace Concesionaria.Clases
             sql = sql + "," + "'" + Campo6 + "'";
             sql = sql + "," + "'" + Campo7 + "'";
             sql = sql + "," + "'" + Campo8 + "'";
-
+            sql = sql + "," + "'" + Campo9 + "'";
             sql = sql + ")";   
             cDb.ExecutarNonQuery(sql);
         }

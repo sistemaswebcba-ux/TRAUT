@@ -7,15 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Concesionaria.Clases;
+
 namespace Concesionaria
 {
-    public partial class FrmAbmCiudad : Form
+    public partial class FrmAbmProducto : FrmBase
     {
-        public FrmAbmCiudad()
+        public FrmAbmProducto()
         {
             InitializeComponent();
-            cFunciones func = new cFunciones();
-            func.LlenarCombo(cmb_CodProvincia, "Provincia", "Nombre", "CodProvincia");
         }
 
         private void Botonera(int Jugada)
@@ -46,46 +45,41 @@ namespace Concesionaria
                     btnEliminar.Enabled = true;
                     btnAceptar.Enabled = false;
                     btnCancelar.Enabled = false;
-
-
                     break;
             }
 
-
         }
 
-        private void FrmAbmCiudad_Load(object sender, EventArgs e)
+        private void FrmAbmProducto_Load(object sender, EventArgs e)
         {
+            cFunciones fun = new Clases.cFunciones();
             Botonera(1);
             Grupo.Enabled = false;
+            fun.LlenarCombo(cmb_CodMarca, "MarcaProducto", "Nombre", "CodMarca");
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-             Botonera(2);
+            Botonera(2);
             Clases.cFunciones fun = new Clases.cFunciones();
             fun.LimpiarGenerico(this);
             txtCodigo.Text = "";
             Grupo.Enabled = true;
         }
 
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            Botonera(2);
+            Grupo.Enabled = true;
+        }
+
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (cmb_CodProvincia.SelectedIndex<1 )
-            {
-                MessageBox.Show("Debe seleccionar una provincia para continuar", Clases.cMensaje.Mensaje());
-                return;
-            }
-            if (txt_Nombre.Text == "")
-            {
-                MessageBox.Show("Debe ingresar un nombre para continuar", Clases.cMensaje.Mensaje());
-                return;
-            }
             Clases.cFunciones fun = new Clases.cFunciones();
             if (txtCodigo.Text == "")
-                fun.GuardarNuevoGenerico(this, "Ciudad");
+                fun.GuardarNuevoGenerico(this, "Producto");
             else
-                fun.ModificarGenerico(this, "Ciudad", "CodCiudad", txtCodigo.Text);
+                fun.ModificarGenerico(this, "Producto", "CodProducto", txtCodigo.Text);
             MessageBox.Show("Datos grabados Correctamente", Clases.cMensaje.Mensaje());
             Botonera(1);
             fun.LimpiarGenerico(this);
@@ -93,24 +87,27 @@ namespace Concesionaria
             Grupo.Enabled = false;
         }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Clases.cFunciones fun = new Clases.cFunciones();
+            Botonera(1);
+            Grupo.Enabled = false;
+            fun.LimpiarGenerico(this);
+            txtCodigo.Text = "";
+        }
+
         private void btnAbrir_Click(object sender, EventArgs e)
         {
             //nombre de los camposa buscar, se llaman igual que en la base de datos
-            Principal.OpcionesdeBusqueda = "Nombre";
+            Principal.OpcionesdeBusqueda = "Codigo;Nombre";
             //nombre de la tabla, 
-             Principal.TablaPrincipal = "Ciudad";
-            Principal.OpcionesColumnasGrilla = "CodCiudad; Nombre";
+            Principal.TablaPrincipal = "Producto";
+            Principal.OpcionesColumnasGrilla = "CodProducto;Codigo; Nombre";
             Principal.ColumnasVisibles = "0;1";
-            Principal.ColumnasAncho = "100;580";
+            Principal.ColumnasAncho = "0;100;480";
             FrmBuscadorGenerico form = new FrmBuscadorGenerico();
             form.FormClosing += new FormClosingEventHandler(form_FormClosing);
             form.ShowDialog();
-        }
-
-        private void btnEditar_Click(object sender, EventArgs e)
-        {
-            Botonera(2);
-            Grupo.Enabled = true;
         }
 
         private void form_FormClosing(object sender, FormClosingEventArgs e)
@@ -125,17 +122,12 @@ namespace Concesionaria
                     txtCodigo.Text = Principal.CodigoPrincipalAbm.ToString();
 
                     if (Principal.CodigoPrincipalAbm != "")
-                        fun.CargarControles(this, "Ciudad", "CodCiudad", txtCodigo.Text);
+                        fun.CargarControles(this, "Producto", "CodProducto", txtCodigo.Text);
                     Grupo.Enabled = false;
                     return;
                 }
 
             }
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -145,7 +137,23 @@ namespace Concesionaria
 
         private void btnAgregarProvincia2_Click(object sender, EventArgs e)
         {
+            Principal.CampoIdSecundario = "CodMarca";
+            Principal.CampoNombreSecundario = "Nombre";
+            Principal.NombreTablaSecundario = "MarcaProducto";
+            Principal.CodigoPrincipalAbm = null;
+            FrmAltaBasica form = new FrmAltaBasica();
+            form.FormClosing += new FormClosingEventHandler(ContinuarMarca);
+            form.ShowDialog();
+        }
 
+        private void ContinuarMarca(object sender, FormClosingEventArgs e)
+        { 
+            cFunciones fun = new Clases.cFunciones();
+            if (Principal.CampoIdSecundarioGenerado != "")
+            { 
+                fun.LlenarCombo(cmb_CodMarca, "MarcaProducto", "Nombre", "CodMarca");
+                cmb_CodMarca.SelectedValue = Principal.CampoIdSecundarioGenerado;
+            }
         }
     }
 }

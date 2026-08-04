@@ -954,5 +954,17 @@ namespace Concesionaria
             FrmAbmProveedorAccdesorio frm = new FrmAbmProveedorAccdesorio();
             frm.Show();
         }
+
+        private void productoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAbmProducto frm = new FrmAbmProducto();
+            frm.Show();
+        }
+
+        private void comprarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCompraPrducto frm = new Concesionaria.FrmCompraPrducto();
+            frm.Show();
+        }
     }
 }
