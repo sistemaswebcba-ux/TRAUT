@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.Grupo = new System.Windows.Forms.GroupBox();
+            this.txtCodigoProducto = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnQuitarFinanciacion = new System.Windows.Forms.Button();
             this.btnAgregarFinanciacion = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Grilla = new System.Windows.Forms.DataGridView();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnAbrirVenta = new System.Windows.Forms.Button();
@@ -47,17 +48,18 @@
             this.dpFechaDesde = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.Grupo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
             // 
             // Grupo
             // 
+            this.Grupo.Controls.Add(this.txtCodigoProducto);
             this.Grupo.Controls.Add(this.label7);
             this.Grupo.Controls.Add(this.txtPrecio);
             this.Grupo.Controls.Add(this.label6);
             this.Grupo.Controls.Add(this.btnQuitarFinanciacion);
             this.Grupo.Controls.Add(this.btnAgregarFinanciacion);
-            this.Grupo.Controls.Add(this.dataGridView1);
+            this.Grupo.Controls.Add(this.Grilla);
             this.Grupo.Controls.Add(this.txtCantidad);
             this.Grupo.Controls.Add(this.label5);
             this.Grupo.Controls.Add(this.btnAbrirVenta);
@@ -77,6 +79,14 @@
             this.Grupo.TabStop = false;
             this.Grupo.Text = "Información del Producto";
             // 
+            // txtCodigoProducto
+            // 
+            this.txtCodigoProducto.Location = new System.Drawing.Point(76, 99);
+            this.txtCodigoProducto.Name = "txtCodigoProducto";
+            this.txtCodigoProducto.ReadOnly = true;
+            this.txtCodigoProducto.Size = new System.Drawing.Size(100, 23);
+            this.txtCodigoProducto.TabIndex = 87;
+            // 
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.Silver;
@@ -92,7 +102,6 @@
             // 
             this.txtPrecio.Location = new System.Drawing.Point(265, 127);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.ReadOnly = true;
             this.txtPrecio.Size = new System.Drawing.Size(100, 23);
             this.txtPrecio.TabIndex = 85;
             // 
@@ -122,20 +131,21 @@
             this.btnAgregarFinanciacion.Size = new System.Drawing.Size(40, 27);
             this.btnAgregarFinanciacion.TabIndex = 82;
             this.btnAgregarFinanciacion.UseVisualStyleBackColor = true;
+            this.btnAgregarFinanciacion.Click += new System.EventHandler(this.btnAgregarFinanciacion_Click);
             // 
-            // dataGridView1
+            // Grilla
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 154);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(706, 225);
-            this.dataGridView1.TabIndex = 81;
+            this.Grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Grilla.Location = new System.Drawing.Point(6, 154);
+            this.Grilla.Name = "Grilla";
+            this.Grilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Grilla.Size = new System.Drawing.Size(706, 225);
+            this.Grilla.TabIndex = 81;
             // 
             // txtCantidad
             // 
             this.txtCantidad.Location = new System.Drawing.Point(76, 125);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.ReadOnly = true;
             this.txtCantidad.Size = new System.Drawing.Size(100, 23);
             this.txtCantidad.TabIndex = 80;
             // 
@@ -177,7 +187,8 @@
             // 
             // txtCodProducto
             // 
-            this.txtCodProducto.Location = new System.Drawing.Point(76, 96);
+            this.txtCodProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txtCodProducto.Location = new System.Drawing.Point(467, 99);
             this.txtCodProducto.Name = "txtCodProducto";
             this.txtCodProducto.ReadOnly = true;
             this.txtCodProducto.Size = new System.Drawing.Size(100, 23);
@@ -238,7 +249,7 @@
             this.Load += new System.EventHandler(this.FrmCompraPrducto_Load);
             this.Grupo.ResumeLayout(false);
             this.Grupo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grilla)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -254,7 +265,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCodProducto;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView Grilla;
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnAbrirVenta;
@@ -263,5 +274,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnQuitarFinanciacion;
         private System.Windows.Forms.Button btnAgregarFinanciacion;
+        private System.Windows.Forms.TextBox txtCodigoProducto;
     }
 }

@@ -44,6 +44,7 @@ namespace Concesionaria
         public static Int32? CodCheque;
         public static Int32? Codigo;
         public static Int32? CodStock;
+        public static Int32? CodProducto;
         public static DateTime Fecha;
         public static string ConceptoCaja;
         public Principal()
@@ -963,6 +964,7 @@ namespace Concesionaria
 
         private void comprarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Principal.CodProducto = null;
             FrmCompraPrducto frm = new Concesionaria.FrmCompraPrducto();
             frm.Show();
         }

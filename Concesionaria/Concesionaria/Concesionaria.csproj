@@ -138,6 +138,7 @@
     <Compile Include="Clases\cPresupuesto.cs" />
     <Compile Include="Clases\CPresupuestoxAuto.cs" />
     <Compile Include="Clases\cPreVenta.cs" />
+    <Compile Include="Clases\cProducto.cs" />
     <Compile Include="Clases\cProveedor.cs" />
     <Compile Include="Clases\cPunitorioCobranza.cs" />
     <Compile Include="Clases\cPunitorioCuota.cs" />
