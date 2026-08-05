@@ -56,6 +56,11 @@ namespace Concesionaria
             Botonera(1);
             Grupo.Enabled = false;
             fun.LlenarCombo(cmb_CodMarca, "MarcaProducto", "Nombre", "CodMarca");
+            if (Principal.CodProducto ==-1)
+            {
+                Botonera(2);
+                Grupo.Enabled = true;
+            }
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -77,7 +82,18 @@ namespace Concesionaria
         {
             Clases.cFunciones fun = new Clases.cFunciones();
             if (txtCodigo.Text == "")
+            {
                 fun.GuardarNuevoGenerico(this, "Producto");
+                if (Principal.CodProducto ==-1)
+                {
+                    cProducto pro = new Clases.cProducto();
+                    Int32 CodProducto = pro.GetMaxProducto();
+                    Principal.CodProducto = CodProducto;
+                    this.Close();
+                }
+                
+            }
+               
             else
                 fun.ModificarGenerico(this, "Producto", "CodProducto", txtCodigo.Text);
             MessageBox.Show("Datos grabados Correctamente", Clases.cMensaje.Mensaje());

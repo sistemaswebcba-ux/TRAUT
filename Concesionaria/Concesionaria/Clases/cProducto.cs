@@ -43,5 +43,16 @@ namespace Concesionaria.Clases
             sql = sql + " where CodProducto =" + CodProducto.ToString();
             return cDb.ExecuteDataTable(sql);
         }
+
+        public Int32 GetMaxProducto()
+        {
+            Int32 CodProducto = 0;
+            string sql = "select max(CodProducto) as CodProducto ";
+            sql = sql + " from Producto ";
+            DataTable trdo = cDb.ExecuteDataTable(sql);
+            if (trdo.Rows.Count > 0)
+                CodProducto = Convert.ToInt32(trdo.Rows[0]["CodProducto"]);
+            return CodProducto;
+        }
     }
 }
