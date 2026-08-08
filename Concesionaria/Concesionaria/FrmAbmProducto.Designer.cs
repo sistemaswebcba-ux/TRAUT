@@ -39,6 +39,7 @@
             this.btnImprimir = new System.Windows.Forms.ToolStripButton();
             this.btnSalir = new System.Windows.Forms.ToolStripButton();
             this.Grupo = new System.Windows.Forms.GroupBox();
+            this.txt_Estado = new System.Windows.Forms.TextBox();
             this.txt_Stock = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cmb_CodEstado = new System.Windows.Forms.ComboBox();
@@ -53,7 +54,6 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txt_Nombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_Estado = new System.Windows.Forms.TextBox();
             this.BarraBotones.SuspendLayout();
             this.Grupo.SuspendLayout();
             this.SuspendLayout();
@@ -72,7 +72,7 @@
             this.btnSalir});
             this.BarraBotones.Location = new System.Drawing.Point(0, 0);
             this.BarraBotones.Name = "BarraBotones";
-            this.BarraBotones.Size = new System.Drawing.Size(410, 39);
+            this.BarraBotones.Size = new System.Drawing.Size(417, 39);
             this.BarraBotones.TabIndex = 16;
             this.BarraBotones.Text = "toolStrip1";
             // 
@@ -178,14 +178,23 @@
             this.Grupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Grupo.Location = new System.Drawing.Point(0, 56);
             this.Grupo.Name = "Grupo";
-            this.Grupo.Size = new System.Drawing.Size(385, 225);
+            this.Grupo.Size = new System.Drawing.Size(413, 225);
             this.Grupo.TabIndex = 15;
             this.Grupo.TabStop = false;
             this.Grupo.Text = "Información del Producto";
             // 
+            // txt_Estado
+            // 
+            this.txt_Estado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txt_Estado.Location = new System.Drawing.Point(301, 0);
+            this.txt_Estado.Name = "txt_Estado";
+            this.txt_Estado.Size = new System.Drawing.Size(90, 23);
+            this.txt_Estado.TabIndex = 40;
+            this.txt_Estado.Visible = false;
+            // 
             // txt_Stock
             // 
-            this.txt_Stock.Location = new System.Drawing.Point(77, 181);
+            this.txt_Stock.Location = new System.Drawing.Point(102, 181);
             this.txt_Stock.Name = "txt_Stock";
             this.txt_Stock.Size = new System.Drawing.Size(299, 23);
             this.txt_Stock.TabIndex = 39;
@@ -203,7 +212,7 @@
             // 
             this.cmb_CodEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_CodEstado.FormattingEnabled = true;
-            this.cmb_CodEstado.Location = new System.Drawing.Point(77, 151);
+            this.cmb_CodEstado.Location = new System.Drawing.Point(102, 151);
             this.cmb_CodEstado.Name = "cmb_CodEstado";
             this.cmb_CodEstado.Size = new System.Drawing.Size(302, 24);
             this.cmb_CodEstado.TabIndex = 37;
@@ -220,7 +229,7 @@
             // btnAgregarProvincia2
             // 
             this.btnAgregarProvincia2.Image = global::Concesionaria.Properties.Resources.page_add;
-            this.btnAgregarProvincia2.Location = new System.Drawing.Point(329, 89);
+            this.btnAgregarProvincia2.Location = new System.Drawing.Point(354, 89);
             this.btnAgregarProvincia2.Name = "btnAgregarProvincia2";
             this.btnAgregarProvincia2.Size = new System.Drawing.Size(40, 28);
             this.btnAgregarProvincia2.TabIndex = 34;
@@ -231,14 +240,14 @@
             // 
             this.cmb_CodMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_CodMarca.FormattingEnabled = true;
-            this.cmb_CodMarca.Location = new System.Drawing.Point(77, 89);
+            this.cmb_CodMarca.Location = new System.Drawing.Point(102, 89);
             this.cmb_CodMarca.Name = "cmb_CodMarca";
             this.cmb_CodMarca.Size = new System.Drawing.Size(246, 24);
             this.cmb_CodMarca.TabIndex = 35;
             // 
             // txt_Version
             // 
-            this.txt_Version.Location = new System.Drawing.Point(77, 119);
+            this.txt_Version.Location = new System.Drawing.Point(102, 119);
             this.txt_Version.Name = "txt_Version";
             this.txt_Version.Size = new System.Drawing.Size(299, 23);
             this.txt_Version.TabIndex = 7;
@@ -263,7 +272,7 @@
             // 
             // txt_Codigo
             // 
-            this.txt_Codigo.Location = new System.Drawing.Point(77, 28);
+            this.txt_Codigo.Location = new System.Drawing.Point(102, 28);
             this.txt_Codigo.Name = "txt_Codigo";
             this.txt_Codigo.Size = new System.Drawing.Size(299, 23);
             this.txt_Codigo.TabIndex = 4;
@@ -287,7 +296,7 @@
             // 
             // txt_Nombre
             // 
-            this.txt_Nombre.Location = new System.Drawing.Point(77, 59);
+            this.txt_Nombre.Location = new System.Drawing.Point(102, 59);
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(299, 23);
             this.txt_Nombre.TabIndex = 1;
@@ -297,24 +306,15 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 17);
+            this.label1.Size = new System.Drawing.Size(82, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nombare";
-            // 
-            // txt_Estado
-            // 
-            this.txt_Estado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.txt_Estado.Location = new System.Drawing.Point(301, 0);
-            this.txt_Estado.Name = "txt_Estado";
-            this.txt_Estado.Size = new System.Drawing.Size(90, 23);
-            this.txt_Estado.TabIndex = 40;
-            this.txt_Estado.Visible = false;
+            this.label1.Text = "Descripción";
             // 
             // FrmAbmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(410, 293);
+            this.ClientSize = new System.Drawing.Size(417, 279);
             this.Controls.Add(this.BarraBotones);
             this.Controls.Add(this.Grupo);
             this.Name = "FrmAbmProducto";

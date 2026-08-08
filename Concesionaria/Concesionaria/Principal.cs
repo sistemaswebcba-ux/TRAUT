@@ -958,8 +958,7 @@ namespace Concesionaria
 
         private void productoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmAbmProducto frm = new FrmAbmProducto();
-            frm.Show();
+           
         }
 
         private void comprarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -978,6 +977,18 @@ namespace Concesionaria
         private void consultarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             FrmConsultarCompraProducto frm = new FrmConsultarCompraProducto();
+            frm.Show();
+        }
+
+        private void crearToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmAbmProducto frm = new FrmAbmProducto();
+            frm.Show();
+        }
+
+        private void consultarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FrmListadoProductos frm = new FrmListadoProductos();
             frm.Show();
         }
     }

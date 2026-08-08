@@ -73,6 +73,41 @@ namespace Concesionaria.Clases
             sql = sql + " where CodProducto =" + CodProducto.ToString();
             cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
         }
+
+        public DataTable GetProductos(string Nombre, string Version)
+        {
+            string rdo = "0";
+            string b = "0", b1="0";
+            if (Nombre != "")
+                b="1";
+            if (Version != "")
+                b1 = "1";
+            rdo = b + b1;
+
+            string sql = "";
+            sql = "select p.CodProducto,p.Codigo,p.Nombre, ";
+            sql = sql + "(select m.Nombre from MarcaProducto m) as Marca , ";
+            sql = sql + "p.Version,p.Estado,p.Stock ";
+            sql = sql + " from Producto p ";
+
+            switch(rdo)
+            {
+                case "00":
+                    break;
+                case "01":
+                    sql = sql + " where p.Version like " + "'%" + Version + "%'";
+                    break;
+                case "10":
+                    sql = sql + " where p.Nombre like " + "'%" + Nombre + "%'"; 
+                    break;
+                case "11":
+                    sql = sql + " where p.Nombre like " + "'%" + Nombre + "%'";
+                    sql = sql + " and p.Version like " + "'%" + Version + "%'";
+                    break;
+            }
+
+            return cDb.ExecuteDataTable(sql);
+        }
        
     }
 }
