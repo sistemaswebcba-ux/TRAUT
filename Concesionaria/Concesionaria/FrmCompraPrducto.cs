@@ -29,6 +29,8 @@ namespace Concesionaria
         {
             CargarProveedores();
             IniicalizarTabla();
+            if (Principal.Codigo != null)
+                Buscar(Convert.ToInt32 (Principal.Codigo));
         }
 
         private void IniicalizarTabla()
@@ -76,6 +78,10 @@ namespace Concesionaria
             string Cantidad = txtCantidad.Text;
             string Precio = txtPrecio.Text;
             string Subtotal = (Convert.ToDouble(Cantidad) * Convert.ToDouble(Precio)).ToString();
+
+            Precio = fun.FormatoEnteroMiles(Precio);
+            Subtotal = fun.FormatoEnteroMiles(Subtotal);
+
             string Val = "";
             Val = CodProducto + ";" + Codigo;
             Val = Val + ";" + Nombre;
@@ -83,6 +89,7 @@ namespace Concesionaria
             Val = Val + ";" + Precio;
             Val = Val + ";" + Subtotal;
             Tabla = fun.AgregarFilas(Tabla, Val);
+
             Grilla.DataSource = Tabla;
             txtCodProducto.Text = "";
             txtPrecio.Text = "";
@@ -150,6 +157,7 @@ namespace Concesionaria
                 Transaccion.Commit();
                 con.Close();
                 MessageBox.Show("Datos grabados correctamente", Clases.cMensaje.Mensaje());
+                LimpiarTodos();
             }
             catch (Exception ex)
             {
@@ -159,6 +167,14 @@ namespace Concesionaria
                 con.Close();
                 MessageBox.Show(msj);
             }
+
+        }
+
+        private void LimpiarTodos ()
+        {
+            Tabla.Rows.Clear();
+            Grilla.DataSource = Tabla;
+            txtTotal.Text = "";
 
         }
 
@@ -195,6 +211,40 @@ namespace Concesionaria
                 Subtotal = fun.ToDouble(Tabla.Rows[i]["Subtotal"].ToString());
                 compra.InsertarDetalle(con, Transaccion, CodCompra, CodProducto, Cantidad, Precio, Subtotal);
             }
+        }
+
+        private void Buscar(Int32 CodCompra)
+        {
+            cFunciones fun = new cFunciones();
+            cCompraProducto compra = new cCompraProducto();
+            DataTable trdo = compra.GetComrpaxCodigo(CodCompra);
+            if (trdo.Rows.Count >0)
+            {
+                if (trdo.Rows[0]["CodProveedor"].ToString()!="")
+                {
+                    Int32 CodProveedor = Convert.ToInt32(trdo.Rows[0]["CodProveedor"].ToString());
+                    cmbProveedor.SelectedValue = CodProveedor.ToString();
+                }
+                txtNumero.Text = trdo.Rows[0]["Numero"].ToString();
+                txtTotal.Text = trdo.Rows[0]["Total"].ToString().Replace(",", ".");
+                string[] vec = txtTotal.Text.Split('.');
+                txtTotal.Text = fun.FormatoEnteroMiles(vec[0]);               
+                DateTime Fecha = Convert.ToDateTime(trdo.Rows[0]["Fecha"].ToString());
+                dpFecha.Value = Fecha;
+            }
+            BuscarDetalleCompra(CodCompra);
+            btnGrabar.Enabled = false;
+            btnCancelar.Enabled = false;
+        }
+
+        private void BuscarDetalleCompra (Int32 CodCompra)
+        {
+            cFunciones fun = new cFunciones();
+            cCompraProducto compra = new cCompraProducto();
+            DataTable trdo = compra.GetDetalleCompra(CodCompra);
+            trdo = fun.TablaaMiles(trdo, "Precio");
+            trdo = fun.TablaaMiles(trdo, "Subtotal");
+            Grilla.DataSource = trdo;
         }
     }
 }

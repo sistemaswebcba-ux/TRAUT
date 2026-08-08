@@ -964,8 +964,20 @@ namespace Concesionaria
 
         private void comprarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void registrarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Principal.Codigo = null;
             Principal.CodProducto = null;
             FrmCompraPrducto frm = new Concesionaria.FrmCompraPrducto();
+            frm.Show();
+        }
+
+        private void consultarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmConsultarCompraProducto frm = new FrmConsultarCompraProducto();
             frm.Show();
         }
     }

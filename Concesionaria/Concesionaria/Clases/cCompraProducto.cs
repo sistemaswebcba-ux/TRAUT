@@ -12,7 +12,7 @@ namespace Concesionaria.Clases
         public Int32 Insertar (SqlConnection con, SqlTransaction Transaccion,DateTime Fecha,string Numero, Int32? CodProveedor,
             Double Total )
         {
-            string sql = "Insert into Compra (";
+            string sql = "Insert into compraproducto (";
             sql = sql + "Fecha,Numero,CodProveedor,Total)";
             sql = sql + " values (" + "'" + Fecha.ToShortDateString() + "'";
             sql = sql + "," + "'" + Numero + "'";
@@ -30,7 +30,7 @@ namespace Concesionaria.Clases
         public void InsertarDetalle (SqlConnection con, SqlTransaction Transaccion, Int32 CodCompra,
             Int32 CodProducto , int Cantidad ,Double Precio , Double Subtotal )
         {
-            string sql = "insert into DetalleVentaProducto(";
+            string sql = "insert into DetalleCompraProducto(";
             sql =sql + "CodCompra,CodProducto,Cantidad";
             sql = sql + ",Precio,Subtotal)";
             sql = sql + " values (";
@@ -41,6 +41,36 @@ namespace Concesionaria.Clases
             sql = sql + "," + Subtotal.ToString().Replace(",", ".");
             sql = sql + ")";
             cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
+        }
+
+        public DataTable GetCompraProducto(DateTime FechaDesde, DateTime FechaHasta)
+        {
+            string sql = "";
+            sql = " select c.CodCompra,";
+            sql = sql + "(select p.Nombre from ProveedorAccesorio p where p.CodProveedor = c.CodProveedor) as Proveedor ";
+            sql = sql + ", c.Numero, c.Fecha, c.Total ";
+            sql = sql + " from compraproducto c ";
+            sql = sql + " where c.Fecha >=" + "'" + FechaDesde.ToShortDateString() + "'";
+            sql = sql + " and c.Fecha <="  +"'" + FechaHasta.ToShortDateString() + "'";
+            return cDb.ExecuteDataTable(sql);
+        }
+
+        public DataTable GetComrpaxCodigo(Int32 CodCompra)
+        {
+            string sql = "";
+            sql = " select * from  compraproducto ";
+            sql = sql + " where CodCompra =" + CodCompra.ToString();
+            return cDb.ExecuteDataTable(sql);
+        }
+
+        public DataTable GetDetalleCompra (Int32 CodCompra)
+        {
+            string sql = "";
+            sql = " select p.CodProducto, p.Codigo,p.Nombre,d.Cantidad,d.Precio,d.Subtotal ";
+            sql = sql + " from DetalleCompraProducto d, Producto p ";
+            sql = sql + " where d.CodProducto=p.CodProducto ";
+            sql = sql + " and d.CodCompra = " + CodCompra.ToString();
+            return cDb.ExecuteDataTable(sql);
         }
     }
 }
