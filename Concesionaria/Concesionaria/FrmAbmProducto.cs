@@ -56,6 +56,7 @@ namespace Concesionaria
             Botonera(1);
             Grupo.Enabled = false;
             fun.LlenarCombo(cmb_CodMarca, "MarcaProducto", "Nombre", "CodMarca");
+            CargarEstado();
             if (Principal.CodProducto ==-1)
             {
                 Botonera(2);
@@ -80,6 +81,21 @@ namespace Concesionaria
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            if (txt_Codigo.Text =="")
+            {
+                MessageBox.Show("Debe ingresar un código ");
+                return; 
+            }
+
+            if (cmb_CodEstado.SelectedIndex < 1)
+            {
+                MessageBox.Show("Debe seleccionar un estado  ");
+                return;
+            }
+
+            txt_Estado.Text = cmb_CodEstado.Text;
+            //antes de guardar busco el producto x codigo y estado
+            BuscarProductoxCodigo();
             Clases.cFunciones fun = new Clases.cFunciones();
             if (txtCodigo.Text == "")
             {
@@ -103,6 +119,21 @@ namespace Concesionaria
             Grupo.Enabled = false;
         }
 
+        private void BuscarProductoxCodigo()
+        {
+            cProducto prod = new cProducto();
+            string Codigo = txt_Codigo.Text;
+            int CodEstado = Convert.ToInt32(cmb_CodEstado.SelectedValue);
+            DataTable tb = prod.GetProductoxCodigoEstado(Codigo, CodEstado);
+            if (tb.Rows.Count >0)
+            {
+                if (tb.Rows[0]["CodProducto"].ToString ()!="")
+                {
+                    txt_Codigo.Text = tb.Rows[0]["CodProducto"].ToString();
+                }
+            }
+        }
+
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Clases.cFunciones fun = new Clases.cFunciones();
@@ -115,12 +146,12 @@ namespace Concesionaria
         private void btnAbrir_Click(object sender, EventArgs e)
         {
             //nombre de los camposa buscar, se llaman igual que en la base de datos
-            Principal.OpcionesdeBusqueda = "Codigo;Nombre";
+            Principal.OpcionesdeBusqueda = "Codigo;Nombre;Estado";
             //nombre de la tabla, 
             Principal.TablaPrincipal = "Producto";
-            Principal.OpcionesColumnasGrilla = "CodProducto;Codigo; Nombre";
+            Principal.OpcionesColumnasGrilla = "CodProducto;Codigo; Nombre;Estado";
             Principal.ColumnasVisibles = "0;1";
-            Principal.ColumnasAncho = "0;100;480";
+            Principal.ColumnasAncho = "0;100;380;100";
             FrmBuscadorGenerico form = new FrmBuscadorGenerico();
             form.FormClosing += new FormClosingEventHandler(form_FormClosing);
             form.ShowDialog();
@@ -170,6 +201,17 @@ namespace Concesionaria
                 fun.LlenarCombo(cmb_CodMarca, "MarcaProducto", "Nombre", "CodMarca");
                 cmb_CodMarca.SelectedValue = Principal.CampoIdSecundarioGenerado;
             }
+        }
+
+        private void CargarEstado()
+        {
+            cFunciones fun = new Clases.cFunciones();
+            DataTable tb = fun.CrearTabla("CodEstado;Nombre");
+            string Val = "1;Nuevo";
+            tb = fun.AgregarFilas(tb, Val);
+            Val = "2;Usado";
+            tb = fun.AgregarFilas(tb, Val);
+            fun.LlenarComboDatatable(cmb_CodEstado, tb, "Nombre", "CodEstado");
         }
     }
 }

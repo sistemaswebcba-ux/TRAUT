@@ -180,6 +180,7 @@ namespace Concesionaria
 
         private Int32 GrabarCompra (SqlConnection con, SqlTransaction Transaccion)
         {
+            cProducto prod = new cProducto();
             cFunciones fun = new Clases.cFunciones();
             DateTime Fecha = dpFecha.Value;
             Double Total = 0;
@@ -197,6 +198,7 @@ namespace Concesionaria
 
         private void GrabarDetalle(SqlConnection con, SqlTransaction Transaccion, Int32 CodCompra)
         {
+            cProducto Prod = new Clases.cProducto();
             cFunciones fun = new cFunciones();
             int Cantidad = 0;
             int CodProducto = 0;
@@ -210,6 +212,7 @@ namespace Concesionaria
                 Precio = fun.ToDouble(Tabla.Rows[i]["Precio"].ToString());
                 Subtotal = fun.ToDouble(Tabla.Rows[i]["Subtotal"].ToString());
                 compra.InsertarDetalle(con, Transaccion, CodCompra, CodProducto, Cantidad, Precio, Subtotal);
+                Prod.ActualizarStock(con, Transaccion, CodProducto, Cantidad);
             }
         }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace Concesionaria.Clases
 {
@@ -18,7 +19,7 @@ namespace Concesionaria.Clases
                 b1 = "1";
             string rdo = "";
             string sql = "";
-            sql = " select CodProducto,Codigo,Nombre ";
+            sql = " select CodProducto,Codigo,Nombre,Estado,Stock ";
             sql = sql + " from Producto ";
             switch(rdo)
             {
@@ -54,5 +55,24 @@ namespace Concesionaria.Clases
                 CodProducto = Convert.ToInt32(trdo.Rows[0]["CodProducto"]);
             return CodProducto;
         }
+
+        public DataTable GetProductoxCodigoEstado(string  Codigo, int CodEstado)
+        {
+            string sql = "";
+            sql = "select * from Producto ";
+            sql = sql + " where Codigo =" + "'" + Codigo + "'";
+            sql = sql + " and CodEstado=" + CodEstado.ToString();
+            return cDb.ExecuteDataTable(sql);
+        }
+
+        public void ActualizarStock(SqlConnection con, SqlTransaction Transaccion, Int32 CodProducto, int Cantidad)
+        {
+            string sql = "";
+            sql = " update Producto set ";
+            sql = sql + " stock = isnull(stock,0) + " + Cantidad.ToString();
+            sql = sql + " where CodProducto =" + CodProducto.ToString();
+            cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
+        }
+       
     }
 }
