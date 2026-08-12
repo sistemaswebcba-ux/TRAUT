@@ -27,10 +27,18 @@ namespace Concesionaria
 
         private void FrmCompraPrducto_Load(object sender, EventArgs e)
         {
+            
+            btnGrabarFechaFactura.Enabled = false;
             CargarProveedores();
             IniicalizarTabla();
+            btnAnular.Enabled = false;
             if (Principal.Codigo != null)
-                Buscar(Convert.ToInt32 (Principal.Codigo));
+            {
+                btnAnular.Enabled = true;
+                btnGrabarFechaFactura.Enabled = true;
+                Buscar(Convert.ToInt32(Principal.Codigo));
+            }
+               
         }
 
         private void IniicalizarTabla()
@@ -186,13 +194,16 @@ namespace Concesionaria
             Double Total = 0;
             Int32? CodProvedor = null;
             string Numero = "";
+            if (txtNumero.Text != "")
+                Numero = txtNumero.Text;
+            DateTime FechaFactura = dpFechaFactura.Value;
             Total = fun.ToDouble(txtTotal.Text);
             if (cmbProveedor.SelectedIndex > 0)
                 CodProvedor = Convert.ToInt32(cmbProveedor.SelectedValue);
 
             cCompraProducto compra = new Clases.cCompraProducto();
             Int32 CodCompra = 0;
-            CodCompra = compra.Insertar(con, Transaccion, Fecha, Numero, CodProvedor, Total);
+            CodCompra = compra.Insertar(con, Transaccion, Fecha, Numero, CodProvedor, Total, FechaFactura);
             return CodCompra;
         }
 
@@ -248,6 +259,32 @@ namespace Concesionaria
             trdo = fun.TablaaMiles(trdo, "Precio");
             trdo = fun.TablaaMiles(trdo, "Subtotal");
             Grilla.DataSource = trdo;
+        }
+
+        private void btnGrabarFechaFactura_Click(object sender, EventArgs e)
+        {
+            if (txtNumero.Text =="")
+            {
+                MessageBox.Show("Debe ingresar un numero de factura");
+                return;
+            }
+
+            Int32 CodCompra =Convert.ToInt32 (Principal.Codigo);
+
+            string Numero = txtNumero.Text;
+            DateTime FechaFactira = dpFechaFactura.Value;
+            cCompraProducto compra = new cCompraProducto();
+            compra.ActualizarNroFactura(CodCompra, Numero, FechaFactira);
+            MessageBox.Show("Datos actualizados correctamente ");
+        }
+
+        private void btnAnular_Click(object sender, EventArgs e)
+        {
+            Int32 CodCompra = Convert.ToInt32(Principal.Codigo);
+            cCompraProducto compra = new Clases.cCompraProducto();
+            compra.AnularCompra(CodCompra);
+            MessageBox.Show("Compra anuladacorrectamente ");
+            this.Close();
         }
     }
 }

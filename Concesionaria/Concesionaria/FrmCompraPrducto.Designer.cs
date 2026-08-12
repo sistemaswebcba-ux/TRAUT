@@ -28,7 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCompraPrducto));
             this.Grupo = new System.Windows.Forms.GroupBox();
+            this.btnAnular = new System.Windows.Forms.Button();
+            this.btnGrabarFechaFactura = new System.Windows.Forms.Button();
+            this.dpFechaFactura = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -60,6 +65,10 @@
             // 
             // Grupo
             // 
+            this.Grupo.Controls.Add(this.btnAnular);
+            this.Grupo.Controls.Add(this.btnGrabarFechaFactura);
+            this.Grupo.Controls.Add(this.dpFechaFactura);
+            this.Grupo.Controls.Add(this.label10);
             this.Grupo.Controls.Add(this.txtTotal);
             this.Grupo.Controls.Add(this.label9);
             this.Grupo.Controls.Add(this.btnCancelar);
@@ -88,14 +97,51 @@
             this.Grupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Grupo.Location = new System.Drawing.Point(12, 12);
             this.Grupo.Name = "Grupo";
-            this.Grupo.Size = new System.Drawing.Size(727, 469);
+            this.Grupo.Size = new System.Drawing.Size(815, 469);
             this.Grupo.TabIndex = 16;
             this.Grupo.TabStop = false;
             this.Grupo.Text = "Información del Producto";
             // 
+            // btnAnular
+            // 
+            this.btnAnular.Location = new System.Drawing.Point(555, 427);
+            this.btnAnular.Name = "btnAnular";
+            this.btnAnular.Size = new System.Drawing.Size(75, 36);
+            this.btnAnular.TabIndex = 98;
+            this.btnAnular.Text = "Anular";
+            this.btnAnular.UseVisualStyleBackColor = true;
+            this.btnAnular.Click += new System.EventHandler(this.btnAnular_Click);
+            // 
+            // btnGrabarFechaFactura
+            // 
+            this.btnGrabarFechaFactura.Image = ((System.Drawing.Image)(resources.GetObject("btnGrabarFechaFactura.Image")));
+            this.btnGrabarFechaFactura.Location = new System.Drawing.Point(759, 27);
+            this.btnGrabarFechaFactura.Name = "btnGrabarFechaFactura";
+            this.btnGrabarFechaFactura.Size = new System.Drawing.Size(40, 28);
+            this.btnGrabarFechaFactura.TabIndex = 97;
+            this.btnGrabarFechaFactura.UseVisualStyleBackColor = true;
+            this.btnGrabarFechaFactura.Click += new System.EventHandler(this.btnGrabarFechaFactura_Click);
+            // 
+            // dpFechaFactura
+            // 
+            this.dpFechaFactura.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dpFechaFactura.Location = new System.Drawing.Point(668, 30);
+            this.dpFechaFactura.Name = "dpFechaFactura";
+            this.dpFechaFactura.Size = new System.Drawing.Size(85, 23);
+            this.dpFechaFactura.TabIndex = 96;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(606, 34);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(56, 17);
+            this.label10.TabIndex = 95;
+            this.label10.Text = "Factura";
+            // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(588, 398);
+            this.txtTotal.Location = new System.Drawing.Point(668, 400);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(124, 23);
@@ -104,7 +150,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(542, 395);
+            this.label9.Location = new System.Drawing.Point(622, 397);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(40, 17);
             this.label9.TabIndex = 93;
@@ -112,7 +158,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(556, 427);
+            this.btnCancelar.Location = new System.Drawing.Point(636, 429);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 36);
             this.btnCancelar.TabIndex = 92;
@@ -121,7 +167,7 @@
             // 
             // btnGrabar
             // 
-            this.btnGrabar.Location = new System.Drawing.Point(637, 427);
+            this.btnGrabar.Location = new System.Drawing.Point(717, 429);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(75, 36);
             this.btnGrabar.TabIndex = 91;
@@ -131,15 +177,15 @@
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(558, 33);
+            this.txtNumero.Location = new System.Drawing.Point(486, 31);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(154, 23);
+            this.txtNumero.Size = new System.Drawing.Size(114, 23);
             this.txtNumero.TabIndex = 90;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(469, 37);
+            this.label8.Location = new System.Drawing.Point(406, 37);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(83, 17);
             this.label8.TabIndex = 89;
@@ -169,7 +215,7 @@
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Location = new System.Drawing.Point(6, 62);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(706, 31);
+            this.label7.Size = new System.Drawing.Size(793, 31);
             this.label7.TabIndex = 86;
             this.label7.Text = "Información Del Producto";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -215,7 +261,7 @@
             this.Grilla.Location = new System.Drawing.Point(6, 154);
             this.Grilla.Name = "Grilla";
             this.Grilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Grilla.Size = new System.Drawing.Size(706, 225);
+            this.Grilla.Size = new System.Drawing.Size(793, 225);
             this.Grilla.TabIndex = 81;
             // 
             // txtCantidad
@@ -286,7 +332,7 @@
             this.cmbProveedor.FormattingEnabled = true;
             this.cmbProveedor.Location = new System.Drawing.Point(234, 30);
             this.cmbProveedor.Name = "cmbProveedor";
-            this.cmbProveedor.Size = new System.Drawing.Size(229, 24);
+            this.cmbProveedor.Size = new System.Drawing.Size(166, 24);
             this.cmbProveedor.TabIndex = 73;
             // 
             // label1
@@ -319,7 +365,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(746, 493);
+            this.ClientSize = new System.Drawing.Size(839, 493);
             this.Controls.Add(this.Grupo);
             this.Name = "FrmCompraPrducto";
             this.Text = "Formulario de Compra";
@@ -359,5 +405,9 @@
         private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DateTimePicker dpFechaFactura;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnGrabarFechaFactura;
+        private System.Windows.Forms.Button btnAnular;
     }
 }

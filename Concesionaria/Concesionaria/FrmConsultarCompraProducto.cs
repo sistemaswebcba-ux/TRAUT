@@ -45,7 +45,7 @@ namespace Concesionaria
             DataTable trdo = compra.GetCompraProducto(FechaDesde, FechaHasta);
             trdo = fun.TablaaMiles(trdo, "Total");
             Grilla.DataSource = trdo;
-            string Col = "0;40;20;20;20";
+            string Col = "0;40;15;15;15;15";
             fun.AnchoColumnas(Grilla, Col);
         }
 
@@ -61,6 +61,11 @@ namespace Concesionaria
             Principal.Codigo = CodCompra;
             FrmCompraPrducto frm = new FrmCompraPrducto();
             frm.ShowDialog();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            Buscar();
         }
     }
 }

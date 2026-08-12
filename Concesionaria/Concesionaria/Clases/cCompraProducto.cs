@@ -10,10 +10,10 @@ namespace Concesionaria.Clases
     public class cCompraProducto
     {
         public Int32 Insertar (SqlConnection con, SqlTransaction Transaccion,DateTime Fecha,string Numero, Int32? CodProveedor,
-            Double Total )
+            Double Total, DateTime FechaFactura)
         {
             string sql = "Insert into compraproducto (";
-            sql = sql + "Fecha,Numero,CodProveedor,Total)";
+            sql = sql + "Fecha,Numero,CodProveedor,Total,FechaFactura)";
             sql = sql + " values (" + "'" + Fecha.ToShortDateString() + "'";
             sql = sql + "," + "'" + Numero + "'";
             if (CodProveedor != null)
@@ -21,6 +21,10 @@ namespace Concesionaria.Clases
             else
                 sql = sql + ",null";
             sql = sql + "," + Total.ToString().Replace(",", ".");
+            if (Numero != "")
+                sql = sql + "," + "'" + FechaFactura.ToShortDateString() + "'";
+            else
+                sql = sql + ",null";
             sql = sql + ")";
             Int32 CodCompra = 0;
             CodCompra = Convert.ToInt32 (cDb.EjecutarEscalarTransaccion(con, Transaccion, sql));
@@ -48,7 +52,7 @@ namespace Concesionaria.Clases
             string sql = "";
             sql = " select c.CodCompra,";
             sql = sql + "(select p.Nombre from ProveedorAccesorio p where p.CodProveedor = c.CodProveedor) as Proveedor ";
-            sql = sql + ", c.Numero, c.Fecha, c.Total ";
+            sql = sql + ", c.Numero, c.Fecha, c.Total ,c.FechaFactura ";
             sql = sql + " from compraproducto c ";
             sql = sql + " where c.Fecha >=" + "'" + FechaDesde.ToShortDateString() + "'";
             sql = sql + " and c.Fecha <="  +"'" + FechaHasta.ToShortDateString() + "'";
@@ -71,6 +75,41 @@ namespace Concesionaria.Clases
             sql = sql + " where d.CodProducto=p.CodProducto ";
             sql = sql + " and d.CodCompra = " + CodCompra.ToString();
             return cDb.ExecuteDataTable(sql);
+        }
+
+        public void ActualizarNroFactura (Int32 CodCompra, string Numero, DateTime FechaFactira)
+        {
+            string sql = "update CompraProducto set ";
+            sql = sql + " Numero =" + "'" + Numero + "'" ;
+            sql = sql + ", FechaFactura=" + "'" + FechaFactira + "'";
+            sql = sql + " where CodCompra =" + CodCompra.ToString();
+            cDb.ExecutarNonQuery(sql);
+        }
+
+        public void AnularCompra(Int32 COdCOmpra)
+        {
+            Int32 CodProducto = 0;
+            int Cantidad = 0;
+            string sql2 = "";
+            string sql = "select * from DetalleCompraProducto ";
+            sql = sql + " where CodCompra =" + COdCOmpra.ToString();
+            DataTable trdo = cDb.ExecuteDataTable(sql);
+            if (trdo.Rows.Count >0)
+            {
+                for (int i = 0; i < trdo.Rows.Count ; i++)
+                {
+                    CodProducto = Convert.ToInt32(trdo.Rows[i]["CodProducto"].ToString());
+                    Cantidad = Convert.ToInt32(trdo.Rows[i]["Cantidad"].ToString());
+                    sql2 = " update Producto set stock = isnull(stock,0) - " + Cantidad.ToString();
+                    sql2 = sql2 + " where CodProducto =" + CodProducto.ToString();
+                    cDb.ExecutarNonQuery(sql2);
+                }
+            }
+            // CompraProducto
+            sql = "delete from DetalleCompraProducto where CodCompra  =" + COdCOmpra.ToString();
+            cDb.ExecutarNonQuery(sql);
+            sql = "delete from CompraProducto where CodCompra  =" + COdCOmpra.ToString();
+            cDb.ExecutarNonQuery(sql);
         }
     }
 }
