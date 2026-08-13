@@ -47,15 +47,31 @@ namespace Concesionaria.Clases
             cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
         }
 
-        public DataTable GetCompraProducto(DateTime FechaDesde, DateTime FechaHasta)
+        public DataTable GetCompraProducto(DateTime FechaDesde, DateTime FechaHasta, string Proveedor)
         {
             string sql = "";
-            sql = " select c.CodCompra,";
-            sql = sql + "(select p.Nombre from ProveedorAccesorio p where p.CodProveedor = c.CodProveedor) as Proveedor ";
-            sql = sql + ", c.Numero, c.Fecha, c.Total ,c.FechaFactura ";
-            sql = sql + " from compraproducto c ";
-            sql = sql + " where c.Fecha >=" + "'" + FechaDesde.ToShortDateString() + "'";
-            sql = sql + " and c.Fecha <="  +"'" + FechaHasta.ToShortDateString() + "'";
+            if (Proveedor =="")
+            {
+                sql = " select c.CodCompra,";
+                sql = sql + "(select p.Nombre from ProveedorAccesorio p where p.CodProveedor = c.CodProveedor) as Proveedor ";
+                sql = sql + ", c.Numero, c.Fecha, c.Total ,c.FechaFactura ";
+                sql = sql + " from compraproducto c ";
+                sql = sql + " where c.Fecha >=" + "'" + FechaDesde.ToShortDateString() + "'";
+                sql = sql + " and c.Fecha <=" + "'" + FechaHasta.ToShortDateString() + "'";
+            }
+
+            if (Proveedor !="")
+            {
+                sql = " select c.CodCompra,";
+                sql = sql + " p.Nombre  as Proveedor ";
+                sql = sql + ", c.Numero, c.Fecha, c.Total ,c.FechaFactura ";
+                sql = sql + " from compraproducto c ,ProveedorAccesorio p ";
+                sql = sql + " where c.CodProveedor =p.CodProveedor ";
+                sql = sql + " and c.Fecha >=" + "'" + FechaDesde.ToShortDateString() + "'";
+                sql = sql + " and c.Fecha <=" + "'" + FechaHasta.ToShortDateString() + "'";
+                sql = sql + " and p.Nombre like " + "'%" + Proveedor + "%'";
+            }
+           
             return cDb.ExecuteDataTable(sql);
         }
 

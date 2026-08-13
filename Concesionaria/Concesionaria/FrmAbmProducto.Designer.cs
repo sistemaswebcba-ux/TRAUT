@@ -39,6 +39,8 @@
             this.btnImprimir = new System.Windows.Forms.ToolStripButton();
             this.btnSalir = new System.Windows.Forms.ToolStripButton();
             this.Grupo = new System.Windows.Forms.GroupBox();
+            this.txt_Costo = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.txt_Estado = new System.Windows.Forms.TextBox();
             this.txt_Stock = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -54,6 +56,8 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txt_Nombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txt_PrecioVenta = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.BarraBotones.SuspendLayout();
             this.Grupo.SuspendLayout();
             this.SuspendLayout();
@@ -72,7 +76,7 @@
             this.btnSalir});
             this.BarraBotones.Location = new System.Drawing.Point(0, 0);
             this.BarraBotones.Name = "BarraBotones";
-            this.BarraBotones.Size = new System.Drawing.Size(417, 39);
+            this.BarraBotones.Size = new System.Drawing.Size(438, 39);
             this.BarraBotones.TabIndex = 16;
             this.BarraBotones.Text = "toolStrip1";
             // 
@@ -160,6 +164,10 @@
             // 
             // Grupo
             // 
+            this.Grupo.Controls.Add(this.txt_PrecioVenta);
+            this.Grupo.Controls.Add(this.label8);
+            this.Grupo.Controls.Add(this.txt_Costo);
+            this.Grupo.Controls.Add(this.label7);
             this.Grupo.Controls.Add(this.txt_Estado);
             this.Grupo.Controls.Add(this.txt_Stock);
             this.Grupo.Controls.Add(this.label6);
@@ -178,10 +186,26 @@
             this.Grupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Grupo.Location = new System.Drawing.Point(0, 56);
             this.Grupo.Name = "Grupo";
-            this.Grupo.Size = new System.Drawing.Size(413, 225);
+            this.Grupo.Size = new System.Drawing.Size(413, 275);
             this.Grupo.TabIndex = 15;
             this.Grupo.TabStop = false;
             this.Grupo.Text = "Información del Producto";
+            // 
+            // txt_Costo
+            // 
+            this.txt_Costo.Location = new System.Drawing.Point(102, 210);
+            this.txt_Costo.Name = "txt_Costo";
+            this.txt_Costo.Size = new System.Drawing.Size(299, 23);
+            this.txt_Costo.TabIndex = 42;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 210);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 17);
+            this.label7.TabIndex = 41;
+            this.label7.Text = "Costo";
             // 
             // txt_Estado
             // 
@@ -310,11 +334,27 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Descripción";
             // 
+            // txt_PrecioVenta
+            // 
+            this.txt_PrecioVenta.Location = new System.Drawing.Point(102, 239);
+            this.txt_PrecioVenta.Name = "txt_PrecioVenta";
+            this.txt_PrecioVenta.Size = new System.Drawing.Size(299, 23);
+            this.txt_PrecioVenta.TabIndex = 44;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 239);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(89, 17);
+            this.label8.TabIndex = 43;
+            this.label8.Text = "Precio Venta";
+            // 
             // FrmAbmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(417, 279);
+            this.ClientSize = new System.Drawing.Size(438, 343);
             this.Controls.Add(this.BarraBotones);
             this.Controls.Add(this.Grupo);
             this.Name = "FrmAbmProducto";
@@ -356,5 +396,9 @@
         private System.Windows.Forms.TextBox txt_Stock;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_Estado;
+        private System.Windows.Forms.TextBox txt_Costo;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txt_PrecioVenta;
+        private System.Windows.Forms.Label label8;
     }
 }

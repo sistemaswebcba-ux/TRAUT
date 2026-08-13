@@ -87,7 +87,7 @@ namespace Concesionaria.Clases
             string sql = "";
             sql = "select p.CodProducto,p.Codigo,p.Nombre, ";
             sql = sql + "(select m.Nombre from MarcaProducto m) as Marca , ";
-            sql = sql + "p.Version,p.Estado,p.Stock ";
+            sql = sql + "p.Version,p.Estado,p.Stock,p.Costo,p.PrecioVenta ";
             sql = sql + " from Producto p ";
 
             switch(rdo)

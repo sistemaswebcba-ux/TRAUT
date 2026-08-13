@@ -42,7 +42,10 @@ namespace Concesionaria
             cCompraProducto compra = new Clases.cCompraProducto();
             DateTime FechaDesde = dpFechaDesde.Value;
             DateTime FechaHasta = dpFechaHasta.Value;
-            DataTable trdo = compra.GetCompraProducto(FechaDesde, FechaHasta);
+            string Proveedor = "";
+            if (txtProveedor.Text != "")
+                Proveedor = txtProveedor.Text;
+            DataTable trdo = compra.GetCompraProducto(FechaDesde, FechaHasta, Proveedor);
             trdo = fun.TablaaMiles(trdo, "Total");
             Grilla.DataSource = trdo;
             string Col = "0;40;15;15;15;15";

@@ -92,6 +92,16 @@ namespace Concesionaria
                 MessageBox.Show("Debe seleccionar un estado  ");
                 return;
             }
+              
+            if (txt_PrecioVenta.Text != "")
+            {
+                txt_PrecioVenta.Text = txt_PrecioVenta.Text.Replace(".", "");
+            }
+
+            if (txt_Costo.Text !="")
+            {
+                txt_Costo.Text = txt_Costo.Text.Replace(".", "");
+            }
 
             txt_Estado.Text = cmb_CodEstado.Text;
             //antes de guardar busco el producto x codigo y estado
@@ -167,14 +177,32 @@ namespace Concesionaria
                 {
                     Botonera(3);
                     txtCodigo.Text = Principal.CodigoPrincipalAbm.ToString();
-
+                  
                     if (Principal.CodigoPrincipalAbm != "")
+                    {
+                        
                         fun.CargarControles(this, "Producto", "CodProducto", txtCodigo.Text);
+                        if (txt_Costo.Text != "")
+                        {
+                            txt_Costo.Text = txt_Costo.Text.Replace(",", ".");
+                            string[] vec = txt_Costo.Text.Split('.');
+                            txt_Costo.Text = fun.FormatoEnteroMiles(vec[0]);
+                        }
+                         
+                        if (txt_PrecioVenta.Text != "")
+                        {
+                            txt_PrecioVenta.Text = txt_PrecioVenta.Text.Replace(",", ".");
+                            string[] vec = txt_PrecioVenta.Text.Split('.');
+                            txt_PrecioVenta.Text = fun.FormatoEnteroMiles(vec[0]);
+                        }
+                    }
+                       
                     Grupo.Enabled = false;
                     return;
                 }
-
             }
+            
+         
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

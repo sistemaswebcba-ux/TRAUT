@@ -36,12 +36,16 @@
             this.dpFechaDesde = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.Grilla = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtProveedor = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtProveedor);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.btnAbrir);
             this.groupBox1.Controls.Add(this.btnBuscar);
             this.groupBox1.Controls.Add(this.dpFechaHasta);
@@ -52,14 +56,14 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(665, 463);
+            this.groupBox1.Size = new System.Drawing.Size(837, 505);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Compra de Productos";
             // 
             // btnAbrir
             // 
-            this.btnAbrir.Location = new System.Drawing.Point(375, 15);
+            this.btnAbrir.Location = new System.Drawing.Point(633, 15);
             this.btnAbrir.Name = "btnAbrir";
             this.btnAbrir.Size = new System.Drawing.Size(75, 29);
             this.btnAbrir.TabIndex = 88;
@@ -69,7 +73,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(294, 15);
+            this.btnBuscar.Location = new System.Drawing.Point(552, 15);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 29);
             this.btnBuscar.TabIndex = 87;
@@ -117,14 +121,30 @@
             this.Grilla.Location = new System.Drawing.Point(6, 50);
             this.Grilla.Name = "Grilla";
             this.Grilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Grilla.Size = new System.Drawing.Size(641, 387);
+            this.Grilla.Size = new System.Drawing.Size(813, 431);
             this.Grilla.TabIndex = 82;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(294, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 17);
+            this.label3.TabIndex = 89;
+            this.label3.Text = "Proveedor";
+            // 
+            // txtProveedor
+            // 
+            this.txtProveedor.Location = new System.Drawing.Point(375, 23);
+            this.txtProveedor.Name = "txtProveedor";
+            this.txtProveedor.Size = new System.Drawing.Size(159, 23);
+            this.txtProveedor.TabIndex = 90;
             // 
             // FrmConsultarCompraProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 487);
+            this.ClientSize = new System.Drawing.Size(861, 529);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmConsultarCompraProducto";
             this.Text = "FrmConsultarCompraProducto";
@@ -146,5 +166,7 @@
         private System.Windows.Forms.DateTimePicker dpFechaDesde;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAbrir;
+        private System.Windows.Forms.TextBox txtProveedor;
+        private System.Windows.Forms.Label label3;
     }
 }

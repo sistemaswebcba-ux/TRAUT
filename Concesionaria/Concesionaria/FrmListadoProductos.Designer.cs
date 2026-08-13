@@ -35,12 +35,14 @@
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.BtnVerGanancia = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.BtnVerGanancia);
             this.groupBox1.Controls.Add(this.Grilla);
             this.groupBox1.Controls.Add(this.btnBuscar);
             this.groupBox1.Controls.Add(this.txtVersion);
@@ -106,6 +108,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Descripcion";
             // 
+            // BtnVerGanancia
+            // 
+            this.BtnVerGanancia.Image = global::Concesionaria.Properties.Resources.Linterna;
+            this.BtnVerGanancia.Location = new System.Drawing.Point(649, 30);
+            this.BtnVerGanancia.Name = "BtnVerGanancia";
+            this.BtnVerGanancia.Size = new System.Drawing.Size(40, 27);
+            this.BtnVerGanancia.TabIndex = 58;
+            this.BtnVerGanancia.UseVisualStyleBackColor = true;
+            this.BtnVerGanancia.Click += new System.EventHandler(this.BtnVerGanancia_Click);
+            // 
             // FrmListadoProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -114,6 +126,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmListadoProductos";
             this.Text = "FrmListadoProductos";
+            this.Load += new System.EventHandler(this.FrmListadoProductos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).EndInit();
@@ -130,5 +143,6 @@
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BtnVerGanancia;
     }
 }
