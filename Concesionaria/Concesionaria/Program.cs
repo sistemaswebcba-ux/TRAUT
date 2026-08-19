@@ -16,8 +16,8 @@ namespace Concesionaria
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
              Application.Run(new FrmLogin());
-          //     Application.Run(new FrmRentabilidad());
-             //  Application.Run(new FrmStockAuto());
+             //   Application.Run(new FrmConsultarCompraProducto());
+            //  Application.Run(new FrmStockAuto());
         }
     }
 }

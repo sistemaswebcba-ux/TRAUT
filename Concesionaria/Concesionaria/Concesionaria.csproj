@@ -923,6 +923,12 @@
     <Compile Include="FrmReporteClientes.Designer.cs">
       <DependentUpon>FrmReporteClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmReporteCompraProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporteCompraProducto.Designer.cs">
+      <DependentUpon>FrmReporteCompraProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmReporteControlOperaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1624,6 +1630,9 @@
     <EmbeddedResource Include="FrmReporteClientes.resx">
       <DependentUpon>FrmReporteClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporteCompraProducto.resx">
+      <DependentUpon>FrmReporteCompraProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmReporteControlOperaciones.resx">
       <DependentUpon>FrmReporteControlOperaciones.cs</DependentUpon>
     </EmbeddedResource>
@@ -1805,6 +1814,7 @@
     <EmbeddedResource Include="Reportes\ReporteBoletoCompraventa.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteCaja.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteClientes.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteCompradeProducto.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteControlOperaciones.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteDetalleDeudaCliente.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteDeudaCliente.rdlc" />

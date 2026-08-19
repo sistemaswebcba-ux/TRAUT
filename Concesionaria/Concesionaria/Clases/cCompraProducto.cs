@@ -127,5 +127,18 @@ namespace Concesionaria.Clases
             sql = "delete from CompraProducto where CodCompra  =" + COdCOmpra.ToString();
             cDb.ExecutarNonQuery(sql);
         }
+
+        public DataTable GetReporteCompra(int CodCompra)
+        {
+            string sql = "select c.Fecha,c.FechaFactura,c.Numero,p.Codigo,d.Precio,d.Cantidad,d.Subtotal ,c.Total ";
+            sql = sql + ",(select pa.Nombre from ProveedorAccesorio pa where pa.CodProveedor=c.CodProveedor) as Proveedor ";
+            sql = sql + ",p.Nombre as Producto ";
+            sql = sql + " from CompraProducto c inner join DetalleCompraProducto d ";
+            sql = sql + "  on c.CodCompra = d.CodCompra  ";
+            sql = sql + " inner join Producto p on p.CodProducto = d.CodProducto ";
+            sql = sql + " where  c.CodCompra =" + CodCompra.ToString();
+            return cDb.ExecuteDataTable(sql);
+        }
+
     }
 }

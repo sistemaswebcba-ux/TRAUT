@@ -1405,3 +1405,4 @@ D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesio
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmBuscarProducto.resources
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultarCompraProducto.resources
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoProductos.resources
+D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteCompraProducto.resources
