@@ -50,7 +50,9 @@ namespace Concesionaria
             Grilla.DataSource = trdo;
             string Col = "0;40;15;15;15;15";
             fun.AnchoColumnas(Grilla, Col);
-        }
+            Double Total = fun.TotalizarColumna(trdo, "Total");
+            txtTotal.Text = fun.SepararDecimales(Total.ToString());
+           }
 
         private void btnAbrir_Click(object sender, EventArgs e)
         {
@@ -150,6 +152,54 @@ namespace Concesionaria
                 FrmReporteCompraProducto frm = new FrmReporteCompraProducto();
                 frm.Show();
             }
+        }
+
+        private void btnDetalle_Click(object sender, EventArgs e)
+        {
+            if (Grilla.Rows.Count <1)
+            {
+                MessageBox.Show("Debe buscar registros ");
+                return;
+            }
+
+            cReporte reporte = new Clases.cReporte();
+            reporte.Borrar();
+            string Proveedor = "";
+            string Numero = "";
+            string Fecha = "";
+            string FechaFactura = "";
+            string Subtotal = "";
+            string Total = "";
+            int orden = 0;
+            string FechaDia = "Fecha " + DateTime.Now.ToShortDateString();
+            string DetalleFecha = "";
+            DetalleFecha = "Desde " + dpFechaDesde.Value.ToShortDateString();
+            DetalleFecha = DetalleFecha + " Hasta " + dpFechaHasta.Value.ToShortDateString(); 
+            for (int i = 0; i < Grilla.Rows.Count - 1; i++)
+            {
+                orden = orden + 1;
+                Proveedor = Grilla.Rows[i].Cells[1].Value.ToString();
+                Numero = Grilla.Rows[i].Cells[2].Value.ToString();
+                Fecha = Grilla.Rows[i].Cells[3].Value.ToString().Substring(0, 10);
+                Subtotal = Grilla.Rows[i].Cells[4].Value.ToString();
+                FechaFactura = Grilla.Rows[i].Cells[5].Value.ToString();
+                if (FechaFactura.Length > 10)
+                    FechaFactura = FechaFactura.Substring(0, 10);
+                Total = txtTotal.Text;
+                reporte.Insertar(orden, Proveedor, Numero, Fecha, Subtotal, FechaFactura, FechaDia, DetalleFecha, "", "", "", "", "", "", "");
+            }
+
+            for ( int i = orden;  i < 15; i++)
+            {
+                orden = orden + 1;
+                reporte.Insertar(orden, "", "", "", "", "","","","","","","","","","");
+            }
+
+            orden = orden + 1;
+            reporte.Insertar(orden, "", "", "", Total, "TotalAcumulado", "", "", "", "", "", "", "", "", "");
+
+            FrmReporeRsumenCompra frm = new FrmReporeRsumenCompra();
+            frm.Show();
         }
     }
 }

@@ -905,6 +905,12 @@
     <Compile Include="FrmRentabilidad.Designer.cs">
       <DependentUpon>FrmRentabilidad.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmReporeRsumenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporeRsumenCompra.Designer.cs">
+      <DependentUpon>FrmReporeRsumenCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmReporteCaja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1627,6 +1633,9 @@
     <EmbeddedResource Include="FrmRentabilidad.resx">
       <DependentUpon>FrmRentabilidad.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporeRsumenCompra.resx">
+      <DependentUpon>FrmReporeRsumenCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmReporteCaja.resx">
       <DependentUpon>FrmReporteCaja.cs</DependentUpon>
     </EmbeddedResource>
@@ -1836,6 +1845,7 @@
     <EmbeddedResource Include="Reportes\ReporteProductos.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteRecibo.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteResponsabilidadCivil.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteResumenCompra.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteResumenCuenta.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteStock.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteViaje.rdlc" />
@@ -1955,6 +1965,7 @@
     <Content Include="Iconos\print.ico" />
     <Content Include="Iconos\printer.ico" />
     <Content Include="Iconos\printer2.gif" />
+    <Content Include="Iconos\Productos.ico" />
     <Content Include="Iconos\Recibo.ico" />
     <Content Include="Iconos\Ruta.jpg" />
     <Content Include="Iconos\statistics3.ico" />

@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnDetalle = new System.Windows.Forms.Button();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnImprimir = new System.Windows.Forms.Button();
             this.txtProveedor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAbrir = new System.Windows.Forms.Button();
@@ -38,13 +42,15 @@
             this.dpFechaDesde = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.Grilla = new System.Windows.Forms.DataGridView();
-            this.btnImprimir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnDetalle);
+            this.groupBox1.Controls.Add(this.txtTotal);
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.btnImprimir);
             this.groupBox1.Controls.Add(this.txtProveedor);
             this.groupBox1.Controls.Add(this.label3);
@@ -58,16 +64,54 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(837, 505);
+            this.groupBox1.Size = new System.Drawing.Size(844, 518);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Compra de Productos";
+            // 
+            // btnDetalle
+            // 
+            this.btnDetalle.Location = new System.Drawing.Point(756, 15);
+            this.btnDetalle.Name = "btnDetalle";
+            this.btnDetalle.Size = new System.Drawing.Size(75, 29);
+            this.btnDetalle.TabIndex = 94;
+            this.btnDetalle.Text = "Detalle";
+            this.btnDetalle.UseVisualStyleBackColor = true;
+            this.btnDetalle.Click += new System.EventHandler(this.btnDetalle_Click);
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.Location = new System.Drawing.Point(721, 484);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
+            this.txtTotal.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtTotal.Size = new System.Drawing.Size(110, 23);
+            this.txtTotal.TabIndex = 93;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(672, 484);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 17);
+            this.label4.TabIndex = 92;
+            this.label4.Text = "Total";
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Location = new System.Drawing.Point(675, 15);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(75, 29);
+            this.btnImprimir.TabIndex = 91;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // txtProveedor
             // 
             this.txtProveedor.Location = new System.Drawing.Point(375, 23);
             this.txtProveedor.Name = "txtProveedor";
-            this.txtProveedor.Size = new System.Drawing.Size(159, 23);
+            this.txtProveedor.Size = new System.Drawing.Size(132, 23);
             this.txtProveedor.TabIndex = 90;
             // 
             // label3
@@ -81,7 +125,7 @@
             // 
             // btnAbrir
             // 
-            this.btnAbrir.Location = new System.Drawing.Point(633, 15);
+            this.btnAbrir.Location = new System.Drawing.Point(594, 15);
             this.btnAbrir.Name = "btnAbrir";
             this.btnAbrir.Size = new System.Drawing.Size(75, 29);
             this.btnAbrir.TabIndex = 88;
@@ -91,7 +135,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(552, 15);
+            this.btnBuscar.Location = new System.Drawing.Point(513, 17);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 29);
             this.btnBuscar.TabIndex = 87;
@@ -139,24 +183,14 @@
             this.Grilla.Location = new System.Drawing.Point(6, 50);
             this.Grilla.Name = "Grilla";
             this.Grilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Grilla.Size = new System.Drawing.Size(813, 431);
+            this.Grilla.Size = new System.Drawing.Size(825, 431);
             this.Grilla.TabIndex = 82;
-            // 
-            // btnImprimir
-            // 
-            this.btnImprimir.Location = new System.Drawing.Point(714, 15);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(75, 29);
-            this.btnImprimir.TabIndex = 91;
-            this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // FrmConsultarCompraProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 529);
+            this.ClientSize = new System.Drawing.Size(864, 529);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmConsultarCompraProducto";
             this.Text = "FrmConsultarCompraProducto";
@@ -181,5 +215,8 @@
         private System.Windows.Forms.TextBox txtProveedor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnImprimir;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnDetalle;
     }
 }

@@ -991,5 +991,11 @@ namespace Concesionaria
             FrmListadoProductos frm = new FrmListadoProductos();
             frm.Show();
         }
+
+        private void toolStripButton7_Click(object sender, EventArgs e)
+        {
+            FrmListadoProductos frm = new FrmListadoProductos();
+            frm.Show();
+        }
     }
 }
