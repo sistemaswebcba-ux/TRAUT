@@ -12,12 +12,12 @@ namespace Concesionaria
         /// </summary>
         [STAThread]
         static void Main()
-        {           
+        {            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
              Application.Run(new FrmLogin());
-             //   Application.Run(new FrmConsultarCompraProducto());
-            //  Application.Run(new FrmStockAuto());
+            //   Application.Run(new FrmConsultarCompraProducto());
+           //   Application.Run(new FrmReporteProductos());
         }
     }
 }

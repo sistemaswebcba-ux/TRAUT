@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using Concesionaria.Clases;
 
+
 namespace Concesionaria
 {
     public partial class FrmListadoProductos : FrmBase
@@ -77,6 +78,43 @@ namespace Concesionaria
                 Estado = 0;
                 OcultarColumna();
             }
+        }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            if (Grilla.Rows.Count <1)
+            {
+                MessageBox.Show("Debe buscar productos ");
+                return;
+            }
+            int Orden = 0;
+            string Codigo = "";
+            string Nombre = "";
+            string Marca = "";
+            string Version = "";
+            string Estado = "";
+            string Stock = "";
+            string Costo = "";
+            string PrecioVenta = "";
+            string Fecha = "Feccha: " + DateTime.Now.ToShortDateString();
+            cReporte reporte = new Clases.cReporte();
+            reporte.Borrar();
+            for (int i = 0; i <Grilla.Rows.Count -1; i++)
+            {
+                Orden = Orden + 1;
+                Codigo = Grilla.Rows[i].Cells[1].Value.ToString();
+                Nombre = Grilla.Rows[i].Cells[2].Value.ToString();
+                Marca = Grilla.Rows[i].Cells[3].Value.ToString();
+                Version = Grilla.Rows[i].Cells[4].Value.ToString();
+                Estado = Grilla.Rows[i].Cells[5].Value.ToString();
+                Stock = Grilla.Rows[i].Cells[6].Value.ToString();
+                Costo  = Grilla.Rows[i].Cells[7].Value.ToString();
+                PrecioVenta = Grilla.Rows[i].Cells[8].Value.ToString();
+                reporte.Insertar(Orden, Codigo, Nombre, Marca, Version, Estado, Stock, Costo, PrecioVenta,Fecha,"","","","","");
+            }
+
+            FrmReporteProductos frm = new FrmReporteProductos();
+            frm.Show();
         }
     }
 }
