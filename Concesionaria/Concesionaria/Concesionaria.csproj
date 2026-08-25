@@ -164,6 +164,7 @@
     <Compile Include="Clases\cVencimiento.cs" />
     <Compile Include="Clases\cVendedor.cs" />
     <Compile Include="Clases\cVenta.cs" />
+    <Compile Include="Clases\cVentaProducto.cs" />
     <Compile Include="Clases\cVentaxAuto.cs" />
     <Compile Include="Clases\cVentaxCliente.cs" />
     <Compile Include="Clases\cViaje.cs" />
@@ -1241,6 +1242,12 @@
     <Compile Include="FrmVenta.Designer.cs">
       <DependentUpon>FrmVenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmVentaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVentaProducto.Designer.cs">
+      <DependentUpon>FrmVentaProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmVerCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1800,6 +1807,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVenta.resx">
       <DependentUpon>FrmVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVentaProducto.resx">
+      <DependentUpon>FrmVentaProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVerCliente.resx">
       <DependentUpon>FrmVerCliente.cs</DependentUpon>
