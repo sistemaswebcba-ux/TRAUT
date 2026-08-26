@@ -59,7 +59,7 @@ namespace Concesionaria
         private void IniicalizarTabla()
         {
             cFunciones fun = new Clases.cFunciones();
-            string col = "CodProducto;Codigo;Nombre;Cantidad;Precio;Subtotal";
+            string col = "CodProducto;Codigo;Nombre;Cantidad;PrecioVenta;SubTotal";
             Tabla = fun.CrearTabla(col);
         }
 
@@ -287,6 +287,27 @@ namespace Concesionaria
         private void BuscarVenta(Int32 COdVenta)
         {
             cVentaProducto venta = new Clases.cVentaProducto();
+            DataTable trdo = venta.GetVentaxCodigo(COdVenta);
+            if (trdo.Rows.Count >0)
+            {
+                txtCodCliente.Text = trdo.Rows[0]["CodCliente"].ToString();
+                txtCliente.Text = trdo.Rows[0]["Cliente"].ToString();   
+            }
+
+            BuscarDetalle(COdVenta);
+        }
+
+        private void BuscarDetalle(Int32 CodVenta)
+        {
+            cFunciones fun = new cFunciones();
+            cVentaProducto venta = new Clases.cVentaProducto();
+            DataTable trdo = venta.GetDetalle(CodVenta);
+            trdo = fun.TablaaMiles(trdo, "SubTotal");
+            trdo = fun.TablaaMiles(trdo, "PrecioVenta");
+            Grilla.DataSource = trdo;
+            string Col = "0;15;40;15;15;15";
+            fun.AnchoColumnas(Grilla, Col);
+
         }
     }
 }

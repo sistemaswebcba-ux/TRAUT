@@ -253,7 +253,7 @@ namespace Concesionaria.Clases
                 {
                     Valor = tabla.Rows[i][j].ToString ();
                     Col = tabla.Columns[j].ColumnName;
-                    if (Col ==Columna)
+                    if (Col.ToUpper () ==Columna.ToUpper ())
                     {
                         Valor =FormatoEnteroMiles(ParteEntera (Valor)); 
                     }

@@ -75,12 +75,22 @@ namespace Concesionaria.Clases
         public DataTable GetVentaxCodigo(Int32 CodVenta)
         {
             string sql = "";
-            sql = " select v.CodVenta,";
-            sql = sql + "(select c.Nombre from Cliente c where c.CodCliente = v.CodCliente) as Cliente ";
-            sql = sql + ", v.Fecha, v.Total ";
+            sql = " select v.*,";
+            sql = sql + "(select c.Nombre from Cliente c where c.CodCliente = v.CodCliente) as Cliente ";         
             sql = sql + " from VentaProducto v ";
-            sql = sql + " where v.CodVenta >=" + CodVenta.ToString();
-            
+            sql = sql + " where v.CodVenta =" + CodVenta.ToString();
+            return cDb.ExecuteDataTable(sql);
+        }
+
+        public DataTable GetDetalle(Int32 CodVenta)
+        {
+            string sql = "";
+            sql = "select d.CodProducto,p.Codigo,p.Nombre,";
+            sql = sql + " d.Cantidad,d.PrecioVenta,d.Subtotal ";
+            sql = sql + " from DetalleVentaProducto d,Producto p ";
+            sql = sql + " where d.CodProducto=p.CodProducto ";
+            sql = sql + " and d.CodVenta=" + CodVenta.ToString();
+            return cDb.ExecuteDataTable(sql);
         }
     }
 }
