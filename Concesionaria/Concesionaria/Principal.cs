@@ -997,5 +997,19 @@ namespace Concesionaria
             FrmListadoProductos frm = new FrmListadoProductos();
             frm.Show();
         }
+
+        private void registrarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Principal.Codigo = null;
+            Principal.CodProducto = null;
+            FrmVentaProducto frm = new FrmVentaProducto();
+            frm.Show();
+        }
+
+        private void consultarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            FrmConsultaVentaProducto frm = new FrmConsultaVentaProducto();
+            frm.Show();
+        }
     }
 }

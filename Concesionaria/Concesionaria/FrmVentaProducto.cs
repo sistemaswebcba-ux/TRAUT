@@ -23,6 +23,11 @@ namespace Concesionaria
         private void FrmVentaProducto_Load(object sender, EventArgs e)
         {
             IniicalizarTabla();
+            if (Principal.Codigo !=null)
+            {
+                Int32 CodVenta = Convert.ToInt32(Principal.Codigo);
+                BuscarVenta(CodVenta);
+            }
         }
 
         private void CargarProductoxCodigo()
@@ -35,6 +40,7 @@ namespace Concesionaria
                 txtCodigoProducto.Text = trdo.Rows[0]["Codigo"].ToString();
                 txtCodProducto.Text = trdo.Rows[0]["CodProducto"].ToString();
                 txtNombre.Text = trdo.Rows[0]["Nombre"].ToString();
+                txtStock.Text = trdo.Rows[0]["Stock"].ToString();
             }
         }
 
@@ -81,8 +87,9 @@ namespace Concesionaria
             Val = Val + ";" + Precio;
             Val = Val + ";" + Subtotal;
             Tabla = fun.AgregarFilas(Tabla, Val);
-
             Grilla.DataSource = Tabla;
+            string Col = "0;15;40;15;15;15";
+            fun.AnchoColumnas(Grilla,Col);
             txtCodProducto.Text = "";
             txtPrecio.Text = "";
             txtCantidad.Text = "";
@@ -118,6 +125,15 @@ namespace Concesionaria
                 MessageBox.Show("Debe ingresar un precio ");
                 return false;
             }
+
+            cFunciones fun = new cFunciones();
+            string CodProducto = txtCodProducto.Text;
+            if (fun.Buscar (Tabla ,"CodProducto",CodProducto)==true)
+            {
+                MessageBox.Show("Ya se ha ingresado el producto");
+                return false;
+            }
+
             return true;
         }
 
@@ -160,12 +176,13 @@ namespace Concesionaria
             con.Open();
             SqlTransaction Transaccion;
             Transaccion = con.BeginTransaction();
-            Int32 CodCompra = 0;
+            Int32 CodVenta = 0;
             cVentaProducto Venta = new cVentaProducto();
             try
             {
-                CodCompra = GrabarVenta(con, Transaccion);
-              //  GrabarDetalle(con, Transaccion, CodCompra);
+                CodVenta = GrabarVenta(con, Transaccion);
+                GrabarDetalle(con, Transaccion, CodVenta);
+                //  GrabarDetalle(con, Transaccion, CodCompra);
                 Transaccion.Commit();
                 con.Close();
                 MessageBox.Show("Datos grabados correctamente", Clases.cMensaje.Mensaje());
@@ -201,6 +218,26 @@ namespace Concesionaria
             return CodVenta;
         }
 
+        private void GrabarDetalle(SqlConnection con, SqlTransaction Transaccion, Int32 CodVenta)
+        {
+            cProducto Prod = new Clases.cProducto();
+            cFunciones fun = new cFunciones();
+            int Cantidad = 0;
+            int CodProducto = 0;
+            Double Precio = 0;
+            Double Subtotal = 0;
+            cVentaProducto venta = new Clases.cVentaProducto();
+            for (int i = 0; i < Tabla.Rows.Count; i++)
+            {
+                CodProducto = Convert.ToInt32(Tabla.Rows[i]["CodProducto"].ToString());
+                Cantidad = Convert.ToInt32(Tabla.Rows[i]["Cantidad"].ToString());
+                Precio = fun.ToDouble(Tabla.Rows[i]["Precio"].ToString());
+                Subtotal = fun.ToDouble(Tabla.Rows[i]["Subtotal"].ToString());               
+                venta.InsertarDetalle(con, Transaccion, CodVenta, CodProducto, Cantidad, Precio, Subtotal);
+                Prod.ActualizarStock(con, Transaccion, CodProducto,(-1)* Cantidad);
+            }
+        }
+
         private Boolean ValidarVenta ()
         {
             Boolean op = true;
@@ -216,6 +253,40 @@ namespace Concesionaria
                 return false;
             }
             return op;
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LimpiarTodos ()
+        {
+            txtCodCliente.Text = "";
+            txtCliente.Text = "";
+            Tabla.Rows.Clear();
+            Grilla.DataSource = Tabla;
+            txtTotal.Text = "";
+        }
+
+        private void btnQuitarFinanciacion_Click(object sender, EventArgs e)
+        {
+            if (Grilla.CurrentRow ==null)
+            {
+                MessageBox.Show("Debe seleccionar un elemento ");
+                return;
+            }
+
+            string CodProducto = Grilla.CurrentRow.Cells[0].Value.ToString();
+            cFunciones fun = new cFunciones();
+            Tabla = fun.EliminarFila(Tabla, "CodProducto", CodProducto);
+            Grilla.DataSource = Tabla;
+            CalcularTotal(); 
+        }
+
+        private void BuscarVenta(Int32 COdVenta)
+        {
+            cVentaProducto venta = new Clases.cVentaProducto();
         }
     }
 }

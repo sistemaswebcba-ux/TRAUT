@@ -38,7 +38,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGrabar = new System.Windows.Forms.Button();
-            this.btnNuevoProducto = new System.Windows.Forms.Button();
             this.txtCodigoProducto = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
@@ -55,12 +54,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dpFecha = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtStock = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.Grupo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
             // 
             // Grupo
             // 
+            this.Grupo.Controls.Add(this.txtStock);
+            this.Grupo.Controls.Add(this.label8);
             this.Grupo.Controls.Add(this.txtCodCliente);
             this.Grupo.Controls.Add(this.btnBuscarCliente);
             this.Grupo.Controls.Add(this.label1);
@@ -70,7 +73,6 @@
             this.Grupo.Controls.Add(this.label9);
             this.Grupo.Controls.Add(this.btnCancelar);
             this.Grupo.Controls.Add(this.btnGrabar);
-            this.Grupo.Controls.Add(this.btnNuevoProducto);
             this.Grupo.Controls.Add(this.txtCodigoProducto);
             this.Grupo.Controls.Add(this.label7);
             this.Grupo.Controls.Add(this.txtPrecio);
@@ -90,7 +92,7 @@
             this.Grupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Grupo.Location = new System.Drawing.Point(22, 12);
             this.Grupo.Name = "Grupo";
-            this.Grupo.Size = new System.Drawing.Size(815, 469);
+            this.Grupo.Size = new System.Drawing.Size(806, 468);
             this.Grupo.TabIndex = 17;
             this.Grupo.TabStop = false;
             this.Grupo.Text = "Información del Producto";
@@ -133,7 +135,7 @@
             // 
             // btnAnular
             // 
-            this.btnAnular.Location = new System.Drawing.Point(555, 427);
+            this.btnAnular.Location = new System.Drawing.Point(558, 418);
             this.btnAnular.Name = "btnAnular";
             this.btnAnular.Size = new System.Drawing.Size(75, 36);
             this.btnAnular.TabIndex = 98;
@@ -142,7 +144,7 @@
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(668, 400);
+            this.txtTotal.Location = new System.Drawing.Point(671, 391);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(124, 23);
@@ -151,7 +153,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(622, 397);
+            this.label9.Location = new System.Drawing.Point(625, 391);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(40, 17);
             this.label9.TabIndex = 93;
@@ -159,31 +161,23 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(636, 429);
+            this.btnCancelar.Location = new System.Drawing.Point(639, 420);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 36);
             this.btnCancelar.TabIndex = 92;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGrabar
             // 
-            this.btnGrabar.Location = new System.Drawing.Point(717, 429);
+            this.btnGrabar.Location = new System.Drawing.Point(720, 420);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(75, 36);
             this.btnGrabar.TabIndex = 91;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = true;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
-            // 
-            // btnNuevoProducto
-            // 
-            this.btnNuevoProducto.Image = global::Concesionaria.Properties.Resources.page_add;
-            this.btnNuevoProducto.Location = new System.Drawing.Point(421, 94);
-            this.btnNuevoProducto.Name = "btnNuevoProducto";
-            this.btnNuevoProducto.Size = new System.Drawing.Size(40, 27);
-            this.btnNuevoProducto.TabIndex = 88;
-            this.btnNuevoProducto.UseVisualStyleBackColor = true;
             // 
             // txtCodigoProducto
             // 
@@ -223,16 +217,17 @@
             // btnQuitarFinanciacion
             // 
             this.btnQuitarFinanciacion.Image = global::Concesionaria.Properties.Resources.cancel;
-            this.btnQuitarFinanciacion.Location = new System.Drawing.Point(467, 123);
+            this.btnQuitarFinanciacion.Location = new System.Drawing.Point(575, 123);
             this.btnQuitarFinanciacion.Name = "btnQuitarFinanciacion";
             this.btnQuitarFinanciacion.Size = new System.Drawing.Size(40, 27);
             this.btnQuitarFinanciacion.TabIndex = 83;
             this.btnQuitarFinanciacion.UseVisualStyleBackColor = true;
+            this.btnQuitarFinanciacion.Click += new System.EventHandler(this.btnQuitarFinanciacion_Click);
             // 
             // btnAgregarFinanciacion
             // 
             this.btnAgregarFinanciacion.Image = global::Concesionaria.Properties.Resources.add;
-            this.btnAgregarFinanciacion.Location = new System.Drawing.Point(421, 123);
+            this.btnAgregarFinanciacion.Location = new System.Drawing.Point(529, 123);
             this.btnAgregarFinanciacion.Name = "btnAgregarFinanciacion";
             this.btnAgregarFinanciacion.Size = new System.Drawing.Size(40, 27);
             this.btnAgregarFinanciacion.TabIndex = 82;
@@ -267,7 +262,7 @@
             // btnAbrirVenta
             // 
             this.btnAbrirVenta.Image = global::Concesionaria.Properties.Resources.carpeta;
-            this.btnAbrirVenta.Location = new System.Drawing.Point(467, 95);
+            this.btnAbrirVenta.Location = new System.Drawing.Point(529, 95);
             this.btnAbrirVenta.Name = "btnAbrirVenta";
             this.btnAbrirVenta.Size = new System.Drawing.Size(40, 27);
             this.btnAbrirVenta.TabIndex = 78;
@@ -279,7 +274,7 @@
             this.txtNombre.Location = new System.Drawing.Point(265, 99);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.ReadOnly = true;
-            this.txtNombre.Size = new System.Drawing.Size(150, 23);
+            this.txtNombre.Size = new System.Drawing.Size(255, 23);
             this.txtNombre.TabIndex = 77;
             // 
             // label4
@@ -294,7 +289,7 @@
             // txtCodProducto
             // 
             this.txtCodProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txtCodProducto.Location = new System.Drawing.Point(545, 99);
+            this.txtCodProducto.Location = new System.Drawing.Point(729, 99);
             this.txtCodProducto.Name = "txtCodProducto";
             this.txtCodProducto.ReadOnly = true;
             this.txtCodProducto.Size = new System.Drawing.Size(46, 23);
@@ -327,14 +322,31 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Fecha";
             // 
+            // txtStock
+            // 
+            this.txtStock.Location = new System.Drawing.Point(420, 129);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.ReadOnly = true;
+            this.txtStock.Size = new System.Drawing.Size(100, 23);
+            this.txtStock.TabIndex = 104;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(371, 128);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 17);
+            this.label8.TabIndex = 103;
+            this.label8.Text = "Stock";
+            // 
             // FrmVentaProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(866, 535);
+            this.ClientSize = new System.Drawing.Size(829, 492);
             this.Controls.Add(this.Grupo);
             this.Name = "FrmVentaProducto";
-            this.Text = "FrmVentaProducto";
+            this.Text = "Venta De Productos";
             this.Load += new System.EventHandler(this.FrmVentaProducto_Load);
             this.Grupo.ResumeLayout(false);
             this.Grupo.PerformLayout();
@@ -351,7 +363,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGrabar;
-        private System.Windows.Forms.Button btnNuevoProducto;
         private System.Windows.Forms.TextBox txtCodigoProducto;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtPrecio;
@@ -372,5 +383,7 @@
         private System.Windows.Forms.Button btnBuscarCliente;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCliente;
+        private System.Windows.Forms.TextBox txtStock;
+        private System.Windows.Forms.Label label8;
     }
 }
