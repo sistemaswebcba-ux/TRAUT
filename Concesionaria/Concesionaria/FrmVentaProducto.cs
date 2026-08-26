@@ -22,9 +22,13 @@ namespace Concesionaria
 
         private void FrmVentaProducto_Load(object sender, EventArgs e)
         {
+            btnAnular.Enabled = false;
             IniicalizarTabla();
             if (Principal.Codigo !=null)
             {
+                btnGrabar.Enabled = false;
+                btnCancelar.Enabled = false;
+                btnAnular.Enabled = true;
                 Int32 CodVenta = Convert.ToInt32(Principal.Codigo);
                 BuscarVenta(CodVenta);
             }
@@ -186,7 +190,7 @@ namespace Concesionaria
                 Transaccion.Commit();
                 con.Close();
                 MessageBox.Show("Datos grabados correctamente", Clases.cMensaje.Mensaje());
-            //    LimpiarTodos();
+                LimpiarTodos();
             }
             catch (Exception ex)
             {
@@ -231,7 +235,7 @@ namespace Concesionaria
             {
                 CodProducto = Convert.ToInt32(Tabla.Rows[i]["CodProducto"].ToString());
                 Cantidad = Convert.ToInt32(Tabla.Rows[i]["Cantidad"].ToString());
-                Precio = fun.ToDouble(Tabla.Rows[i]["Precio"].ToString());
+                Precio = fun.ToDouble(Tabla.Rows[i]["PrecioVenta"].ToString());
                 Subtotal = fun.ToDouble(Tabla.Rows[i]["Subtotal"].ToString());               
                 venta.InsertarDetalle(con, Transaccion, CodVenta, CodProducto, Cantidad, Precio, Subtotal);
                 Prod.ActualizarStock(con, Transaccion, CodProducto,(-1)* Cantidad);
@@ -307,7 +311,19 @@ namespace Concesionaria
             Grilla.DataSource = trdo;
             string Col = "0;15;40;15;15;15";
             fun.AnchoColumnas(Grilla, Col);
+            Double total = 0;
+            total = fun.TotalizarColumna(trdo, "Subtotal");
+            txtTotal.Text = fun.FormatoEnteroMiles(total.ToString());
 
+        }
+
+        private void btnAnular_Click(object sender, EventArgs e)
+        {
+            Int32 CodVenta = Convert.ToInt32(Principal.Codigo);
+            cVentaProducto venta = new cVentaProducto();
+            venta.AnularVenta(CodVenta);
+            MessageBox.Show("Venta anulada correctamente ");
+            this.Close();
         }
     }
 }

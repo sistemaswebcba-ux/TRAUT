@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.Grupo = new System.Windows.Forms.GroupBox();
+            this.txtStock = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.txtCodCliente = new System.Windows.Forms.TextBox();
             this.btnBuscarCliente = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,8 +56,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dpFecha = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtStock = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.Grupo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
@@ -96,6 +96,23 @@
             this.Grupo.TabIndex = 17;
             this.Grupo.TabStop = false;
             this.Grupo.Text = "Información del Producto";
+            // 
+            // txtStock
+            // 
+            this.txtStock.Location = new System.Drawing.Point(420, 129);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.ReadOnly = true;
+            this.txtStock.Size = new System.Drawing.Size(100, 23);
+            this.txtStock.TabIndex = 104;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(371, 128);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 17);
+            this.label8.TabIndex = 103;
+            this.label8.Text = "Stock";
             // 
             // txtCodCliente
             // 
@@ -141,6 +158,7 @@
             this.btnAnular.TabIndex = 98;
             this.btnAnular.Text = "Anular";
             this.btnAnular.UseVisualStyleBackColor = true;
+            this.btnAnular.Click += new System.EventHandler(this.btnAnular_Click);
             // 
             // txtTotal
             // 
@@ -321,23 +339,6 @@
             this.label2.Size = new System.Drawing.Size(47, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Fecha";
-            // 
-            // txtStock
-            // 
-            this.txtStock.Location = new System.Drawing.Point(420, 129);
-            this.txtStock.Name = "txtStock";
-            this.txtStock.ReadOnly = true;
-            this.txtStock.Size = new System.Drawing.Size(100, 23);
-            this.txtStock.TabIndex = 104;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(371, 128);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 17);
-            this.label8.TabIndex = 103;
-            this.label8.Text = "Stock";
             // 
             // FrmVentaProducto
             // 

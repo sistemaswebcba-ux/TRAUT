@@ -92,5 +92,31 @@ namespace Concesionaria.Clases
             sql = sql + " and d.CodVenta=" + CodVenta.ToString();
             return cDb.ExecuteDataTable(sql);
         }
+
+        public void AnularVenta(Int32 CodVenta)
+        {
+            Int32 CodProducto = 0;
+            int Cantidad = 0;
+            string sql2 = "";
+            string sql = "select * from DetalleVentaProducto ";
+            sql = sql + " where CodVenta =" + CodVenta.ToString();
+            DataTable trdo = cDb.ExecuteDataTable(sql);
+            if (trdo.Rows.Count > 0)
+            {
+                for (int i = 0; i < trdo.Rows.Count; i++)
+                {
+                    CodProducto = Convert.ToInt32(trdo.Rows[i]["CodProducto"].ToString());
+                    Cantidad = Convert.ToInt32(trdo.Rows[i]["Cantidad"].ToString());
+                    sql2 = " update Producto set stock = isnull(stock,0) + " + Cantidad.ToString();
+                    sql2 = sql2 + " where CodProducto =" + CodProducto.ToString();
+                    cDb.ExecutarNonQuery(sql2);
+                }
+            }
+            // CompraProducto
+            sql = "delete from DetalleVentaProducto where CodVenta  =" + CodVenta.ToString();
+            cDb.ExecutarNonQuery(sql);
+            sql = "delete from VentaProducto where CodVenta  =" + CodVenta.ToString();
+            cDb.ExecutarNonQuery(sql);
+        }
     }
 }

@@ -58,7 +58,13 @@ namespace Concesionaria
             Int32 COdVenta = Convert.ToInt32(Grilla.CurrentRow.Cells[0].Value);
             Principal.Codigo = COdVenta;
             FrmVentaProducto frm = new FrmVentaProducto();
+            frm.FormClosing += new FormClosingEventHandler(Continuar);
             frm.ShowDialog();
+        }
+
+        private void Continuar(object sender, FormClosingEventArgs e)
+        {
+            Buscar();
         }
     }
 }
