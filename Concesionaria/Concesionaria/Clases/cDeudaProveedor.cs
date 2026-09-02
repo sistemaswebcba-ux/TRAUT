@@ -9,10 +9,10 @@ namespace Concesionaria.Clases
     public class cDeudaProveedor
     {
         public Int32 Insertar (Int32 CodCuentaProveedor, string COncepto,
-            DateTime Fecha, DateTime FechaVto, Double Importe, string Observacion, Int32? CodStock, Int32? CodTipoDeuda, Int32? CodTipoPersonal, int CodEmpleado)
+            DateTime Fecha, DateTime FechaVto, Double Importe, string Observacion, Int32? CodStock, Int32? CodTipoDeuda, Int32? CodTipoPersonal, int CodEmpleado, int Obligatorio)
         {
             string sql = "Insert into DeudaProveedor(";
-            sql = sql + "CodCuentaProveedor,COncepto,Fecha,FechaVto,Importe,Observacion,Saldo,CodStock,CodTipoDeuda,CodTipoPersonal,CodEmpleado)";
+            sql = sql + "CodCuentaProveedor,COncepto,Fecha,FechaVto,Importe,Observacion,Saldo,CodStock,CodTipoDeuda,CodTipoPersonal,CodEmpleado,Obligatorio)";
             sql = sql + " values(" + CodCuentaProveedor.ToString();
             sql = sql + "," + "'" + COncepto + "'";
             sql = sql + "," + "'" + Fecha.ToShortDateString() + "'";
@@ -33,6 +33,7 @@ namespace Concesionaria.Clases
             else
                 sql = sql + ",null";
             sql = sql + "," + CodEmpleado.ToString();
+            sql = sql + "," + Obligatorio.ToString();
             sql = sql + ")";
             return cDb.EjecutarEscalar(sql);
         }
@@ -107,6 +108,17 @@ namespace Concesionaria.Clases
             sql = sql + " where d.CodCuentaProveedor=c.CodCuenta ";
             sql = sql + " and p.CodProveedor = c.CodProveedor ";
             sql = sql + " and d.CodStock=" + CodStock.ToString();
+            return cDb.ExecuteDataTable(sql);
+        }
+
+        public DataTable GetVencimientos(DateTime FechaVto)
+        {
+            string sql = "";
+            sql = "select d.CodDeuda ,c.Nombre ,";
+            sql = sql + " (select p.Nombre from Proveedor p where p.CodProveedor=c.CodProveedor) as Proveedor ";
+            sql = sql + " from DeudaProveedor d,CuentaProveedor c ";
+            sql = sql + " where c.CodCuenta= d.CodCuentaProveedor ";
+            sql = sql + " and FechaVto<=" + "'" + FechaVto + "'";
             return cDb.ExecuteDataTable(sql);
         }
     }

@@ -69,8 +69,13 @@ namespace Concesionaria
             Int32 CodEmopñeado = Convert.ToInt32(cmbEmpleado.SelectedValue);
 
             cCosto Costo = new cCosto();
-
+            int Obligatorio = 0;
             Int32 CodDeuda = 0;
+            if (chkObligatorio.Checked == true)
+                Obligatorio = 1;
+            else
+                Obligatorio = 0;
+
             cCuentaProveedor cuentaProv = new cCuentaProveedor();
             Double Saldo = 0;
             cMovimientoProveedor mov = new cMovimientoProveedor();
@@ -114,7 +119,7 @@ namespace Concesionaria
             cFunciones fun = new cFunciones();
             Importe = fun.ToDouble(txtImporte.Text);
             CodDeuda = Deuda.Insertar(CodCuentaProveedor, COncepto,
-             Fecha, FechaVto, Importe, Observacion, CodStock, CodTipoDeuda, CodTipoPersonal, CodEmopñeado);
+             Fecha, FechaVto, Importe, Observacion, CodStock, CodTipoDeuda, CodTipoPersonal, CodEmopñeado,Obligatorio);
             Double SaldoAnterior = Saldo;
             Saldo = Saldo + Importe;
             mov.Insertar(CodCuentaProveedor, Fecha, COncepto, Importe, 0, Saldo, CodDeuda, 0, SaldoAnterior);

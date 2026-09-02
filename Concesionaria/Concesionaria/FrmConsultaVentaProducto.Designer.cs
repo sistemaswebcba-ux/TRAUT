@@ -77,6 +77,7 @@
             this.btnDetalle.TabIndex = 94;
             this.btnDetalle.Text = "Detalle";
             this.btnDetalle.UseVisualStyleBackColor = true;
+            this.btnDetalle.Visible = false;
             // 
             // txtTotal
             // 
@@ -104,6 +105,7 @@
             this.btnImprimir.TabIndex = 91;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Visible = false;
             // 
             // txtCliente
             // 

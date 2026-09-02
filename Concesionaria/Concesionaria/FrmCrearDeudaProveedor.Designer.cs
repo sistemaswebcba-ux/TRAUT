@@ -59,6 +59,7 @@
             this.txtVehiculo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtConcepto = new System.Windows.Forms.TextBox();
+            this.chkObligatorio = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -182,7 +183,7 @@
             // button1
             // 
             this.button1.Image = global::Concesionaria.Properties.Resources.email;
-            this.button1.Location = new System.Drawing.Point(225, 153);
+            this.button1.Location = new System.Drawing.Point(212, 152);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(40, 29);
             this.button1.TabIndex = 82;
@@ -191,6 +192,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.chkObligatorio);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.label11);
@@ -313,9 +315,9 @@
             // 
             this.txtCodAuto.BackColor = System.Drawing.Color.Red;
             this.txtCodAuto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCodAuto.Location = new System.Drawing.Point(351, 159);
+            this.txtCodAuto.Location = new System.Drawing.Point(430, 70);
             this.txtCodAuto.Name = "txtCodAuto";
-            this.txtCodAuto.Size = new System.Drawing.Size(71, 23);
+            this.txtCodAuto.Size = new System.Drawing.Size(25, 23);
             this.txtCodAuto.TabIndex = 90;
             this.txtCodAuto.Visible = false;
             // 
@@ -333,9 +335,9 @@
             // 
             this.txtCodStock.BackColor = System.Drawing.Color.Red;
             this.txtCodStock.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCodStock.Location = new System.Drawing.Point(271, 159);
+            this.txtCodStock.Location = new System.Drawing.Point(0, 22);
             this.txtCodStock.Name = "txtCodStock";
-            this.txtCodStock.Size = new System.Drawing.Size(71, 23);
+            this.txtCodStock.Size = new System.Drawing.Size(33, 23);
             this.txtCodStock.TabIndex = 88;
             this.txtCodStock.Visible = false;
             // 
@@ -385,6 +387,18 @@
             this.txtConcepto.Name = "txtConcepto";
             this.txtConcepto.Size = new System.Drawing.Size(305, 173);
             this.txtConcepto.TabIndex = 83;
+            // 
+            // chkObligatorio
+            // 
+            this.chkObligatorio.AutoSize = true;
+            this.chkObligatorio.Checked = true;
+            this.chkObligatorio.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkObligatorio.Location = new System.Drawing.Point(245, 155);
+            this.chkObligatorio.Name = "chkObligatorio";
+            this.chkObligatorio.Size = new System.Drawing.Size(96, 21);
+            this.chkObligatorio.TabIndex = 101;
+            this.chkObligatorio.Text = "Obligatorio";
+            this.chkObligatorio.UseVisualStyleBackColor = true;
             // 
             // FrmCrearDeudaProveedor
             // 
@@ -438,5 +452,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton RadioVariable;
         private System.Windows.Forms.RadioButton RadioFijo;
+        private System.Windows.Forms.CheckBox chkObligatorio;
     }
 }
