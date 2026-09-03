@@ -1011,5 +1011,11 @@ namespace Concesionaria
             FrmConsultaVentaProducto frm = new FrmConsultaVentaProducto();
             frm.Show();
         }
+
+        private void listadoDeVencimientosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmListadoVencimientos frm = new FrmListadoVencimientos();
+            frm.Show();
+        }
     }
 }

@@ -40,7 +40,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(717, 472);
+            this.groupBox1.Size = new System.Drawing.Size(938, 494);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Listado de Vencimientos";
@@ -51,14 +51,14 @@
             this.Grilla.Location = new System.Drawing.Point(6, 32);
             this.Grilla.Name = "Grilla";
             this.Grilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Grilla.Size = new System.Drawing.Size(705, 416);
+            this.Grilla.Size = new System.Drawing.Size(926, 456);
             this.Grilla.TabIndex = 0;
             // 
             // FrmListadoVencimientos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(741, 496);
+            this.ClientSize = new System.Drawing.Size(962, 518);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmListadoVencimientos";
             this.Text = "Listado de Vencimientos";

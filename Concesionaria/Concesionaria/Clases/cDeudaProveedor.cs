@@ -116,9 +116,13 @@ namespace Concesionaria.Clases
             string sql = "";
             sql = "select d.CodDeuda ,c.Nombre ,";
             sql = sql + " (select p.Nombre from Proveedor p where p.CodProveedor=c.CodProveedor) as Proveedor ";
+            sql = sql + " ,(select td.Nombre from TipoDeuda td where td.CodTipoDeuda=d.CodTipoDeuda) as tipo ";
+            sql = sql + " ,(select tp.Nombre from TipoPersonal tp where tp.CodTipoPersonal=d.CodTipoPersonal) as Caract ";
+            sql = sql + ",d.Fecha,d.FechaVto,d.Importe ,d.Saldo , d.Obligatorio ";
             sql = sql + " from DeudaProveedor d,CuentaProveedor c ";
             sql = sql + " where c.CodCuenta= d.CodCuentaProveedor ";
             sql = sql + " and FechaVto<=" + "'" + FechaVto + "'";
+            sql = sql + " order by d.CodDeuda desc ";
             return cDb.ExecuteDataTable(sql);
         }
     }

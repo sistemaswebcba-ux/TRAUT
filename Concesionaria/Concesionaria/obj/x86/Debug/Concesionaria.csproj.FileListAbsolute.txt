@@ -1410,3 +1410,4 @@ D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesio
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporeRsumenCompra.resources
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmVentaProducto.resources
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmConsultaVentaProducto.resources
+D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoVencimientos.resources
