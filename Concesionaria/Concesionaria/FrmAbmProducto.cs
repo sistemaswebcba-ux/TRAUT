@@ -105,7 +105,7 @@ namespace Concesionaria
 
             txt_Estado.Text = cmb_CodEstado.Text;
             //antes de guardar busco el producto x codigo y estado
-            BuscarProductoxCodigo();
+          //  BuscarProductoxCodigo();
             Clases.cFunciones fun = new Clases.cFunciones();
             if (txtCodigo.Text == "")
             {
@@ -240,6 +240,33 @@ namespace Concesionaria
             Val = "2;Usado";
             tb = fun.AgregarFilas(tb, Val);
             fun.LlenarComboDatatable(cmb_CodEstado, tb, "Nombre", "CodEstado");
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            cFunciones fun = new Clases.cFunciones();
+            string msj = "Confirma Eliminar el registro ";
+            var result = MessageBox.Show(msj, "Información",
+                                 MessageBoxButtons.YesNo,
+                                 MessageBoxIcon.Question);
+
+            // If the no button was pressed ...
+            if (result == DialogResult.No)
+            {
+                return;
+            }
+            try
+            {
+                fun.EliminarGenerico("Producto", "CodProducto", txtCodigo.Text);
+                MessageBox.Show("Datos Borrados");
+                fun.LimpiarGenerico(this);
+                Botonera(1);
+                Grupo.Enabled = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede eliminar el registro, tien datos asociados");
+            }
         }
     }
 }

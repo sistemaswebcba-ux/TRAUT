@@ -39,6 +39,8 @@
             this.btnImprimir = new System.Windows.Forms.ToolStripButton();
             this.btnSalir = new System.Windows.Forms.ToolStripButton();
             this.Grupo = new System.Windows.Forms.GroupBox();
+            this.txt_PrecioVenta = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.txt_Costo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_Estado = new System.Windows.Forms.TextBox();
@@ -56,8 +58,6 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txt_Nombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_PrecioVenta = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.BarraBotones.SuspendLayout();
             this.Grupo.SuspendLayout();
             this.SuspendLayout();
@@ -111,6 +111,7 @@
             this.btnEliminar.Size = new System.Drawing.Size(36, 36);
             this.btnEliminar.Text = "toolStripButton3";
             this.btnEliminar.ToolTipText = "Eliminar";
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnAceptar
             // 
@@ -190,6 +191,22 @@
             this.Grupo.TabIndex = 15;
             this.Grupo.TabStop = false;
             this.Grupo.Text = "Información del Producto";
+            // 
+            // txt_PrecioVenta
+            // 
+            this.txt_PrecioVenta.Location = new System.Drawing.Point(102, 239);
+            this.txt_PrecioVenta.Name = "txt_PrecioVenta";
+            this.txt_PrecioVenta.Size = new System.Drawing.Size(299, 23);
+            this.txt_PrecioVenta.TabIndex = 44;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 239);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(89, 17);
+            this.label8.TabIndex = 43;
+            this.label8.Text = "Precio Venta";
             // 
             // txt_Costo
             // 
@@ -333,22 +350,6 @@
             this.label1.Size = new System.Drawing.Size(82, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Descripción";
-            // 
-            // txt_PrecioVenta
-            // 
-            this.txt_PrecioVenta.Location = new System.Drawing.Point(102, 239);
-            this.txt_PrecioVenta.Name = "txt_PrecioVenta";
-            this.txt_PrecioVenta.Size = new System.Drawing.Size(299, 23);
-            this.txt_PrecioVenta.TabIndex = 44;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 239);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 17);
-            this.label8.TabIndex = 43;
-            this.label8.Text = "Precio Venta";
             // 
             // FrmAbmProducto
             // 
