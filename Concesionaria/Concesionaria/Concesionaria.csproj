@@ -336,6 +336,12 @@
     <Compile Include="FrmAbmVendedor.Designer.cs">
       <DependentUpon>FrmAbmVendedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmActualizarPrecioProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizarPrecioProducto.Designer.cs">
+      <DependentUpon>FrmActualizarPrecioProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAdjuntarArchivo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1366,6 +1372,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAbmVendedor.resx">
       <DependentUpon>FrmAbmVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActualizarPrecioProducto.resx">
+      <DependentUpon>FrmActualizarPrecioProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAdjuntarArchivo.resx">
       <DependentUpon>FrmAdjuntarArchivo.cs</DependentUpon>

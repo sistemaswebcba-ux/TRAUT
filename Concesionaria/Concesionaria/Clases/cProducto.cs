@@ -108,6 +108,16 @@ namespace Concesionaria.Clases
 
             return cDb.ExecuteDataTable(sql);
         }
+
+        public void ActualilzarPrecio(int CodProducto, Double PrecioVenta, Double Costo)
+        {
+            string sql = "";
+            sql = "update Producto set ";
+            sql = sql + " PrecioVenta =" + PrecioVenta.ToString().Replace(",", ".");
+            sql = sql + " , Costo =" + Costo.ToString().Replace(",", ".");
+            sql = sql + " where CodProducto=" + CodProducto.ToString();
+            cDb.ExecutarNonQuery(sql);
+        }
        
     }
 }

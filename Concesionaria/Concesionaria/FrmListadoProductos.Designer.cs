@@ -30,19 +30,21 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnImprimir = new System.Windows.Forms.Button();
-            this.BtnVerGanancia = new System.Windows.Forms.Button();
             this.Grilla = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtVersion = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.BtnVerGanancia = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnActualizar);
             this.groupBox1.Controls.Add(this.btnImprimir);
             this.groupBox1.Controls.Add(this.BtnVerGanancia);
             this.groupBox1.Controls.Add(this.Grilla);
@@ -68,16 +70,6 @@
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
-            // 
-            // BtnVerGanancia
-            // 
-            this.BtnVerGanancia.Image = global::Concesionaria.Properties.Resources.Linterna;
-            this.BtnVerGanancia.Location = new System.Drawing.Point(730, 30);
-            this.BtnVerGanancia.Name = "BtnVerGanancia";
-            this.BtnVerGanancia.Size = new System.Drawing.Size(40, 27);
-            this.BtnVerGanancia.TabIndex = 58;
-            this.BtnVerGanancia.UseVisualStyleBackColor = true;
-            this.BtnVerGanancia.Click += new System.EventHandler(this.BtnVerGanancia_Click);
             // 
             // Grilla
             // 
@@ -130,6 +122,26 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Descripcion";
             // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Location = new System.Drawing.Point(729, 24);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(81, 32);
+            this.btnActualizar.TabIndex = 60;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // BtnVerGanancia
+            // 
+            this.BtnVerGanancia.Image = global::Concesionaria.Properties.Resources.Linterna;
+            this.BtnVerGanancia.Location = new System.Drawing.Point(816, 29);
+            this.BtnVerGanancia.Name = "BtnVerGanancia";
+            this.BtnVerGanancia.Size = new System.Drawing.Size(40, 27);
+            this.BtnVerGanancia.TabIndex = 58;
+            this.BtnVerGanancia.UseVisualStyleBackColor = true;
+            this.BtnVerGanancia.Click += new System.EventHandler(this.BtnVerGanancia_Click);
+            // 
             // FrmListadoProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -157,5 +169,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnVerGanancia;
         private System.Windows.Forms.Button btnImprimir;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }

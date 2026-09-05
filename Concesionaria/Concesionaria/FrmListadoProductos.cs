@@ -21,6 +21,11 @@ namespace Concesionaria
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            Buscar();
+        }
+
+        private void Buscar()
+        {
             cFunciones fun = new cFunciones();
             string Nombre = "";
             string Version = "";
@@ -36,11 +41,6 @@ namespace Concesionaria
             string Col = "0;10;20;15;15;10;10;10;10";
             fun.AnchoColumnas(Grilla, Col);
             OcultarColumna();
-        }
-
-        private void Buscar()
-        {
-            cProducto prod = new Clases.cProducto();
         }
 
         private void FrmListadoProductos_Load(object sender, EventArgs e)
@@ -115,6 +115,26 @@ namespace Concesionaria
 
             FrmReporteProductos frm = new FrmReporteProductos();
             frm.Show();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            if (Grilla.CurrentRow ==null)
+            {
+                MessageBox.Show("Debe seleccionar un registro ");
+                return;
+            }
+
+            int CodProducto = Convert.ToInt32(Grilla.CurrentRow.Cells[0].Value);
+            Principal.CodProducto = CodProducto;
+            FrmActualizarPrecioProducto frm = new FrmActualizarPrecioProducto();
+            frm.FormClosing += new FormClosingEventHandler(Continuar);
+            frm.ShowDialog();
+        }
+
+        private void Continuar(object sender, FormClosingEventArgs e)
+        {
+            Buscar();
         }
     }
 }
