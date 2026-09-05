@@ -56,12 +56,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dpFecha = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtCosto = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.Grupo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
             // 
             // Grupo
             // 
+            this.Grupo.Controls.Add(this.txtCosto);
+            this.Grupo.Controls.Add(this.label10);
             this.Grupo.Controls.Add(this.txtStock);
             this.Grupo.Controls.Add(this.label8);
             this.Grupo.Controls.Add(this.txtCodCliente);
@@ -102,7 +106,7 @@
             this.txtStock.Location = new System.Drawing.Point(420, 129);
             this.txtStock.Name = "txtStock";
             this.txtStock.ReadOnly = true;
-            this.txtStock.Size = new System.Drawing.Size(100, 23);
+            this.txtStock.Size = new System.Drawing.Size(71, 23);
             this.txtStock.TabIndex = 104;
             // 
             // label8
@@ -235,7 +239,7 @@
             // btnQuitarFinanciacion
             // 
             this.btnQuitarFinanciacion.Image = global::Concesionaria.Properties.Resources.cancel;
-            this.btnQuitarFinanciacion.Location = new System.Drawing.Point(575, 123);
+            this.btnQuitarFinanciacion.Location = new System.Drawing.Point(695, 126);
             this.btnQuitarFinanciacion.Name = "btnQuitarFinanciacion";
             this.btnQuitarFinanciacion.Size = new System.Drawing.Size(40, 27);
             this.btnQuitarFinanciacion.TabIndex = 83;
@@ -245,7 +249,7 @@
             // btnAgregarFinanciacion
             // 
             this.btnAgregarFinanciacion.Image = global::Concesionaria.Properties.Resources.add;
-            this.btnAgregarFinanciacion.Location = new System.Drawing.Point(529, 123);
+            this.btnAgregarFinanciacion.Location = new System.Drawing.Point(649, 126);
             this.btnAgregarFinanciacion.Name = "btnAgregarFinanciacion";
             this.btnAgregarFinanciacion.Size = new System.Drawing.Size(40, 27);
             this.btnAgregarFinanciacion.TabIndex = 82;
@@ -280,7 +284,7 @@
             // btnAbrirVenta
             // 
             this.btnAbrirVenta.Image = global::Concesionaria.Properties.Resources.carpeta;
-            this.btnAbrirVenta.Location = new System.Drawing.Point(529, 95);
+            this.btnAbrirVenta.Location = new System.Drawing.Point(649, 99);
             this.btnAbrirVenta.Name = "btnAbrirVenta";
             this.btnAbrirVenta.Size = new System.Drawing.Size(40, 27);
             this.btnAbrirVenta.TabIndex = 78;
@@ -292,7 +296,7 @@
             this.txtNombre.Location = new System.Drawing.Point(265, 99);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.ReadOnly = true;
-            this.txtNombre.Size = new System.Drawing.Size(255, 23);
+            this.txtNombre.Size = new System.Drawing.Size(379, 23);
             this.txtNombre.TabIndex = 77;
             // 
             // label4
@@ -340,6 +344,23 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Fecha";
             // 
+            // txtCosto
+            // 
+            this.txtCosto.Location = new System.Drawing.Point(544, 128);
+            this.txtCosto.Name = "txtCosto";
+            this.txtCosto.ReadOnly = true;
+            this.txtCosto.Size = new System.Drawing.Size(100, 23);
+            this.txtCosto.TabIndex = 106;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(494, 130);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(44, 17);
+            this.label10.TabIndex = 105;
+            this.label10.Text = "Costo";
+            // 
             // FrmVentaProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -386,5 +407,7 @@
         private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtCosto;
+        private System.Windows.Forms.Label label10;
     }
 }

@@ -10,10 +10,10 @@ namespace Concesionaria.Clases
     public class cVentaProducto
     {
         public Int32 Insertar(SqlConnection con, SqlTransaction Transaccion, DateTime Fecha, Int32? CodCliente,
-          Double Total)
+          Double Total, Double TotalCosto)
         {
             string sql = "Insert into VentaProducto (";
-            sql = sql + "Fecha,CodCliente,Total)";
+            sql = sql + "Fecha,CodCliente,Total,TotalCosto)";
             sql = sql + " values (" + "'" + Fecha.ToShortDateString() + "'";
            
             if (CodCliente != null)
@@ -21,7 +21,7 @@ namespace Concesionaria.Clases
             else
                 sql = sql + ",null";
             sql = sql + "," + Total.ToString().Replace(",", ".");
-            
+            sql = sql + "," + TotalCosto.ToString().Replace(",", ".");
             sql = sql + ")";
             Int32 CodVenta = 0;
             CodVenta = Convert.ToInt32(cDb.EjecutarEscalarTransaccion(con, Transaccion, sql));
@@ -29,17 +29,19 @@ namespace Concesionaria.Clases
         }
 
         public void InsertarDetalle(SqlConnection con, SqlTransaction Transaccion, Int32 codventa,
-         Int32 CodProducto, int Cantidad, Double PrecioVenta, Double Subtotal)
+         Int32 CodProducto, int Cantidad, Double PrecioVenta, Double Subtotal, Double Costo, Double SubTotalCosto)
         {
             string sql = "insert into DetalleVentaProducto(";
             sql = sql + "codventa,CodProducto,Cantidad";
-            sql = sql + ",PrecioVenta,Subtotal)";
+            sql = sql + ",PrecioVenta,Subtotal, Costo,SubTotalCosto)";
             sql = sql + " values (";
             sql = sql + codventa.ToString();
             sql = sql + "," + CodProducto.ToString();
             sql = sql + "," + Cantidad.ToString();
             sql = sql + "," + PrecioVenta.ToString().Replace(",", ".");
             sql = sql + "," + Subtotal.ToString().Replace(",", ".");
+            sql = sql + "," + Costo.ToString().Replace(",", ".");
+            sql = sql + "," + SubTotalCosto.ToString().Replace(",", ".");
             sql = sql + ")";
             cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
         }
@@ -86,7 +88,7 @@ namespace Concesionaria.Clases
         {
             string sql = "";
             sql = "select d.CodProducto,p.Codigo,p.Nombre,";
-            sql = sql + " d.Cantidad,d.PrecioVenta,d.Subtotal ";
+            sql = sql + " d.Cantidad,d.PrecioVenta,d.Costo,d.SubTotalCosto,d.Subtotal ";
             sql = sql + " from DetalleVentaProducto d,Producto p ";
             sql = sql + " where d.CodProducto=p.CodProducto ";
             sql = sql + " and d.CodVenta=" + CodVenta.ToString();

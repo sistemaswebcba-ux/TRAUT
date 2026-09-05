@@ -36,6 +36,7 @@ namespace Concesionaria
 
         private void CargarProductoxCodigo()
         {
+            cFunciones fun = new Clases.cFunciones();
             Int32 CodProducto = Convert.ToInt32(Principal.CodProducto);
             cProducto prod = new Clases.cProducto();
             DataTable trdo = prod.GetProductoxCodigo(CodProducto);
@@ -45,6 +46,11 @@ namespace Concesionaria
                 txtCodProducto.Text = trdo.Rows[0]["CodProducto"].ToString();
                 txtNombre.Text = trdo.Rows[0]["Nombre"].ToString();
                 txtStock.Text = trdo.Rows[0]["Stock"].ToString();
+                txtCosto.Text = trdo.Rows[0]["Costo"].ToString();
+                if (txtCosto.Text !="")
+                {
+                    txtCosto.Text = fun.SepararDecimales(txtCosto.Text);
+                }
             }
         }
 
@@ -63,7 +69,7 @@ namespace Concesionaria
         private void IniicalizarTabla()
         {
             cFunciones fun = new Clases.cFunciones();
-            string col = "CodProducto;Codigo;Nombre;Cantidad;PrecioVenta;SubTotal";
+            string col = "CodProducto;Codigo;Nombre;Cantidad;PrecioVenta;Costo;SubTotalCosto;SubTotal";
             Tabla = fun.CrearTabla(col);
         }
 
@@ -80,6 +86,13 @@ namespace Concesionaria
             string Cantidad = txtCantidad.Text;
             string Precio = txtPrecio.Text;
             string Subtotal = (Convert.ToDouble(Cantidad) * Convert.ToDouble(Precio)).ToString();
+            string Costo = txtCosto.Text;
+            string SubTotalCosto = "0";
+            if (txtCosto.Text !="")
+            {
+                SubTotalCosto = (Convert.ToDouble(Costo) * Convert.ToDouble(Cantidad)).ToString();
+                SubTotalCosto = fun.SepararDecimales(SubTotalCosto);
+            }
 
             Precio = fun.FormatoEnteroMiles(Precio);
             Subtotal = fun.FormatoEnteroMiles(Subtotal);
@@ -89,10 +102,12 @@ namespace Concesionaria
             Val = Val + ";" + Nombre;
             Val = Val + ";" + Cantidad;
             Val = Val + ";" + Precio;
+            Val = Val + ";" + Costo;
+            Val = Val + ";" + SubTotalCosto;
             Val = Val + ";" + Subtotal;
             Tabla = fun.AgregarFilas(Tabla, Val);
             Grilla.DataSource = Tabla;
-            string Col = "0;15;40;15;15;15";
+            string Col = "0;10;50;10;10;10;0;10";
             fun.AnchoColumnas(Grilla,Col);
             txtCodProducto.Text = "";
             txtPrecio.Text = "";
@@ -209,16 +224,17 @@ namespace Concesionaria
             DateTime Fecha = dpFecha.Value;
             Double Total = 0;
             Int32? CodCliente = null;
+            Double TotalCosto = 0;
 
             if (txtCodCliente.Text != "")
                 CodCliente = Convert.ToInt32(txtCodCliente.Text);
            
            
             Total = fun.ToDouble(txtTotal.Text);
-
+            TotalCosto = fun.TotalizarColumna(Tabla, "SubTotalCosto");
             cVentaProducto venta = new cVentaProducto();
             Int32 CodVenta = 0;
-            CodVenta = venta.Insertar(con, Transaccion, Fecha,CodCliente  , Total);
+            CodVenta = venta.Insertar(con, Transaccion, Fecha,CodCliente  , Total,TotalCosto);
             return CodVenta;
         }
 
@@ -230,14 +246,18 @@ namespace Concesionaria
             int CodProducto = 0;
             Double Precio = 0;
             Double Subtotal = 0;
+            Double Costo = 0;
+            Double SubTotalCosto = 0;
             cVentaProducto venta = new Clases.cVentaProducto();
             for (int i = 0; i < Tabla.Rows.Count; i++)
             {
                 CodProducto = Convert.ToInt32(Tabla.Rows[i]["CodProducto"].ToString());
                 Cantidad = Convert.ToInt32(Tabla.Rows[i]["Cantidad"].ToString());
                 Precio = fun.ToDouble(Tabla.Rows[i]["PrecioVenta"].ToString());
-                Subtotal = fun.ToDouble(Tabla.Rows[i]["Subtotal"].ToString());               
-                venta.InsertarDetalle(con, Transaccion, CodVenta, CodProducto, Cantidad, Precio, Subtotal);
+                Subtotal = fun.ToDouble(Tabla.Rows[i]["Subtotal"].ToString());
+                Costo = fun.ToDouble(Tabla.Rows[i]["Costo"].ToString());
+                SubTotalCosto = fun.ToDouble(Tabla.Rows[i]["SubTotalCosto"].ToString());
+                venta.InsertarDetalle(con, Transaccion, CodVenta, CodProducto, Cantidad, Precio, Subtotal, Costo,SubTotalCosto);
                 Prod.ActualizarStock(con, Transaccion, CodProducto,(-1)* Cantidad);
             }
         }
@@ -308,8 +328,9 @@ namespace Concesionaria
             DataTable trdo = venta.GetDetalle(CodVenta);
             trdo = fun.TablaaMiles(trdo, "SubTotal");
             trdo = fun.TablaaMiles(trdo, "PrecioVenta");
+            trdo = fun.TablaaMiles(trdo, "Costo");
             Grilla.DataSource = trdo;
-            string Col = "0;15;40;15;15;15";
+            string Col = "0;10;50;10;10;10;0;10";
             fun.AnchoColumnas(Grilla, Col);
             Double total = 0;
             total = fun.TotalizarColumna(trdo, "Subtotal");
