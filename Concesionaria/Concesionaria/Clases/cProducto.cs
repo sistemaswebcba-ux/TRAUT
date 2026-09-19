@@ -74,6 +74,15 @@ namespace Concesionaria.Clases
             cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
         }
 
+        public void ActualizarCosto(SqlConnection con, SqlTransaction Transaccion, Int32 CodProducto, Double Costo)
+        {
+            string sql = "";
+            sql = " update Producto set ";
+            sql = sql + " Costo =" + Costo.ToString().Replace(",", ".");
+            sql = sql + " where CodProducto =" + CodProducto.ToString();
+            cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
+        }
+
         public DataTable GetProductos(string Nombre, string Version)
         {
             string rdo = "0";

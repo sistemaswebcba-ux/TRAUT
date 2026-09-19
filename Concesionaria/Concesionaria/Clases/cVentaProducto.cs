@@ -54,6 +54,8 @@ namespace Concesionaria.Clases
                 sql = " select v.CodVenta,";
                 sql = sql + "(select c.Nombre from Cliente c where c.CodCliente = v.CodCliente) as Cliente ";
                 sql = sql + ", v.Fecha, v.Total ";
+                sql = sql + ",(isnull(TotalCosto,0)) as Costo ";
+                sql = sql + ",(v.Total - isnull(TotalCosto,0)) as Rentabilidad ";
                 sql = sql + " from VentaProducto v ";
                 sql = sql + " where v.Fecha >=" + "'" + FechaDesde.ToShortDateString() + "'";
                 sql = sql + " and v.Fecha <=" + "'" + FechaHasta.ToShortDateString() + "'";
@@ -64,6 +66,8 @@ namespace Concesionaria.Clases
                 sql = " select v.CodVenta,";
                 sql = sql + " c.Nombre  as Cliente ";
                 sql = sql + ", v.Fecha, v.Total  ";
+                sql = sql + ",(isnull(TotalCosto,0)) as Costo ";
+                sql = sql + ",(v.Total - isnull(TotalCosto,0)) as Rentabilidad ";
                 sql = sql + " from VentaProducto v ,Cliente  c ";
                 sql = sql + " where v.CodCliente =c.CodCliente ";
                 sql = sql + " and v.Fecha >=" + "'" + FechaDesde.ToShortDateString() + "'";

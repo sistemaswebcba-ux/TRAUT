@@ -224,6 +224,7 @@ namespace Concesionaria
                 Subtotal = fun.ToDouble(Tabla.Rows[i]["Subtotal"].ToString());
                 compra.InsertarDetalle(con, Transaccion, CodCompra, CodProducto, Cantidad, Precio, Subtotal);
                 Prod.ActualizarStock(con, Transaccion, CodProducto, Cantidad);
+                Prod.ActualizarCosto(con, Transaccion, CodProducto, Precio);
             }
         }
 
@@ -285,6 +286,11 @@ namespace Concesionaria
             compra.AnularCompra(CodCompra);
             MessageBox.Show("Compra anuladacorrectamente ");
             this.Close();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BtnVerGanancia = new System.Windows.Forms.Button();
             this.btnDetalle = new System.Windows.Forms.Button();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,12 +43,17 @@
             this.dpFechaDesde = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.Grilla = new System.Windows.Forms.DataGridView();
+            this.txtRentabilidad = new System.Windows.Forms.TextBox();
+            this.lblRentabilidad = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtRentabilidad);
+            this.groupBox1.Controls.Add(this.lblRentabilidad);
+            this.groupBox1.Controls.Add(this.BtnVerGanancia);
             this.groupBox1.Controls.Add(this.btnDetalle);
             this.groupBox1.Controls.Add(this.txtTotal);
             this.groupBox1.Controls.Add(this.label4);
@@ -68,6 +74,16 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Compra de Productos";
+            // 
+            // BtnVerGanancia
+            // 
+            this.BtnVerGanancia.Image = global::Concesionaria.Properties.Resources.Linterna;
+            this.BtnVerGanancia.Location = new System.Drawing.Point(595, 19);
+            this.BtnVerGanancia.Name = "BtnVerGanancia";
+            this.BtnVerGanancia.Size = new System.Drawing.Size(34, 27);
+            this.BtnVerGanancia.TabIndex = 95;
+            this.BtnVerGanancia.UseVisualStyleBackColor = true;
+            this.BtnVerGanancia.Click += new System.EventHandler(this.BtnVerGanancia_Click);
             // 
             // btnDetalle
             // 
@@ -125,21 +141,21 @@
             // 
             // btnAbrir
             // 
-            this.btnAbrir.Location = new System.Drawing.Point(594, 15);
+            this.btnAbrir.Image = global::Concesionaria.Properties.Resources.Folder1;
+            this.btnAbrir.Location = new System.Drawing.Point(554, 15);
             this.btnAbrir.Name = "btnAbrir";
-            this.btnAbrir.Size = new System.Drawing.Size(75, 29);
+            this.btnAbrir.Size = new System.Drawing.Size(35, 29);
             this.btnAbrir.TabIndex = 88;
-            this.btnAbrir.Text = "Abrir";
             this.btnAbrir.UseVisualStyleBackColor = true;
             this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
             // 
             // btnBuscar
             // 
+            this.btnBuscar.Image = global::Concesionaria.Properties.Resources.zoom1;
             this.btnBuscar.Location = new System.Drawing.Point(513, 17);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 29);
+            this.btnBuscar.Size = new System.Drawing.Size(35, 29);
             this.btnBuscar.TabIndex = 87;
-            this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
@@ -186,6 +202,26 @@
             this.Grilla.Size = new System.Drawing.Size(825, 431);
             this.Grilla.TabIndex = 82;
             // 
+            // txtRentabilidad
+            // 
+            this.txtRentabilidad.Location = new System.Drawing.Point(554, 484);
+            this.txtRentabilidad.Name = "txtRentabilidad";
+            this.txtRentabilidad.ReadOnly = true;
+            this.txtRentabilidad.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtRentabilidad.Size = new System.Drawing.Size(110, 23);
+            this.txtRentabilidad.TabIndex = 97;
+            this.txtRentabilidad.Visible = false;
+            // 
+            // lblRentabilidad
+            // 
+            this.lblRentabilidad.AutoSize = true;
+            this.lblRentabilidad.Location = new System.Drawing.Point(461, 484);
+            this.lblRentabilidad.Name = "lblRentabilidad";
+            this.lblRentabilidad.Size = new System.Drawing.Size(87, 17);
+            this.lblRentabilidad.TabIndex = 96;
+            this.lblRentabilidad.Text = "Rentabilidad";
+            this.lblRentabilidad.Visible = false;
+            // 
             // FrmConsultaVentaProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,5 +254,8 @@
         private System.Windows.Forms.DateTimePicker dpFechaDesde;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView Grilla;
+        private System.Windows.Forms.Button BtnVerGanancia;
+        private System.Windows.Forms.TextBox txtRentabilidad;
+        private System.Windows.Forms.Label lblRentabilidad;
     }
 }
