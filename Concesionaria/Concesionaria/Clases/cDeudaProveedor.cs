@@ -122,6 +122,7 @@ namespace Concesionaria.Clases
             sql = sql + " from DeudaProveedor d,CuentaProveedor c ";
             sql = sql + " where c.CodCuenta= d.CodCuentaProveedor ";
             sql = sql + " and FechaVto<=" + "'" + FechaVto + "'";
+            sql = sql + " and d.Saldo >0 ";
             sql = sql + " order by d.CodDeuda desc ";
             return cDb.ExecuteDataTable(sql);
         }
