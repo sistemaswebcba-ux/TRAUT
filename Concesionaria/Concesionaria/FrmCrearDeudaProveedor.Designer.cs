@@ -43,6 +43,7 @@
             this.txtCodCuenta = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkObligatorio = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.radioNegocio = new System.Windows.Forms.RadioButton();
             this.radioPersonal = new System.Windows.Forms.RadioButton();
@@ -59,7 +60,6 @@
             this.txtVehiculo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtConcepto = new System.Windows.Forms.TextBox();
-            this.chkObligatorio = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -227,6 +227,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "RegistrarDeuda Proveedor";
             // 
+            // chkObligatorio
+            // 
+            this.chkObligatorio.AutoSize = true;
+            this.chkObligatorio.Location = new System.Drawing.Point(245, 155);
+            this.chkObligatorio.Name = "chkObligatorio";
+            this.chkObligatorio.Size = new System.Drawing.Size(96, 21);
+            this.chkObligatorio.TabIndex = 101;
+            this.chkObligatorio.Text = "Obligatorio";
+            this.chkObligatorio.UseVisualStyleBackColor = true;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.radioNegocio);
@@ -387,18 +397,6 @@
             this.txtConcepto.Name = "txtConcepto";
             this.txtConcepto.Size = new System.Drawing.Size(305, 173);
             this.txtConcepto.TabIndex = 83;
-            // 
-            // chkObligatorio
-            // 
-            this.chkObligatorio.AutoSize = true;
-            this.chkObligatorio.Checked = true;
-            this.chkObligatorio.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkObligatorio.Location = new System.Drawing.Point(245, 155);
-            this.chkObligatorio.Name = "chkObligatorio";
-            this.chkObligatorio.Size = new System.Drawing.Size(96, 21);
-            this.chkObligatorio.TabIndex = 101;
-            this.chkObligatorio.Text = "Obligatorio";
-            this.chkObligatorio.UseVisualStyleBackColor = true;
             // 
             // FrmCrearDeudaProveedor
             // 

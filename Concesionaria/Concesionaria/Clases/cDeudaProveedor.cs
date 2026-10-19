@@ -126,5 +126,18 @@ namespace Concesionaria.Clases
             sql = sql + " order by d.CodDeuda desc ";
             return cDb.ExecuteDataTable(sql);
         }
+
+        public DataTable GetDeudaResumida(DateTime FechaDesde, DateTime FechaHasta, string Proveedor, string Concepto)
+        {
+            string sql = "select d.CodCuentaProveedor, p.Nombre as Proveedor,";
+            sql = sql + " c.Nombre as Cuenta ,";
+            sql = sql + " sum(d.Importe),sum(d.Saldo)  ";
+            sql = sql + " from CuentaProveedor c,Proveedor p,DeudaProveedor d ";
+            sql = sql + " where c.CodProveedor=p.CodProveedor ";
+            sql = sql + " and d.CodCuentaProveedor=c.CodCuenta  ";
+            sql = sql + " and d.Fecha>=" + "'" + FechaDesde.ToShortDateString() + "'";
+            sql = sql + " and d.Fecha<=" + "'" + FechaHasta.ToShortDateString() + "'";
+            return cDb.ExecuteDataTable(sql);
+        }
     }
 }

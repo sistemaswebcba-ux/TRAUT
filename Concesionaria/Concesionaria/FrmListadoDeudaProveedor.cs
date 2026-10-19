@@ -45,8 +45,8 @@ namespace Concesionaria
             Saldo = fun.TotalizarColumna(trdo, "Saldo");
             txtTotalDeuda.Text = fun.FormatoEnteroMiles(Total.ToString());
             txtTotalSaldo.Text = fun.FormatoEnteroMiles(Saldo.ToString());
-            trdo = fun.TablaaFechas(trdo, "Importe");
-            trdo = fun.TablaaFechas(trdo, "Saldo");
+            trdo = fun.TablaaMiles(trdo, "Importe");
+            trdo = fun.TablaaMiles(trdo, "Saldo");
             Grilla.DataSource = trdo;
             //select d.CodDeuda,p.Nombre as Proveedor,c.Nombre as Cuenta,d.Concepto,d.Importe,d.Saldo,d.CodPago,d.CodDeudaProveedor
             fun.AnchoColumnas(Grilla, "0;20;20;30;15;15;0;0");
