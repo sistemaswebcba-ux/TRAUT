@@ -624,6 +624,12 @@
     <Compile Include="FrmDetalleSaldosEfectivosaPagar.Designer.cs">
       <DependentUpon>FrmDetalleSaldosEfectivosaPagar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDeudaAgrupada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeudaAgrupada.Designer.cs">
+      <DependentUpon>FrmDeudaAgrupada.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDeudaCobranzaGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -785,6 +791,12 @@
     </Compile>
     <Compile Include="FrmListadoDeudaProveedor.Designer.cs">
       <DependentUpon>FrmListadoDeudaProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListadoDeudasDiarias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListadoDeudasDiarias.Designer.cs">
+      <DependentUpon>FrmListadoDeudasDiarias.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmListadoDocumentosAnteriores.cs">
       <SubType>Form</SubType>
@@ -1517,6 +1529,9 @@
     <EmbeddedResource Include="FrmDetalleSaldosEfectivosaPagar.resx">
       <DependentUpon>FrmDetalleSaldosEfectivosaPagar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeudaAgrupada.resx">
+      <DependentUpon>FrmDeudaAgrupada.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDeudaCobranzaGeneral.resx">
       <DependentUpon>FrmDeudaCobranzaGeneral.cs</DependentUpon>
     </EmbeddedResource>
@@ -1597,6 +1612,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoDeudaProveedor.resx">
       <DependentUpon>FrmListadoDeudaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListadoDeudasDiarias.resx">
+      <DependentUpon>FrmListadoDeudasDiarias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoDocumentosAnteriores.resx">
       <DependentUpon>FrmListadoDocumentosAnteriores.cs</DependentUpon>

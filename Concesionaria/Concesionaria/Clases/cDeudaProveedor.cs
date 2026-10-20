@@ -126,8 +126,7 @@ namespace Concesionaria.Clases
             sql = sql + " order by d.CodDeuda desc ";
             return cDb.ExecuteDataTable(sql);
         }
-
-        public DataTable GetDeudaResumida(DateTime FechaDesde, DateTime FechaHasta, string Proveedor, string Concepto)
+        public DataTable GetDeudaResumida(DateTime FechaDesde, DateTime FechaHasta)
         {
             string sql = "select d.CodCuentaProveedor, p.Nombre as Proveedor,";
             sql = sql + " c.Nombre as Cuenta ,";
@@ -137,6 +136,34 @@ namespace Concesionaria.Clases
             sql = sql + " and d.CodCuentaProveedor=c.CodCuenta  ";
             sql = sql + " and d.Fecha>=" + "'" + FechaDesde.ToShortDateString() + "'";
             sql = sql + " and d.Fecha<=" + "'" + FechaHasta.ToShortDateString() + "'";
+            sql = sql + " group by d.CodCuentaProveedor,p.Nombre,c.Nombre";
+            return cDb.ExecuteDataTable(sql);
+        }
+
+        public DataTable GetDeudaDiarias(DateTime FechaDesde, DateTime FechaHasta, string Proveedor, string Concepto)
+        {
+            string sql = "select distinct d.CodDeuda,d.FechaVto, p.Nombre as Proveedor,c.Nombre as Cuenta,d.Concepto,d.Importe,d.Saldo,d.CodPago,d.CodCuentaProveedor ";
+            sql = sql + " from CuentaProveedor c,Proveedor p,DeudaProveedor d";
+            sql = sql + " where c.CodProveedor=p.CodProveedor";
+            sql = sql + " and d.CodCuentaProveedor=c.CodCuenta ";
+            sql = sql + " and d.Fecha>=" + "'" + FechaDesde.ToShortDateString() + "'";
+            sql = sql + " and d.Fecha<=" + "'" + FechaHasta.ToShortDateString() + "'";
+            sql = sql + " and d.Saldo >0 ";
+            if (Proveedor != "")
+                sql = sql + " and p.Nombre like " + "'%" + Proveedor + "%'";
+            if (Concepto != "")
+                sql = sql + " and d.Concepto like " + "'%" + Concepto + "%'";
+            sql = sql + " union ";
+            sql = sql + "select distinct d.CodDeuda,d.FechaVto, p.Nombre as Proveedor,c.Nombre as Cuenta,d.Concepto,d.Importe,d.Saldo,d.CodPago,d.CodCuentaProveedor ";
+            sql = sql + " from CuentaProveedor c,Proveedor p,DeudaProveedor d";
+            sql = sql + " where c.CodProveedor=p.CodProveedor";
+            sql = sql + " and d.CodCuentaProveedor=c.CodCuenta ";          
+            sql = sql + " and d.Saldo >0 ";
+            if (Proveedor != "")
+                sql = sql + " and p.Nombre like " + "'%" + Proveedor + "%'";
+            if (Concepto != "")
+                sql = sql + " and d.Concepto like " + "'%" + Concepto + "%'";
+            sql = sql + " order by d.FechaVto  ";
             return cDb.ExecuteDataTable(sql);
         }
     }

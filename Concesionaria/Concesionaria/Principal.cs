@@ -160,7 +160,10 @@ namespace Concesionaria
 
         private void Principal_Load(object sender, EventArgs e)
         {
+            //busca vendimiento de los clientes
             VerificarVencimientos();
+            //verifico deudad de proveedores
+            BuscarDeudasVencidas();
             //CodUsuarioLogueado = "1";
             /*
             Clases.cAlarma alarma = new Clases.cAlarma();
@@ -195,6 +198,19 @@ namespace Concesionaria
                     FrmVencimiento fr = new FrmVencimiento();
                     fr.ShowDialog();
                 }
+            }
+        }
+
+        private void BuscarDeudasVencidas()
+        {
+            DateTime hoy = DateTime.Now;
+            DateTime Proximo = hoy.AddDays(7);
+            cDeudaProveedor deuda = new Clases.cDeudaProveedor();
+            DataTable trdo = deuda.GetDeudaDiarias(hoy, Proximo, "", "");
+            if (trdo.Rows.Count >0)
+            {
+                FrmListadoDeudasDiarias frm = new FrmListadoDeudasDiarias();
+                frm.Show();
             }
         }
 
