@@ -1414,3 +1414,5 @@ D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesio
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmActualizarPrecioProducto.resources
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmDeudaAgrupada.resources
 D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmListadoDeudasDiarias.resources
+D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmReporteVencimientos.resources
+D:\PROGRAMACION 3\TRAUT\TRAUT\Concesionaria\Concesionaria\obj\x86\Debug\Concesionaria.FrmAbmTipoPago.resources

@@ -245,5 +245,23 @@ namespace Concesionaria
             FrmMensajesGastosTransferencia frm = new FrmMensajesGastosTransferencia();
             frm.Show();
         }
+
+        private void btnAnularFechaPago_Click(object sender, EventArgs e)
+        {
+            string msj = "Confirma anular el pago";
+            var result = MessageBox.Show(msj, "Información",
+                                 MessageBoxButtons.YesNo,
+                                 MessageBoxIcon.Question);
+
+            // If the no button was pressed ...
+            if (result == DialogResult.No)
+            {
+                return;
+            }
+
+            Clases.cGastosPagar gasto = new Clases.cGastosPagar();
+            gasto.ActualizarPago(Convert.ToInt32(Principal.CodigoPrincipalAbm), null, 0);
+            MessageBox.Show("Datos actualizados");
+        }
     }
 }

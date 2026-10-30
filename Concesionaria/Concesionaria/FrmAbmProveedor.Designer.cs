@@ -30,11 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAbmProveedor));
             this.Grupo = new System.Windows.Forms.GroupBox();
-            this.btnBorrarProveedor = new System.Windows.Forms.Button();
+            this.btnNuevoTipoPago = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cmb_CodTipoPago = new System.Windows.Forms.ComboBox();
+            this.btnCrearCuentas = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txt_Nombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnCrearCuentas = new System.Windows.Forms.Button();
+            this.btnBorrarProveedor = new System.Windows.Forms.Button();
             this.BarraBotones = new System.Windows.Forms.ToolStrip();
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
             this.btnEditar = new System.Windows.Forms.ToolStripButton();
@@ -50,26 +55,77 @@
             // 
             // Grupo
             // 
+            this.Grupo.Controls.Add(this.btnNuevoTipoPago);
+            this.Grupo.Controls.Add(this.comboBox2);
+            this.Grupo.Controls.Add(this.label3);
+            this.Grupo.Controls.Add(this.cmb_CodTipoPago);
+            this.Grupo.Controls.Add(this.btnCrearCuentas);
+            this.Grupo.Controls.Add(this.label2);
             this.Grupo.Controls.Add(this.txtCodigo);
             this.Grupo.Controls.Add(this.txt_Nombre);
             this.Grupo.Controls.Add(this.label1);
             this.Grupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Grupo.Location = new System.Drawing.Point(12, 65);
             this.Grupo.Name = "Grupo";
-            this.Grupo.Size = new System.Drawing.Size(331, 95);
+            this.Grupo.Size = new System.Drawing.Size(431, 126);
             this.Grupo.TabIndex = 15;
             this.Grupo.TabStop = false;
             this.Grupo.Text = "Informaci{on de Proveedores";
             // 
-            // btnBorrarProveedor
+            // btnNuevoTipoPago
             // 
-            this.btnBorrarProveedor.Location = new System.Drawing.Point(175, 177);
-            this.btnBorrarProveedor.Name = "btnBorrarProveedor";
-            this.btnBorrarProveedor.Size = new System.Drawing.Size(143, 34);
-            this.btnBorrarProveedor.TabIndex = 16;
-            this.btnBorrarProveedor.Text = "Borrar Proveedor";
-            this.btnBorrarProveedor.UseVisualStyleBackColor = true;
-            this.btnBorrarProveedor.Click += new System.EventHandler(this.btnBorrarProveedor_Click);
+            this.btnNuevoTipoPago.Image = global::Concesionaria.Properties.Resources.page_add;
+            this.btnNuevoTipoPago.Location = new System.Drawing.Point(311, 55);
+            this.btnNuevoTipoPago.Name = "btnNuevoTipoPago";
+            this.btnNuevoTipoPago.Size = new System.Drawing.Size(40, 28);
+            this.btnNuevoTipoPago.TabIndex = 51;
+            this.btnNuevoTipoPago.UseVisualStyleBackColor = true;
+            this.btnNuevoTipoPago.Click += new System.EventHandler(this.btnNuevoTipoPago_Click);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(106, 88);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(200, 24);
+            this.comboBox2.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(1, 91);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 17);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Período";
+            // 
+            // cmb_CodTipoPago
+            // 
+            this.cmb_CodTipoPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_CodTipoPago.FormattingEnabled = true;
+            this.cmb_CodTipoPago.Location = new System.Drawing.Point(105, 58);
+            this.cmb_CodTipoPago.Name = "cmb_CodTipoPago";
+            this.cmb_CodTipoPago.Size = new System.Drawing.Size(200, 24);
+            this.cmb_CodTipoPago.TabIndex = 5;
+            // 
+            // btnCrearCuentas
+            // 
+            this.btnCrearCuentas.Location = new System.Drawing.Point(326, 28);
+            this.btnCrearCuentas.Name = "btnCrearCuentas";
+            this.btnCrearCuentas.Size = new System.Drawing.Size(75, 23);
+            this.btnCrearCuentas.TabIndex = 4;
+            this.btnCrearCuentas.Text = "Cuentas";
+            this.btnCrearCuentas.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(0, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 17);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Tipo de Pago";
             // 
             // txtCodigo
             // 
@@ -81,29 +137,29 @@
             // 
             // txt_Nombre
             // 
-            this.txt_Nombre.Location = new System.Drawing.Point(89, 28);
+            this.txt_Nombre.Location = new System.Drawing.Point(106, 29);
             this.txt_Nombre.Name = "txt_Nombre";
-            this.txt_Nombre.Size = new System.Drawing.Size(217, 23);
+            this.txt_Nombre.Size = new System.Drawing.Size(194, 23);
             this.txt_Nombre.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 28);
+            this.label1.Location = new System.Drawing.Point(6, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             // 
-            // btnCrearCuentas
+            // btnBorrarProveedor
             // 
-            this.btnCrearCuentas.Location = new System.Drawing.Point(349, 74);
-            this.btnCrearCuentas.Name = "btnCrearCuentas";
-            this.btnCrearCuentas.Size = new System.Drawing.Size(75, 23);
-            this.btnCrearCuentas.TabIndex = 3;
-            this.btnCrearCuentas.Text = "Cuentas";
-            this.btnCrearCuentas.UseVisualStyleBackColor = true;
-            this.btnCrearCuentas.Click += new System.EventHandler(this.btnCrearCuentas_Click);
+            this.btnBorrarProveedor.Location = new System.Drawing.Point(175, 246);
+            this.btnBorrarProveedor.Name = "btnBorrarProveedor";
+            this.btnBorrarProveedor.Size = new System.Drawing.Size(143, 34);
+            this.btnBorrarProveedor.TabIndex = 16;
+            this.btnBorrarProveedor.Text = "Borrar Proveedor";
+            this.btnBorrarProveedor.UseVisualStyleBackColor = true;
+            this.btnBorrarProveedor.Click += new System.EventHandler(this.btnBorrarProveedor_Click);
             // 
             // BarraBotones
             // 
@@ -212,7 +268,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(443, 341);
             this.Controls.Add(this.btnBorrarProveedor);
-            this.Controls.Add(this.btnCrearCuentas);
             this.Controls.Add(this.Grupo);
             this.Controls.Add(this.BarraBotones);
             this.Name = "FrmAbmProveedor";
@@ -242,7 +297,12 @@
         private System.Windows.Forms.ToolStripButton btnAbrir;
         private System.Windows.Forms.ToolStripButton btnImprimir;
         private System.Windows.Forms.ToolStripButton btnSalir;
-        private System.Windows.Forms.Button btnCrearCuentas;
         private System.Windows.Forms.Button btnBorrarProveedor;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cmb_CodTipoPago;
+        private System.Windows.Forms.Button btnCrearCuentas;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnNuevoTipoPago;
     }
 }

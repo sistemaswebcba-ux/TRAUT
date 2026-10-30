@@ -140,7 +140,7 @@ namespace Concesionaria.Clases
             return cDb.ExecuteDataTable(sql);
         }
 
-        public DataTable GetDeudaDiarias(DateTime FechaDesde, DateTime FechaHasta, string Proveedor, string Concepto)
+        public DataTable GetDeudaDiarias(DateTime FechaDesde, DateTime FechaHasta, string Proveedor, string Concepto, int Obligatorio, string Cuenta)
         {
             string sql = "select distinct d.CodDeuda,d.FechaVto, p.Nombre as Proveedor,c.Nombre as Cuenta,d.Concepto,d.Importe,d.Saldo,d.CodPago,d.CodCuentaProveedor ";
             sql = sql + " from CuentaProveedor c,Proveedor p,DeudaProveedor d";
@@ -149,10 +149,18 @@ namespace Concesionaria.Clases
             sql = sql + " and d.Fecha>=" + "'" + FechaDesde.ToShortDateString() + "'";
             sql = sql + " and d.Fecha<=" + "'" + FechaHasta.ToShortDateString() + "'";
             sql = sql + " and d.Saldo >0 ";
+            if (Obligatorio ==1)
+            {
+                sql = sql + " and d.Obligatorio =1 ";
+            }
             if (Proveedor != "")
                 sql = sql + " and p.Nombre like " + "'%" + Proveedor + "%'";
             if (Concepto != "")
                 sql = sql + " and d.Concepto like " + "'%" + Concepto + "%'";
+
+            if (Cuenta !="")
+                sql = sql + " and c.Nombre like " + "'%" + Cuenta + "%'";
+
             sql = sql + " union ";
             sql = sql + "select distinct d.CodDeuda,d.FechaVto, p.Nombre as Proveedor,c.Nombre as Cuenta,d.Concepto,d.Importe,d.Saldo,d.CodPago,d.CodCuentaProveedor ";
             sql = sql + " from CuentaProveedor c,Proveedor p,DeudaProveedor d";
@@ -163,6 +171,14 @@ namespace Concesionaria.Clases
                 sql = sql + " and p.Nombre like " + "'%" + Proveedor + "%'";
             if (Concepto != "")
                 sql = sql + " and d.Concepto like " + "'%" + Concepto + "%'";
+            if (Obligatorio == 1)
+            {
+                sql = sql + " and d.Obligatorio =1 ";
+            }
+
+            if (Cuenta != "")
+                sql = sql + " and c.Nombre like " + "'%" + Cuenta + "%'";
+
             sql = sql + " order by d.FechaVto  ";
             return cDb.ExecuteDataTable(sql);
         }

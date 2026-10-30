@@ -28,7 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmListadoDeudasDiarias));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.txtCuenta = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.chkObligatorio = new System.Windows.Forms.CheckBox();
             this.txtConcepto = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtTotalDeuda = new System.Windows.Forms.TextBox();
@@ -54,6 +59,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnImprimir);
+            this.groupBox1.Controls.Add(this.txtCuenta);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.chkObligatorio);
             this.groupBox1.Controls.Add(this.txtConcepto);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txtTotalDeuda);
@@ -81,17 +90,53 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Listado de deuda Proveedor";
             // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
+            this.btnImprimir.Location = new System.Drawing.Point(925, 29);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(39, 28);
+            this.btnImprimir.TabIndex = 86;
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
+            // txtCuenta
+            // 
+            this.txtCuenta.Location = new System.Drawing.Point(759, 34);
+            this.txtCuenta.Name = "txtCuenta";
+            this.txtCuenta.Size = new System.Drawing.Size(115, 23);
+            this.txtCuenta.TabIndex = 85;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(705, 37);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 17);
+            this.label7.TabIndex = 84;
+            this.label7.Text = "Cuenta";
+            // 
+            // chkObligatorio
+            // 
+            this.chkObligatorio.AutoSize = true;
+            this.chkObligatorio.Location = new System.Drawing.Point(309, 7);
+            this.chkObligatorio.Name = "chkObligatorio";
+            this.chkObligatorio.Size = new System.Drawing.Size(96, 21);
+            this.chkObligatorio.TabIndex = 83;
+            this.chkObligatorio.Text = "Obligatorio";
+            this.chkObligatorio.UseVisualStyleBackColor = true;
+            // 
             // txtConcepto
             // 
-            this.txtConcepto.Location = new System.Drawing.Point(597, 33);
+            this.txtConcepto.Location = new System.Drawing.Point(579, 33);
             this.txtConcepto.Name = "txtConcepto";
-            this.txtConcepto.Size = new System.Drawing.Size(137, 23);
+            this.txtConcepto.Size = new System.Drawing.Size(123, 23);
             this.txtConcepto.TabIndex = 82;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(523, 36);
+            this.label6.Location = new System.Drawing.Point(505, 36);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 17);
             this.label6.TabIndex = 81;
@@ -119,7 +164,7 @@
             // 
             this.txtProveedor.Location = new System.Drawing.Point(386, 34);
             this.txtProveedor.Name = "txtProveedor";
-            this.txtProveedor.Size = new System.Drawing.Size(137, 23);
+            this.txtProveedor.Size = new System.Drawing.Size(113, 23);
             this.txtProveedor.TabIndex = 78;
             // 
             // label4
@@ -134,7 +179,7 @@
             // btnAbrirDeuda
             // 
             this.btnAbrirDeuda.Image = global::Concesionaria.Properties.Resources.carpeta;
-            this.btnAbrirDeuda.Location = new System.Drawing.Point(917, 28);
+            this.btnAbrirDeuda.Location = new System.Drawing.Point(912, -9);
             this.btnAbrirDeuda.Name = "btnAbrirDeuda";
             this.btnAbrirDeuda.Size = new System.Drawing.Size(40, 31);
             this.btnAbrirDeuda.TabIndex = 76;
@@ -144,7 +189,7 @@
             // btnEliminarDeuda
             // 
             this.btnEliminarDeuda.Image = global::Concesionaria.Properties.Resources.cancel;
-            this.btnEliminarDeuda.Location = new System.Drawing.Point(871, 28);
+            this.btnEliminarDeuda.Location = new System.Drawing.Point(866, -9);
             this.btnEliminarDeuda.Name = "btnEliminarDeuda";
             this.btnEliminarDeuda.Size = new System.Drawing.Size(40, 31);
             this.btnEliminarDeuda.TabIndex = 75;
@@ -154,7 +199,7 @@
             // button1
             // 
             this.button1.Image = global::Concesionaria.Properties.Resources.add;
-            this.button1.Location = new System.Drawing.Point(825, 28);
+            this.button1.Location = new System.Drawing.Point(820, -9);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(40, 31);
             this.button1.TabIndex = 74;
@@ -227,11 +272,11 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(745, 29);
+            this.btnBuscar.Image = global::Concesionaria.Properties.Resources.zoom2;
+            this.btnBuscar.Location = new System.Drawing.Point(880, 30);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(74, 28);
+            this.btnBuscar.Size = new System.Drawing.Size(39, 28);
             this.btnBuscar.TabIndex = 44;
-            this.btnBuscar.Text = "&Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
@@ -291,5 +336,9 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox chkObligatorio;
+        private System.Windows.Forms.TextBox txtCuenta;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnImprimir;
     }
 }

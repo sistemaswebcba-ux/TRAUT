@@ -122,6 +122,8 @@
             this.listadoDeudasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoCuentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDePagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoDeVencimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoDePróximosVencimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAperturaCierreCaja = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -150,7 +152,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.listadoDeVencimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnProximosVto = new System.Windows.Forms.ToolStripButton();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -873,7 +875,8 @@
             this.listadoDeudasToolStripMenuItem,
             this.listadoCuentasToolStripMenuItem,
             this.listadoDePagosToolStripMenuItem,
-            this.listadoDeVencimientosToolStripMenuItem});
+            this.listadoDeVencimientosToolStripMenuItem,
+            this.listadoDePróximosVencimientosToolStripMenuItem});
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
             this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(112, 21);
             this.proveedoresToolStripMenuItem.Text = "Proveedores";
@@ -881,30 +884,44 @@
             // crearToolStripMenuItem
             // 
             this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
-            this.crearToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.crearToolStripMenuItem.Size = new System.Drawing.Size(323, 22);
             this.crearToolStripMenuItem.Text = "Crear";
             this.crearToolStripMenuItem.Click += new System.EventHandler(this.crearToolStripMenuItem_Click);
             // 
             // listadoDeudasToolStripMenuItem
             // 
             this.listadoDeudasToolStripMenuItem.Name = "listadoDeudasToolStripMenuItem";
-            this.listadoDeudasToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.listadoDeudasToolStripMenuItem.Size = new System.Drawing.Size(323, 22);
             this.listadoDeudasToolStripMenuItem.Text = "Listado Deudas";
             this.listadoDeudasToolStripMenuItem.Click += new System.EventHandler(this.listadoDeudasToolStripMenuItem_Click);
             // 
             // listadoCuentasToolStripMenuItem
             // 
             this.listadoCuentasToolStripMenuItem.Name = "listadoCuentasToolStripMenuItem";
-            this.listadoCuentasToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.listadoCuentasToolStripMenuItem.Size = new System.Drawing.Size(323, 22);
             this.listadoCuentasToolStripMenuItem.Text = "Listado Cuentas";
             this.listadoCuentasToolStripMenuItem.Click += new System.EventHandler(this.listadoCuentasToolStripMenuItem_Click);
             // 
             // listadoDePagosToolStripMenuItem
             // 
             this.listadoDePagosToolStripMenuItem.Name = "listadoDePagosToolStripMenuItem";
-            this.listadoDePagosToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.listadoDePagosToolStripMenuItem.Size = new System.Drawing.Size(323, 22);
             this.listadoDePagosToolStripMenuItem.Text = "Listado de Pagos";
             this.listadoDePagosToolStripMenuItem.Click += new System.EventHandler(this.listadoDePagosToolStripMenuItem_Click);
+            // 
+            // listadoDeVencimientosToolStripMenuItem
+            // 
+            this.listadoDeVencimientosToolStripMenuItem.Name = "listadoDeVencimientosToolStripMenuItem";
+            this.listadoDeVencimientosToolStripMenuItem.Size = new System.Drawing.Size(323, 22);
+            this.listadoDeVencimientosToolStripMenuItem.Text = "Listado de Vencimientos";
+            this.listadoDeVencimientosToolStripMenuItem.Click += new System.EventHandler(this.listadoDeVencimientosToolStripMenuItem_Click);
+            // 
+            // listadoDePróximosVencimientosToolStripMenuItem
+            // 
+            this.listadoDePróximosVencimientosToolStripMenuItem.Name = "listadoDePróximosVencimientosToolStripMenuItem";
+            this.listadoDePróximosVencimientosToolStripMenuItem.Size = new System.Drawing.Size(323, 22);
+            this.listadoDePróximosVencimientosToolStripMenuItem.Text = "Listado de Próximos Vencimientos";
+            this.listadoDePróximosVencimientosToolStripMenuItem.Click += new System.EventHandler(this.listadoDePróximosVencimientosToolStripMenuItem_Click);
             // 
             // cajaToolStripMenuItem
             // 
@@ -975,7 +992,8 @@
             this.toolStripButton6,
             this.ButtonResumenDewuda,
             this.btnDistancia,
-            this.toolStripButton7});
+            this.toolStripButton7,
+            this.btnProximosVto});
             this.toolStrip.Location = new System.Drawing.Point(0, 25);
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.Size = new System.Drawing.Size(763, 39);
@@ -1185,12 +1203,15 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // listadoDeVencimientosToolStripMenuItem
+            // btnProximosVto
             // 
-            this.listadoDeVencimientosToolStripMenuItem.Name = "listadoDeVencimientosToolStripMenuItem";
-            this.listadoDeVencimientosToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.listadoDeVencimientosToolStripMenuItem.Text = "Listado de Vencimientos";
-            this.listadoDeVencimientosToolStripMenuItem.Click += new System.EventHandler(this.listadoDeVencimientosToolStripMenuItem_Click);
+            this.btnProximosVto.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnProximosVto.Image = ((System.Drawing.Image)(resources.GetObject("btnProximosVto.Image")));
+            this.btnProximosVto.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnProximosVto.Name = "btnProximosVto";
+            this.btnProximosVto.Size = new System.Drawing.Size(36, 36);
+            this.btnProximosVto.Text = "Proximos Vencimientos";
+            this.btnProximosVto.Click += new System.EventHandler(this.btnProximosVto_Click);
             // 
             // Principal
             // 
@@ -1340,6 +1361,8 @@
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem registrarToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem listadoDeVencimientosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listadoDePróximosVencimientosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton btnProximosVto;
     }
 }
 

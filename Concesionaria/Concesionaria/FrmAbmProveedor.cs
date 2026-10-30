@@ -22,6 +22,8 @@ namespace Concesionaria
             Botonera(1);
             Grupo.Enabled = false;
             txt_Nombre.Text = "";
+            cFunciones fun = new Clases.cFunciones();
+            fun.LlenarCombo(cmb_CodTipoPago, "TipoPagoProveedor", "Nombre", "CodTipoPago");
         }
 
         private void Botonera(int Jugada)
@@ -218,6 +220,19 @@ namespace Concesionaria
                 Grupo.Enabled = false;
                 txt_Nombre.Text = "";
             }
+        }
+
+        private void btnNuevoTipoPago_Click(object sender, EventArgs e)
+        {
+            FrmAbmTipoPago frm = new FrmAbmTipoPago();
+            frm.FormClosing += new FormClosingEventHandler(ContinuarTipoPago);
+            frm.ShowDialog();
+        }
+
+        private void ContinuarTipoPago(object sender, FormClosingEventArgs e)
+        {
+            cFunciones fun = new Clases.cFunciones();
+            fun.LlenarCombo(cmb_CodTipoPago, "TipoPagoProveedor", "Nombre", "CodTipoPago");
         }
     }
 }

@@ -178,13 +178,13 @@ namespace Concesionaria.Clases
             string sql = "update GastosPagar set ";
             if (FechaPago == null)
             {
-              //  sql = sql + " FechaPago=null";
-                sql = sql + " FechaTramite=null";
+                sql = sql + " FechaPago=null";
+                sql = sql + ", FechaTramite=null";
             }
             else
             {
-              //  sql = sql + " FechaPago=" + "'" + FechaPago +"'";
-                sql = sql + " FechaTramite=" + "'" + FechaPago + "'";
+                sql = sql + " FechaPago=" + "'" + FechaPago +"'";
+                sql = sql + " ,FechaTramite=" + "'" + FechaPago + "'";
 
             }
             sql = sql + ",ImportePagado=" + ImportePagado.ToString().Replace(",", ".");

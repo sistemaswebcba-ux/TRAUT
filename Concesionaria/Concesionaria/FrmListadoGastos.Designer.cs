@@ -30,6 +30,7 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnEliminarGasto = new System.Windows.Forms.Button();
+            this.btnImprimir = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtVencida = new System.Windows.Forms.TextBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -55,13 +56,14 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnImprimir = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.btnEliminarGasto);
             this.groupBox1.Controls.Add(this.btnImprimir);
             this.groupBox1.Controls.Add(this.btnAgregar);
@@ -100,17 +102,27 @@
             // btnEliminarGasto
             // 
             this.btnEliminarGasto.Image = global::Concesionaria.Properties.Resources.cancel;
-            this.btnEliminarGasto.Location = new System.Drawing.Point(1095, 24);
+            this.btnEliminarGasto.Location = new System.Drawing.Point(860, 13);
             this.btnEliminarGasto.Name = "btnEliminarGasto";
             this.btnEliminarGasto.Size = new System.Drawing.Size(37, 31);
             this.btnEliminarGasto.TabIndex = 79;
             this.btnEliminarGasto.UseVisualStyleBackColor = true;
             this.btnEliminarGasto.Click += new System.EventHandler(this.btnEliminarGasto_Click);
             // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Image = global::Concesionaria.Properties.Resources.printer1;
+            this.btnImprimir.Location = new System.Drawing.Point(903, 13);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(34, 30);
+            this.btnImprimir.TabIndex = 77;
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
             // btnAgregar
             // 
             this.btnAgregar.Image = global::Concesionaria.Properties.Resources.add;
-            this.btnAgregar.Location = new System.Drawing.Point(1049, 27);
+            this.btnAgregar.Location = new System.Drawing.Point(814, 16);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(40, 28);
             this.btnAgregar.TabIndex = 78;
@@ -149,15 +161,15 @@
             // 
             this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategoria.FormattingEnabled = true;
-            this.cmbCategoria.Location = new System.Drawing.Point(884, 32);
+            this.cmbCategoria.Location = new System.Drawing.Point(504, 23);
             this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(70, 24);
+            this.cmbCategoria.Size = new System.Drawing.Size(215, 24);
             this.cmbCategoria.TabIndex = 73;
             // 
             // dpFechaHasta
             // 
             this.dpFechaHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dpFechaHasta.Location = new System.Drawing.Point(199, 28);
+            this.dpFechaHasta.Location = new System.Drawing.Point(250, 28);
             this.dpFechaHasta.Name = "dpFechaHasta";
             this.dpFechaHasta.Size = new System.Drawing.Size(87, 23);
             this.dpFechaHasta.TabIndex = 72;
@@ -165,7 +177,7 @@
             // dpFechaDesde
             // 
             this.dpFechaDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dpFechaDesde.Location = new System.Drawing.Point(55, 32);
+            this.dpFechaDesde.Location = new System.Drawing.Point(69, 27);
             this.dpFechaDesde.Name = "dpFechaDesde";
             this.dpFechaDesde.Size = new System.Drawing.Size(87, 23);
             this.dpFechaDesde.TabIndex = 71;
@@ -209,15 +221,15 @@
             // txtApellido
             // 
             this.txtApellido.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtApellido.Location = new System.Drawing.Point(773, 31);
+            this.txtApellido.Location = new System.Drawing.Point(504, 56);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(104, 23);
+            this.txtApellido.Size = new System.Drawing.Size(215, 23);
             this.txtApellido.TabIndex = 60;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(709, 34);
+            this.label6.Location = new System.Drawing.Point(440, 62);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 17);
             this.label6.TabIndex = 59;
@@ -226,15 +238,15 @@
             // txtNombre
             // 
             this.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtNombre.Location = new System.Drawing.Point(599, 29);
+            this.txtNombre.Location = new System.Drawing.Point(250, 56);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(104, 23);
+            this.txtNombre.Size = new System.Drawing.Size(172, 23);
             this.txtNombre.TabIndex = 58;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(535, 34);
+            this.label5.Location = new System.Drawing.Point(186, 59);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 17);
             this.label5.TabIndex = 57;
@@ -261,15 +273,15 @@
             // txtPatente
             // 
             this.txtPatente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtPatente.Location = new System.Drawing.Point(455, 28);
+            this.txtPatente.Location = new System.Drawing.Point(69, 56);
             this.txtPatente.Name = "txtPatente";
-            this.txtPatente.Size = new System.Drawing.Size(74, 23);
+            this.txtPatente.Size = new System.Drawing.Size(111, 23);
             this.txtPatente.TabIndex = 54;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(392, 34);
+            this.label3.Location = new System.Drawing.Point(0, 56);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 17);
             this.label3.TabIndex = 48;
@@ -278,7 +290,7 @@
             // btnCobroCheque
             // 
             this.btnCobroCheque.Image = global::Concesionaria.Properties.Resources.money_euro;
-            this.btnCobroCheque.Location = new System.Drawing.Point(1003, 28);
+            this.btnCobroCheque.Location = new System.Drawing.Point(768, 17);
             this.btnCobroCheque.Name = "btnCobroCheque";
             this.btnCobroCheque.Size = new System.Drawing.Size(40, 28);
             this.btnCobroCheque.TabIndex = 47;
@@ -290,7 +302,7 @@
             this.chkImpagos.AutoSize = true;
             this.chkImpagos.Checked = true;
             this.chkImpagos.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkImpagos.Location = new System.Drawing.Point(292, 29);
+            this.chkImpagos.Location = new System.Drawing.Point(343, 29);
             this.chkImpagos.Name = "chkImpagos";
             this.chkImpagos.Size = new System.Drawing.Size(91, 21);
             this.chkImpagos.TabIndex = 46;
@@ -300,17 +312,17 @@
             // Grilla
             // 
             this.Grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Grilla.Location = new System.Drawing.Point(0, 63);
+            this.Grilla.Location = new System.Drawing.Point(0, 87);
             this.Grilla.Name = "Grilla";
             this.Grilla.ReadOnly = true;
             this.Grilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Grilla.Size = new System.Drawing.Size(1172, 440);
+            this.Grilla.Size = new System.Drawing.Size(1172, 416);
             this.Grilla.TabIndex = 45;
             // 
             // btnBuscar
             // 
             this.btnBuscar.Image = global::Concesionaria.Properties.Resources.zoom;
-            this.btnBuscar.Location = new System.Drawing.Point(960, 26);
+            this.btnBuscar.Location = new System.Drawing.Point(725, 17);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(37, 31);
             this.btnBuscar.TabIndex = 44;
@@ -320,7 +332,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 34);
+            this.label1.Location = new System.Drawing.Point(6, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 17);
             this.label1.TabIndex = 41;
@@ -329,21 +341,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(148, 32);
+            this.label2.Location = new System.Drawing.Point(186, 31);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 17);
             this.label2.TabIndex = 40;
             this.label2.Text = "Hasta";
             // 
-            // btnImprimir
+            // label10
             // 
-            this.btnImprimir.Image = global::Concesionaria.Properties.Resources.printer1;
-            this.btnImprimir.Location = new System.Drawing.Point(1138, 24);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(34, 30);
-            this.btnImprimir.TabIndex = 77;
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(442, 27);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(56, 17);
+            this.label10.TabIndex = 80;
+            this.label10.Text = "Trámite";
             // 
             // FrmListadoGastos
             // 
@@ -395,5 +406,6 @@
         private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEliminarGasto;
+        private System.Windows.Forms.Label label10;
     }
 }

@@ -324,6 +324,12 @@
     <Compile Include="FrmAbmTipoFinanciacion.Designer.cs">
       <DependentUpon>FrmAbmTipoFinanciacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAbmTipoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbmTipoPago.Designer.cs">
+      <DependentUpon>FrmAbmTipoPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAbmTipoUtilitario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1020,6 +1026,12 @@
     <Compile Include="FrmReporteResumenProveedor.Designer.cs">
       <DependentUpon>FrmReporteResumenProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmReporteVencimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporteVencimientos.Designer.cs">
+      <DependentUpon>FrmReporteVencimientos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmReporteViaje.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1379,6 +1391,9 @@
     <EmbeddedResource Include="FrmAbmTipoFinanciacion.resx">
       <DependentUpon>FrmAbmTipoFinanciacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAbmTipoPago.resx">
+      <DependentUpon>FrmAbmTipoPago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAbmTipoUtilitario.resx">
       <DependentUpon>FrmAbmTipoUtilitario.cs</DependentUpon>
     </EmbeddedResource>
@@ -1727,6 +1742,9 @@
     <EmbeddedResource Include="FrmReporteResumenProveedor.resx">
       <DependentUpon>FrmReporteResumenProveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporteVencimientos.resx">
+      <DependentUpon>FrmReporteVencimientos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmReporteViaje.resx">
       <DependentUpon>FrmReporteViaje.cs</DependentUpon>
     </EmbeddedResource>
@@ -1903,6 +1921,7 @@
     <EmbeddedResource Include="Reportes\ReporteResumenCompra.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteResumenCuenta.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteStock.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesVencimientos.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteViaje.rdlc" />
     <EmbeddedResource Include="ReporteVentas.rdlc">
       <SubType>Designer</SubType>
@@ -2027,6 +2046,7 @@
     <Content Include="Iconos\table.ico" />
     <Content Include="Iconos\tilde.png" />
     <Content Include="Iconos\tv.ico" />
+    <Content Include="Iconos\Vencimiento.png" />
     <Content Include="Iconos\Ventas.ico" />
     <Content Include="Iconos\zoom.ico" />
   </ItemGroup>

@@ -206,7 +206,7 @@ namespace Concesionaria
             DateTime hoy = DateTime.Now;
             DateTime Proximo = hoy.AddDays(7);
             cDeudaProveedor deuda = new Clases.cDeudaProveedor();
-            DataTable trdo = deuda.GetDeudaDiarias(hoy, Proximo, "", "");
+            DataTable trdo = deuda.GetDeudaDiarias(hoy, Proximo, "", "",1,"");
             if (trdo.Rows.Count >0)
             {
                 FrmListadoDeudasDiarias frm = new FrmListadoDeudasDiarias();
@@ -1031,6 +1031,18 @@ namespace Concesionaria
         private void listadoDeVencimientosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmListadoVencimientos frm = new FrmListadoVencimientos();
+            frm.Show();
+        }
+
+        private void listadoDePróximosVencimientosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmListadoDeudasDiarias frm = new FrmListadoDeudasDiarias();
+            frm.Show();
+        }
+
+        private void btnProximosVto_Click(object sender, EventArgs e)
+        {
+            FrmListadoDeudasDiarias frm = new FrmListadoDeudasDiarias();
             frm.Show();
         }
     }
