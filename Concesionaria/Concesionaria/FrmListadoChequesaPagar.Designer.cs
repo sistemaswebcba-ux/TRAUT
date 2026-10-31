@@ -46,12 +46,14 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnImprimir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnImprimir);
             this.groupBox1.Controls.Add(this.chkVencidas);
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.label6);
@@ -206,11 +208,11 @@
             // 
             // btnBuscar
             // 
+            this.btnBuscar.Image = global::Concesionaria.Properties.Resources.zoom;
             this.btnBuscar.Location = new System.Drawing.Point(856, 22);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(87, 31);
+            this.btnBuscar.Size = new System.Drawing.Size(40, 28);
             this.btnBuscar.TabIndex = 44;
-            this.btnBuscar.Text = "&Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
@@ -231,6 +233,16 @@
             this.label2.Size = new System.Drawing.Size(88, 17);
             this.label2.TabIndex = 40;
             this.label2.Text = "Fecha Hasta";
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Image = global::Concesionaria.Properties.Resources.printer1;
+            this.btnImprimir.Location = new System.Drawing.Point(903, 23);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(40, 28);
+            this.btnImprimir.TabIndex = 81;
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // FrmListadoChequesaPagar
             // 
@@ -270,5 +282,6 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.CheckBox chkVencidas;
+        private System.Windows.Forms.Button btnImprimir;
     }
 }

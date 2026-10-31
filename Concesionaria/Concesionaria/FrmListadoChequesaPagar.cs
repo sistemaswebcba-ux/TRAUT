@@ -130,5 +130,35 @@ namespace Concesionaria
                 MessageBox.Show("El cheque se debe anular para poder borrarlo ");
             }
         }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            if (Grilla.Rows.Count <1 )
+            {
+                MessageBox.Show("No hay registros ");
+                return;
+            }
+            string Fecha = "Fecha: " + DateTime.Now.ToShortDateString();
+            string FechaVto = "";
+            string Cliente = "";
+            string Banco = "";
+            string Importe = "";
+            int Orden = 1;
+            cReporte Reporte = new cReporte();
+            Reporte.Borrar();
+            for (int i = 0; i < Grilla.Rows.Count -1; i++)
+            {
+                Orden = Orden + 1;
+                FechaVto = Grilla.Rows[i].Cells[1].Value.ToString();  
+                Cliente = Grilla.Rows[i].Cells[2].Value.ToString();
+                Banco = Grilla.Rows[i].Cells[3].Value.ToString();
+                Importe = Grilla.Rows[i].Cells[4].Value.ToString();
+                Reporte.Insertar(Orden, FechaVto, Cliente, Banco, Importe, Fecha, "", "", "", "", "", "", "", "", "");
+            }
+            Orden = Orden + 1;
+            Reporte.Insertar(Orden,"" ,"" , "Total ", txtTotal.Text , Fecha, "", "", "", "", "", "", "", "", "");
+            FrmReporteCheque frm = new FrmReporteCheque();
+            frm.Show();
+        }
     }
 }
