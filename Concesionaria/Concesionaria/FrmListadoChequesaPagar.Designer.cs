@@ -72,7 +72,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1191, 483);
+            this.groupBox1.Size = new System.Drawing.Size(1110, 483);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Listado de Cheques";
@@ -160,7 +160,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1027, 443);
+            this.label3.Location = new System.Drawing.Point(931, 454);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 17);
             this.label3.TabIndex = 49;
@@ -168,7 +168,7 @@
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(1085, 443);
+            this.txtTotal.Location = new System.Drawing.Point(977, 454);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(100, 23);
@@ -201,7 +201,7 @@
             this.Grilla.Name = "Grilla";
             this.Grilla.ReadOnly = true;
             this.Grilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Grilla.Size = new System.Drawing.Size(1168, 370);
+            this.Grilla.Size = new System.Drawing.Size(1060, 370);
             this.Grilla.TabIndex = 45;
             // 
             // btnBuscar
@@ -237,7 +237,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1185, 507);
+            this.ClientSize = new System.Drawing.Size(1101, 507);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmListadoChequesaPagar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

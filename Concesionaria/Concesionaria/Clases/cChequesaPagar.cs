@@ -24,14 +24,13 @@ namespace Concesionaria.Clases
         public DataTable GetChequesPagar(DateTime FechaDesde, DateTime FechaHasta, int Impago,string Patente, 
             string Numero, string Nombre, int Vencidas)
         {
-            string sql = "select c.CodCheque, c.NroCheque,";
+            string sql = "select c.CodCheque,c.FechaVencimiento, ";
             sql = sql + "(select (cli.Nombre + ' ' + cli.Apellido)  from Cliente cli where cli.CodCliente =c.CodCliente) as Nombre ";
-            sql = sql + ",(select cli.Apellido from Cliente cli where cli.CodCliente =c.CodCliente) as Apellido";
             sql = sql + ",(select bb.Nombre from Banco bb where bb.CodBanco =c.CodBanco) as Banco ";
-            sql = sql + ",c.Fecha,c.Importe,c.Saldo, c.FechaPago,";
-            sql = sql + "(select a.Patente from auto a where a.CodAuto = c.CodAuto) as Patente";
-            sql = sql + ",(select a.Descripcion from auto a where a.CodAuto = c.CodAuto) as Descripcion";
-            sql = sql + ",c.FechaVencimiento";
+            sql = sql + ",c.Importe,c.Fecha, c.FechaPago";
+         //   sql = sql + "(select a.Patente from auto a where a.CodAuto = c.CodAuto) as Patente";
+         //   sql = sql + ",(select a.Descripcion from auto a where a.CodAuto = c.CodAuto) as Descripcion";
+            
             sql = sql + " from ChequesPagar c";
            // sql = sql + " from ChequesPagar c, auto au";
            // sql = sql + " where c.CodAuto = au.CodAuto";

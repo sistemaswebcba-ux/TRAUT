@@ -288,6 +288,12 @@
     <Compile Include="FrmAbmPapeles.Designer.cs">
       <DependentUpon>FrmAbmPapeles.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAbmPeriodoPagocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbmPeriodoPagocs.Designer.cs">
+      <DependentUpon>FrmAbmPeriodoPagocs.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAbmProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1372,6 +1378,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAbmPapeles.resx">
       <DependentUpon>FrmAbmPapeles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAbmPeriodoPagocs.resx">
+      <DependentUpon>FrmAbmPeriodoPagocs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAbmProducto.resx">
       <DependentUpon>FrmAbmProducto.cs</DependentUpon>

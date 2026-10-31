@@ -65,13 +65,16 @@ namespace Concesionaria
             DataTable trdo = cheque.GetChequesPagar(FechaDesde, FechaHasta, Impago, "", NroCheque, Nombre, Vencidas);
             txtTotal.Text = fun.TotalizarColumna(trdo, "Importe").ToString();
             txtTotal.Text = fun.FormatoEnteroMiles(txtTotal.Text);
-            trdo = fun.TablaaMiles(trdo, "Importe");
-            trdo = fun.TablaaMiles(trdo, "Saldo");
+            trdo = fun.TablaaMiles(trdo, "Importe"); 
+            trdo = fun.TablaaFechas(trdo, "Fecha");
+            trdo = fun.TablaaFechas(trdo, "FechaVencimiento");
+            trdo = fun.TablaaFechas(trdo, "FechaPago");
+            //  trdo = fun.TablaaMiles(trdo, "Saldo");
             Grilla.DataSource = trdo;
-            string Col = "0;10;30;0;10;10;10;10;10;0;0;10";
+            string Col = "0;10;30;30;10;10;10";
             fun.AnchoColumnas(Grilla, Col);
-            Grilla.Columns[8].HeaderText = "Fecha Pago";
-            Grilla.Columns[11].HeaderText = "Fecha Vto";
+          //  Grilla.Columns[8].HeaderText = "Fecha Pago";
+         //   Grilla.Columns[11].HeaderText = "Fecha Vto";
         }
 
         private void btnCobroCheque_Click(object sender, EventArgs e)

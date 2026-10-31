@@ -24,6 +24,7 @@ namespace Concesionaria
             txt_Nombre.Text = "";
             cFunciones fun = new Clases.cFunciones();
             fun.LlenarCombo(cmb_CodTipoPago, "TipoPagoProveedor", "Nombre", "CodTipoPago");
+            fun.LlenarCombo(cmb_CodPeriodo, "PeriodoPago", "Nombre", "CodPeriodo");
         }
 
         private void Botonera(int Jugada)
@@ -233,6 +234,19 @@ namespace Concesionaria
         {
             cFunciones fun = new Clases.cFunciones();
             fun.LlenarCombo(cmb_CodTipoPago, "TipoPagoProveedor", "Nombre", "CodTipoPago");
+        }
+
+        private void btnNuevoPeriodoPago_Click(object sender, EventArgs e)
+        {
+            FrmAbmPeriodoPagocs frm = new FrmAbmPeriodoPagocs();
+            frm.FormClosing += new FormClosingEventHandler(ContinuarPeriodoPago);
+            frm.ShowDialog();
+        }
+
+        private void ContinuarPeriodoPago(object sender, FormClosingEventArgs e)
+        {   
+            cFunciones fun = new Clases.cFunciones();
+            fun.LlenarCombo(cmb_CodPeriodo, "PeriodoPago", "Nombre", "CodPeriodo");
         }
     }
 }
