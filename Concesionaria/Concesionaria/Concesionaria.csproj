@@ -1068,6 +1068,12 @@
     <Compile Include="FrmResumenDeuda.Designer.cs">
       <DependentUpon>FrmResumenDeuda.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmResumenProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmResumenProveedor.Designer.cs">
+      <DependentUpon>FrmResumenProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmsotprinciapl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1775,6 +1781,9 @@
     <EmbeddedResource Include="FrmResumenDeuda.resx">
       <DependentUpon>FrmResumenDeuda.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmResumenProveedor.resx">
+      <DependentUpon>FrmResumenProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmsotprinciapl.resx">
       <DependentUpon>frmsotprinciapl.cs</DependentUpon>
     </EmbeddedResource>
@@ -2060,6 +2069,7 @@
     <Content Include="Iconos\printer2.gif" />
     <Content Include="Iconos\Productos.ico" />
     <Content Include="Iconos\Recibo.ico" />
+    <Content Include="Iconos\Resumen.png" />
     <Content Include="Iconos\Ruta.jpg" />
     <Content Include="Iconos\statistics3.ico" />
     <Content Include="Iconos\table.ico" />

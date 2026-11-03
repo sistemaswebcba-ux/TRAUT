@@ -1045,5 +1045,11 @@ namespace Concesionaria
             FrmListadoDeudasDiarias frm = new FrmListadoDeudasDiarias();
             frm.Show();
         }
+
+        private void btnResumenDeudda_Click(object sender, EventArgs e)
+        {
+            FrmResumenProveedor frm = new FrmResumenProveedor();
+            frm.Show();
+        }
     }
 }

@@ -149,10 +149,11 @@
             this.ButtonResumenDewuda = new System.Windows.Forms.ToolStripButton();
             this.btnDistancia = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
+            this.btnProximosVto = new System.Windows.Forms.ToolStripButton();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.btnProximosVto = new System.Windows.Forms.ToolStripButton();
+            this.btnResumenDeudda = new System.Windows.Forms.ToolStripButton();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -993,7 +994,8 @@
             this.ButtonResumenDewuda,
             this.btnDistancia,
             this.toolStripButton7,
-            this.btnProximosVto});
+            this.btnProximosVto,
+            this.btnResumenDeudda});
             this.toolStrip.Location = new System.Drawing.Point(0, 25);
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.Size = new System.Drawing.Size(763, 39);
@@ -1187,6 +1189,16 @@
             this.toolStripButton7.ToolTipText = "Listado de Productos";
             this.toolStripButton7.Click += new System.EventHandler(this.toolStripButton7_Click);
             // 
+            // btnProximosVto
+            // 
+            this.btnProximosVto.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnProximosVto.Image = ((System.Drawing.Image)(resources.GetObject("btnProximosVto.Image")));
+            this.btnProximosVto.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnProximosVto.Name = "btnProximosVto";
+            this.btnProximosVto.Size = new System.Drawing.Size(36, 36);
+            this.btnProximosVto.Text = "Proximos Vencimientos";
+            this.btnProximosVto.Click += new System.EventHandler(this.btnProximosVto_Click);
+            // 
             // statusStrip
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1203,15 +1215,15 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // btnProximosVto
+            // btnResumenDeudda
             // 
-            this.btnProximosVto.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnProximosVto.Image = ((System.Drawing.Image)(resources.GetObject("btnProximosVto.Image")));
-            this.btnProximosVto.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnProximosVto.Name = "btnProximosVto";
-            this.btnProximosVto.Size = new System.Drawing.Size(36, 36);
-            this.btnProximosVto.Text = "Proximos Vencimientos";
-            this.btnProximosVto.Click += new System.EventHandler(this.btnProximosVto_Click);
+            this.btnResumenDeudda.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnResumenDeudda.Image = ((System.Drawing.Image)(resources.GetObject("btnResumenDeudda.Image")));
+            this.btnResumenDeudda.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnResumenDeudda.Name = "btnResumenDeudda";
+            this.btnResumenDeudda.Size = new System.Drawing.Size(36, 36);
+            this.btnResumenDeudda.Text = "toolStripButton8";
+            this.btnResumenDeudda.Click += new System.EventHandler(this.btnResumenDeudda_Click);
             // 
             // Principal
             // 
@@ -1363,6 +1375,7 @@
         private System.Windows.Forms.ToolStripMenuItem listadoDeVencimientosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listadoDePróximosVencimientosToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton btnProximosVto;
+        private System.Windows.Forms.ToolStripButton btnResumenDeudda;
     }
 }
 

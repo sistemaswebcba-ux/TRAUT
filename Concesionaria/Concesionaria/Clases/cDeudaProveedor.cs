@@ -8,7 +8,7 @@ namespace Concesionaria.Clases
 {
     public class cDeudaProveedor
     {
-        public Int32 Insertar (Int32 CodCuentaProveedor, string COncepto,
+        public Int32 Insertar(Int32 CodCuentaProveedor, string COncepto,
             DateTime Fecha, DateTime FechaVto, Double Importe, string Observacion, Int32? CodStock, Int32? CodTipoDeuda, Int32? CodTipoPersonal, int CodEmpleado, int Obligatorio)
         {
             string sql = "Insert into DeudaProveedor(";
@@ -38,23 +38,23 @@ namespace Concesionaria.Clases
             return cDb.EjecutarEscalar(sql);
         }
 
-        public DataTable GetDeuda(DateTime FechaDesde,DateTime FechaHasta, string Proveedor, string Concepto)
+        public DataTable GetDeuda(DateTime FechaDesde, DateTime FechaHasta, string Proveedor, string Concepto)
         {
             string sql = "select d.CodDeuda,p.Nombre as Proveedor,c.Nombre as Cuenta,d.Concepto,d.Importe,d.Saldo,d.CodPago,d.CodCuentaProveedor ";
             sql = sql + " from CuentaProveedor c,Proveedor p,DeudaProveedor d";
             sql = sql + " where c.CodProveedor=p.CodProveedor";
-            sql = sql + " and d.CodCuentaProveedor=c.CodCuenta "; 
+            sql = sql + " and d.CodCuentaProveedor=c.CodCuenta ";
             sql = sql + " and d.Fecha>=" + "'" + FechaDesde.ToShortDateString() + "'";
             sql = sql + " and d.Fecha<=" + "'" + FechaHasta.ToShortDateString() + "'";
             if (Proveedor != "")
-                sql = sql + " and p.Nombre like " + "'%" + Proveedor +"%'";
-            if (Concepto !="")
+                sql = sql + " and p.Nombre like " + "'%" + Proveedor + "%'";
+            if (Concepto != "")
                 sql = sql + " and d.Concepto like " + "'%" + Concepto + "%'";
             sql = sql + " order by CodDeuda Desc ";
             return cDb.ExecuteDataTable(sql);
         }
 
-        public void ActualizarSaldo(SqlConnection con, SqlTransaction Transaccion,Int32 CodDeuda,Double Importe,Int32 CodPago)
+        public void ActualizarSaldo(SqlConnection con, SqlTransaction Transaccion, Int32 CodDeuda, Double Importe, Int32 CodPago)
         {
             string sql = "update DeudaProveedor ";
             sql = sql + " set Saldo = Saldo -" + Importe.ToString().Replace(",", ".");
@@ -64,7 +64,7 @@ namespace Concesionaria.Clases
 
         }
 
-        public void Anular(SqlConnection con, SqlTransaction Transaccion,Int32 CodPago)
+        public void Anular(SqlConnection con, SqlTransaction Transaccion, Int32 CodPago)
         {
             string sql = " update DeudaProveedor ";
             sql = sql + " set Saldo = Importe ";
@@ -85,7 +85,7 @@ namespace Concesionaria.Clases
         {
             string sql = "select d.*,c.Nombre as Cuenta ,p.Nombre as Proveedor   ";
             sql = sql + " from DeudaProveedor d, CuentaProveedor c , Proveedor p";
-            sql = sql + " where d.CodCuentaProveedor=c.CodCuenta" ;
+            sql = sql + " where d.CodCuentaProveedor=c.CodCuenta";
             sql = sql + " and c.CodProveedor=p.CodProveedor ";
             sql = sql + " and CodDeuda=" + CodDeuda.ToString();
             DataTable trdo = cDb.ExecuteDataTable(sql);
@@ -104,7 +104,7 @@ namespace Concesionaria.Clases
         {
             string sql = "select p.Nombre as Proveedor,c.Nombre as Cuenta, ";
             sql = sql + " d.Concepto,d.Importe";
-            sql = sql +" from DeudaProveedor d,CuentaProveedor c, Proveedor p";
+            sql = sql + " from DeudaProveedor d,CuentaProveedor c, Proveedor p";
             sql = sql + " where d.CodCuentaProveedor=c.CodCuenta ";
             sql = sql + " and p.CodProveedor = c.CodProveedor ";
             sql = sql + " and d.CodStock=" + CodStock.ToString();
@@ -149,7 +149,7 @@ namespace Concesionaria.Clases
             sql = sql + " and d.Fecha>=" + "'" + FechaDesde.ToShortDateString() + "'";
             sql = sql + " and d.Fecha<=" + "'" + FechaHasta.ToShortDateString() + "'";
             sql = sql + " and d.Saldo >0 ";
-            if (Obligatorio ==1)
+            if (Obligatorio == 1)
             {
                 sql = sql + " and d.Obligatorio =1 ";
             }
@@ -158,14 +158,14 @@ namespace Concesionaria.Clases
             if (Concepto != "")
                 sql = sql + " and d.Concepto like " + "'%" + Concepto + "%'";
 
-            if (Cuenta !="")
+            if (Cuenta != "")
                 sql = sql + " and c.Nombre like " + "'%" + Cuenta + "%'";
 
             sql = sql + " union ";
             sql = sql + "select distinct d.CodDeuda,d.FechaVto, p.Nombre as Proveedor,c.Nombre as Cuenta,d.Concepto,d.Importe,d.Saldo,d.CodPago,d.CodCuentaProveedor ";
             sql = sql + " from CuentaProveedor c,Proveedor p,DeudaProveedor d";
             sql = sql + " where c.CodProveedor=p.CodProveedor";
-            sql = sql + " and d.CodCuentaProveedor=c.CodCuenta ";          
+            sql = sql + " and d.CodCuentaProveedor=c.CodCuenta ";
             sql = sql + " and d.Saldo >0 ";
             if (Proveedor != "")
                 sql = sql + " and p.Nombre like " + "'%" + Proveedor + "%'";
@@ -180,6 +180,27 @@ namespace Concesionaria.Clases
                 sql = sql + " and c.Nombre like " + "'%" + Cuenta + "%'";
 
             sql = sql + " order by d.FechaVto  ";
+            return cDb.ExecuteDataTable(sql);
+        }
+
+        public DataTable GetResumenDeudaProveedor(DateTime Fecha, string Proveedor)
+        {
+            string sql = "";
+            sql = "select p.CodProveedor ,p.Nombre, sum (d.saldo) as Saldo, ";
+            sql = sql + " (select min(dd.FechaVto) from DeudaProveedor dd , CuentaProveedor  cc ";
+            sql = sql + " where dd.CodCuentaProveedor = cc.CodCuenta and cc.CodProveedor =p.CodProveedor  ";
+            sql = sql + " and dd.Saldo >0) as Vto ";
+            sql = sql + " from DeudaProveedor d, CuentaProveedor c , proveedor p ";
+            sql = sql + " where d.CodCuentaProveedor = c.CodCuenta ";
+            sql = sql + " and c.CodProveedor = p.CodProveedor ";
+            sql = sql + " and d.FechaVto <=" + "'" + Fecha.ToShortDateString() + "'";
+            if (Proveedor !="")
+            {
+                sql = sql + " and p.Nombre like " + "'%" + Proveedor + "%'";
+            }
+            sql = sql + " group by p.CodProveedor ,p.Nombre ";
+            sql = sql + " having sum (d.saldo)  >0 ";
+            sql = sql + " order by p.Nombre";
             return cDb.ExecuteDataTable(sql);
         }
     }
