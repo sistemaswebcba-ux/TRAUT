@@ -906,6 +906,12 @@
     <Compile Include="FrmMensajesGastosTransferencia.Designer.cs">
       <DependentUpon>FrmMensajesGastosTransferencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmOrdenPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrdenPago.Designer.cs">
+      <DependentUpon>FrmOrdenPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPagoCuentaProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1705,6 +1711,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMensajesGastosTransferencia.resx">
       <DependentUpon>FrmMensajesGastosTransferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrdenPago.resx">
+      <DependentUpon>FrmOrdenPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPagoCuentaProveedor.resx">
       <DependentUpon>FrmPagoCuentaProveedor.cs</DependentUpon>

@@ -19,7 +19,7 @@ namespace Concesionaria
 
         private void FrmDetalleDeudaProveedor_Load(object sender, EventArgs e)
         {
-            Principal.CodProveedor = 71;
+           
             Int32 CodProveedor = Convert.ToInt32(Principal.CodProveedor);
             CargarProveedor(CodProveedor);
         }
@@ -67,12 +67,12 @@ namespace Concesionaria
                         CodDeuda = Convert.ToInt32(r.Cells[1].Value.ToString());
                         if (b == 0)
                         {
-                            Deudas = CodDeuda.ToString();
+                            Deudas = "(" + CodDeuda.ToString();
                             b = 1;
                         }
                         else
                         {
-                            Deudas = Deudas + ";" + CodDeuda.ToString();
+                            Deudas = Deudas + "," + CodDeuda.ToString();
                         }
                             
                     }
@@ -83,6 +83,13 @@ namespace Concesionaria
             if (b ==0)
             {
                 MessageBox.Show("Debe seleccionar los registros a pagar ");
+            }
+            else
+            {
+                Deudas = Deudas + ")";
+                Principal.ListadoDeuda = Deudas;
+                FrmOrdenPago frm = new Concesionaria.FrmOrdenPago();
+                frm.Show();
             }
         }
     }

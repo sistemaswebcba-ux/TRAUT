@@ -47,5 +47,19 @@ namespace Concesionaria
         {
             Buscar();
         }
+
+        private void btnAbrirCompra_Click(object sender, EventArgs e)
+        {
+            if (Grilla.CurrentRow ==null)
+            {
+                MessageBox.Show("Debe seleccionar un elemento para continuar ");
+                return;
+            }
+
+            Int32 CodProveedor = Convert.ToInt32(Grilla.CurrentRow.Cells[0].Value);
+            Principal.CodProveedor = CodProveedor;
+            FrmDetalleDeudaProveedor frm = new FrmDetalleDeudaProveedor();
+            frm.Show();
+        }
     }
 }

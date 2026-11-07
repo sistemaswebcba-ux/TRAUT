@@ -105,7 +105,7 @@
             this.btnAbrirCompra.Size = new System.Drawing.Size(34, 30);
             this.btnAbrirCompra.TabIndex = 52;
             this.btnAbrirCompra.UseVisualStyleBackColor = true;
-            this.btnAbrirCompra.Visible = false;
+            this.btnAbrirCompra.Click += new System.EventHandler(this.btnAbrirCompra_Click);
             // 
             // btnBuscarCompra
             // 

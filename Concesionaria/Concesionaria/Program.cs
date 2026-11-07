@@ -15,8 +15,8 @@ namespace Concesionaria
         {              
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           //  Application.Run(new FrmLogin());
-                 Application.Run(new FrmDetalleDeudaProveedor());
+             Application.Run(new FrmLogin());
+            //     Application.Run(new FrmDetalleDeudaProveedor());
             //    Application.Run(new FrmAbmPeriodoPagocs());
         }
     }

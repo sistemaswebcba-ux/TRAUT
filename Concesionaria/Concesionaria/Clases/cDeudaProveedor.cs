@@ -215,5 +215,17 @@ namespace Concesionaria.Clases
             sql = sql + " order by CodDeuda Desc ";
             return cDb.ExecuteDataTable(sql);
         }
+
+        public DataTable GetDeudasVarias(string Listado)
+        {
+            string sql = "select d.CodDeuda,c.Nombre as Cuenta,d.Concepto,d.Importe,d.Saldo ";
+            sql = sql + " from CuentaProveedor c,Proveedor p,DeudaProveedor d";
+            sql = sql + " where c.CodProveedor=p.CodProveedor";
+            sql = sql + " and d.CodCuentaProveedor=c.CodCuenta ";
+            sql = sql + " and d.CodDeuda in " + Listado;
+          
+            sql = sql + " order by CodDeuda Desc ";
+            return cDb.ExecuteDataTable(sql);
+        }
     }
 }
