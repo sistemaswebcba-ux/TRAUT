@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.Grupo = new System.Windows.Forms.GroupBox();
+            this.txtImporte = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtSaldo = new System.Windows.Forms.TextBox();
+            this.lblMoneda = new System.Windows.Forms.Label();
+            this.btnCalcularSaldo = new System.Windows.Forms.Button();
             this.btnCobrar = new System.Windows.Forms.Button();
             this.GrillaDeuda = new System.Windows.Forms.DataGridView();
             this.Cobrar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.btnImprimir = new System.Windows.Forms.Label();
             this.lblVencidas = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnCalcularSaldo = new System.Windows.Forms.Button();
-            this.lblMoneda = new System.Windows.Forms.Label();
-            this.txtSaldo = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtImporte = new System.Windows.Forms.TextBox();
             this.Grupo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaDeuda)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +62,50 @@
             this.Grupo.Size = new System.Drawing.Size(973, 485);
             this.Grupo.TabIndex = 62;
             this.Grupo.TabStop = false;
+            // 
+            // txtImporte
+            // 
+            this.txtImporte.Location = new System.Drawing.Point(415, 10);
+            this.txtImporte.Name = "txtImporte";
+            this.txtImporte.Size = new System.Drawing.Size(138, 23);
+            this.txtImporte.TabIndex = 79;
+            this.txtImporte.Leave += new System.EventHandler(this.txtImporte_Leave);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(298, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 17);
+            this.label1.TabIndex = 78;
+            this.label1.Text = "Ingresar Importe";
+            // 
+            // txtSaldo
+            // 
+            this.txtSaldo.Location = new System.Drawing.Point(175, 10);
+            this.txtSaldo.Name = "txtSaldo";
+            this.txtSaldo.ReadOnly = true;
+            this.txtSaldo.Size = new System.Drawing.Size(117, 23);
+            this.txtSaldo.TabIndex = 77;
+            // 
+            // lblMoneda
+            // 
+            this.lblMoneda.AutoSize = true;
+            this.lblMoneda.Location = new System.Drawing.Point(131, 13);
+            this.lblMoneda.Name = "lblMoneda";
+            this.lblMoneda.Size = new System.Drawing.Size(59, 17);
+            this.lblMoneda.TabIndex = 76;
+            this.lblMoneda.Text = "Moneda";
+            // 
+            // btnCalcularSaldo
+            // 
+            this.btnCalcularSaldo.Location = new System.Drawing.Point(0, 10);
+            this.btnCalcularSaldo.Name = "btnCalcularSaldo";
+            this.btnCalcularSaldo.Size = new System.Drawing.Size(125, 23);
+            this.btnCalcularSaldo.TabIndex = 75;
+            this.btnCalcularSaldo.Text = "Calcular Saldo";
+            this.btnCalcularSaldo.UseVisualStyleBackColor = true;
+            this.btnCalcularSaldo.Click += new System.EventHandler(this.btnCalcularSaldo_Click);
             // 
             // btnCobrar
             // 
@@ -117,50 +161,6 @@
             this.label2.TabIndex = 59;
             this.label2.Text = "Listado de Deuda por Cliente";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btnCalcularSaldo
-            // 
-            this.btnCalcularSaldo.Location = new System.Drawing.Point(0, 10);
-            this.btnCalcularSaldo.Name = "btnCalcularSaldo";
-            this.btnCalcularSaldo.Size = new System.Drawing.Size(125, 23);
-            this.btnCalcularSaldo.TabIndex = 75;
-            this.btnCalcularSaldo.Text = "Calcular Saldo";
-            this.btnCalcularSaldo.UseVisualStyleBackColor = true;
-            this.btnCalcularSaldo.Click += new System.EventHandler(this.btnCalcularSaldo_Click);
-            // 
-            // lblMoneda
-            // 
-            this.lblMoneda.AutoSize = true;
-            this.lblMoneda.Location = new System.Drawing.Point(131, 13);
-            this.lblMoneda.Name = "lblMoneda";
-            this.lblMoneda.Size = new System.Drawing.Size(59, 17);
-            this.lblMoneda.TabIndex = 76;
-            this.lblMoneda.Text = "Moneda";
-            // 
-            // txtSaldo
-            // 
-            this.txtSaldo.Location = new System.Drawing.Point(175, 10);
-            this.txtSaldo.Name = "txtSaldo";
-            this.txtSaldo.ReadOnly = true;
-            this.txtSaldo.Size = new System.Drawing.Size(117, 23);
-            this.txtSaldo.TabIndex = 77;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(298, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 17);
-            this.label1.TabIndex = 78;
-            this.label1.Text = "Ingresar Importe";
-            // 
-            // txtImporte
-            // 
-            this.txtImporte.Location = new System.Drawing.Point(415, 10);
-            this.txtImporte.Name = "txtImporte";
-            this.txtImporte.Size = new System.Drawing.Size(138, 23);
-            this.txtImporte.TabIndex = 79;
-            this.txtImporte.Leave += new System.EventHandler(this.txtImporte_Leave);
             // 
             // FrmListadoDeudaCoibranzaxCliente
             // 

@@ -203,5 +203,17 @@ namespace Concesionaria.Clases
             sql = sql + " order by p.Nombre";
             return cDb.ExecuteDataTable(sql);
         }
+
+        public DataTable GetDeudaxCodProveedor(Int32 CodProveedor)
+        {
+            string sql = "select d.CodDeuda,c.Nombre as Cuenta,d.Concepto,d.Importe,d.Saldo ";
+            sql = sql + " from CuentaProveedor c,Proveedor p,DeudaProveedor d";
+            sql = sql + " where c.CodProveedor=p.CodProveedor";
+            sql = sql + " and d.CodCuentaProveedor=c.CodCuenta ";
+            sql = sql + " and c.CodProveedor =" + CodProveedor.ToString();
+            sql = sql + " and d.Saldo >0" ;
+            sql = sql + " order by CodDeuda Desc ";
+            return cDb.ExecuteDataTable(sql);
+        }
     }
 }

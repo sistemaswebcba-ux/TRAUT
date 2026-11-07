@@ -606,6 +606,12 @@
     <Compile Include="FrmDetalleAuto.Designer.cs">
       <DependentUpon>FrmDetalleAuto.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDetalleDeudaProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDetalleDeudaProveedor.Designer.cs">
+      <DependentUpon>FrmDetalleDeudaProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDetalleDeudaxCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1549,6 +1555,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDetalleAuto.resx">
       <DependentUpon>FrmDetalleAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDetalleDeudaProveedor.resx">
+      <DependentUpon>FrmDetalleDeudaProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDetalleDeudaxCliente.resx">
       <DependentUpon>FrmDetalleDeudaxCliente.cs</DependentUpon>
