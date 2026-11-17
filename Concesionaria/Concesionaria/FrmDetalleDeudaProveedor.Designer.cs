@@ -29,7 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbCuenta = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.Grilla = new System.Windows.Forms.DataGridView();
+            this.Pagar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.txtProveedor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -37,13 +40,14 @@
             this.btnBuscarCompra = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
-            this.Pagar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmbCuenta);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.Grilla);
             this.groupBox1.Controls.Add(this.txtProveedor);
             this.groupBox1.Controls.Add(this.label1);
@@ -59,6 +63,24 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
+            // cmbCuenta
+            // 
+            this.cmbCuenta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCuenta.FormattingEnabled = true;
+            this.cmbCuenta.Location = new System.Drawing.Point(358, 16);
+            this.cmbCuenta.Name = "cmbCuenta";
+            this.cmbCuenta.Size = new System.Drawing.Size(189, 24);
+            this.cmbCuenta.TabIndex = 77;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(298, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 17);
+            this.label2.TabIndex = 76;
+            this.label2.Text = "Cuenta";
+            // 
             // Grilla
             // 
             this.Grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -69,9 +91,14 @@
             this.Grilla.Size = new System.Drawing.Size(914, 394);
             this.Grilla.TabIndex = 75;
             // 
+            // Pagar
+            // 
+            this.Pagar.HeaderText = "Pagar";
+            this.Pagar.Name = "Pagar";
+            // 
             // txtProveedor
             // 
-            this.txtProveedor.Location = new System.Drawing.Point(94, 17);
+            this.txtProveedor.Location = new System.Drawing.Point(86, 16);
             this.txtProveedor.Name = "txtProveedor";
             this.txtProveedor.Size = new System.Drawing.Size(206, 23);
             this.txtProveedor.TabIndex = 74;
@@ -79,7 +106,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 20);
+            this.label1.Location = new System.Drawing.Point(6, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 17);
             this.label1.TabIndex = 73;
@@ -88,7 +115,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Image = global::Concesionaria.Properties.Resources.cancel;
-            this.btnEliminar.Location = new System.Drawing.Point(386, 8);
+            this.btnEliminar.Location = new System.Drawing.Point(633, 6);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(34, 30);
             this.btnEliminar.TabIndex = 53;
@@ -97,18 +124,18 @@
             // 
             // btnPagar
             // 
-            this.btnPagar.Image = global::Concesionaria.Properties.Resources.money_euro;
-            this.btnPagar.Location = new System.Drawing.Point(346, 10);
+            this.btnPagar.Location = new System.Drawing.Point(797, 460);
             this.btnPagar.Name = "btnPagar";
-            this.btnPagar.Size = new System.Drawing.Size(34, 30);
+            this.btnPagar.Size = new System.Drawing.Size(123, 30);
             this.btnPagar.TabIndex = 52;
+            this.btnPagar.Text = "Orden de Pago";
             this.btnPagar.UseVisualStyleBackColor = true;
             this.btnPagar.Click += new System.EventHandler(this.btnPagar_Click);
             // 
             // btnBuscarCompra
             // 
             this.btnBuscarCompra.Image = global::Concesionaria.Properties.Resources.zoom;
-            this.btnBuscarCompra.Location = new System.Drawing.Point(306, 10);
+            this.btnBuscarCompra.Location = new System.Drawing.Point(553, 8);
             this.btnBuscarCompra.Name = "btnBuscarCompra";
             this.btnBuscarCompra.Size = new System.Drawing.Size(34, 30);
             this.btnBuscarCompra.TabIndex = 51;
@@ -119,7 +146,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(774, 467);
+            this.label4.Location = new System.Drawing.Point(645, 467);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 17);
             this.label4.TabIndex = 47;
@@ -128,16 +155,11 @@
             // txtTotal
             // 
             this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(820, 467);
+            this.txtTotal.Location = new System.Drawing.Point(691, 467);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtTotal.Size = new System.Drawing.Size(100, 23);
             this.txtTotal.TabIndex = 48;
-            // 
-            // Pagar
-            // 
-            this.Pagar.HeaderText = "Pagar";
-            this.Pagar.Name = "Pagar";
             // 
             // FrmDetalleDeudaProveedor
             // 
@@ -167,5 +189,7 @@
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.DataGridView Grilla;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Pagar;
+        private System.Windows.Forms.ComboBox cmbCuenta;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -29,16 +29,19 @@ namespace Concesionaria
             cFunciones fun = new cFunciones();
             Double Total = 0;
             string Proveedor = "";
+            int Obligatorio = 0;
+            if (chkObligatorio.Checked == true)
+                Obligatorio = 1;
             if (txtProveedor.Text != "")
                 Proveedor = txtProveedor.Text;
             cDeudaProveedor Deuda = new Clases.cDeudaProveedor();
-            DataTable trdo = Deuda.GetResumenDeudaProveedor(dpFecha.Value, Proveedor);
+            DataTable trdo = Deuda.GetResumenDeudaProveedor(dpFecha.Value, Proveedor,Obligatorio);
             Total = fun.TotalizarColumna(trdo, "Saldo");
             trdo = fun.TablaaMiles(trdo, "Saldo");
             trdo = fun.TablaaFechas(trdo, "Vto");
             Grilla.DataSource = trdo;
-            fun.AnchoColumnas(Grilla, "0;50;25;25");
-            Grilla.Columns[2].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            fun.AnchoColumnas(Grilla, "0;25;50;25");
+           // Grilla.Columns[2].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             Grilla.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             txtTotal.Text = fun.SepararDecimales(Total.ToString());
         }

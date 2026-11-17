@@ -22,6 +22,15 @@ namespace Concesionaria
            
             Int32 CodProveedor = Convert.ToInt32(Principal.CodProveedor);
             CargarProveedor(CodProveedor);
+            CararCuentasxProveedor(CodProveedor);
+        }
+
+        private void CararCuentasxProveedor(Int32 CodProveedor)
+        {
+            cCuentaProveedor cuenta = new Clases.cCuentaProveedor();
+            DataTable trdo = cuenta.GetCuentas(CodProveedor);
+            cFunciones fun = new Clases.cFunciones();
+            fun.LlenarComboDatatable(cmbCuenta, trdo, "Nombre", "CodCuenta");
         }
 
         private void CargarProveedor(Int32 CodProveedor)
@@ -32,9 +41,14 @@ namespace Concesionaria
             {
                 txtProveedor.Text = tbProv.Rows[0]["Nombre"].ToString(); 
             }
+
+            Int32? CodCuenta = null;
+            if (cmbCuenta.SelectedIndex > 0)
+                CodCuenta = Convert.ToInt32(cmbCuenta.SelectedValue);
+
             cFunciones fun = new cFunciones();
             cDeudaProveedor Deuda = new Clases.cDeudaProveedor();
-            DataTable trdo = Deuda.GetDeudaxCodProveedor(CodProveedor);
+            DataTable trdo = Deuda.GetDeudaxCodProveedor(CodProveedor,CodCuenta);
             Double Total = fun.TotalizarColumna(trdo, "Saldo");
             txtTotal.Text = fun.SepararDecimales(Total.ToString());
             trdo = fun.TablaaMiles(trdo, "Importe");
@@ -43,6 +57,9 @@ namespace Concesionaria
             Grilla.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft ;
             Grilla.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             Grilla.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            Grilla.Columns[4].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleRight;
+            Grilla.Columns[5].HeaderCell.Style.Alignment = DataGridViewContentAlignment.TopRight ;
+
             Grilla.Columns[0].HeaderText = "Pagar";
             fun.AnchoColumnas(Grilla, "8;0;20;42;15;15");
         }

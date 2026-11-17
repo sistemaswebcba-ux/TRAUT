@@ -183,13 +183,14 @@ namespace Concesionaria.Clases
             return cDb.ExecuteDataTable(sql);
         }
 
-        public DataTable GetResumenDeudaProveedor(DateTime Fecha, string Proveedor)
+        public DataTable GetResumenDeudaProveedor(DateTime Fecha, string Proveedor, int Obligatorio)
         {
             string sql = "";
-            sql = "select p.CodProveedor ,p.Nombre, sum (d.saldo) as Saldo, ";
+            sql = "select p.CodProveedor , ";
             sql = sql + " (select min(dd.FechaVto) from DeudaProveedor dd , CuentaProveedor  cc ";
             sql = sql + " where dd.CodCuentaProveedor = cc.CodCuenta and cc.CodProveedor =p.CodProveedor  ";
             sql = sql + " and dd.Saldo >0) as Vto ";
+            sql = sql + " ,p.Nombre, sum (d.saldo) as Saldo ";
             sql = sql + " from DeudaProveedor d, CuentaProveedor c , proveedor p ";
             sql = sql + " where d.CodCuentaProveedor = c.CodCuenta ";
             sql = sql + " and c.CodProveedor = p.CodProveedor ";
@@ -198,13 +199,18 @@ namespace Concesionaria.Clases
             {
                 sql = sql + " and p.Nombre like " + "'%" + Proveedor + "%'";
             }
+
+            if (Obligatorio ==1)
+            {
+                sql = sql + " and d.Obligatorio=1 ";
+            }
             sql = sql + " group by p.CodProveedor ,p.Nombre ";
             sql = sql + " having sum (d.saldo)  >0 ";
             sql = sql + " order by p.Nombre";
             return cDb.ExecuteDataTable(sql);
         }
 
-        public DataTable GetDeudaxCodProveedor(Int32 CodProveedor)
+        public DataTable GetDeudaxCodProveedor(Int32 CodProveedor, Int32? CodCuenta)
         {
             string sql = "select d.CodDeuda,c.Nombre as Cuenta,d.Concepto,d.Importe,d.Saldo ";
             sql = sql + " from CuentaProveedor c,Proveedor p,DeudaProveedor d";
@@ -212,6 +218,10 @@ namespace Concesionaria.Clases
             sql = sql + " and d.CodCuentaProveedor=c.CodCuenta ";
             sql = sql + " and c.CodProveedor =" + CodProveedor.ToString();
             sql = sql + " and d.Saldo >0" ;
+            if (CodCuenta !=null)
+            {
+                sql = sql + " and c.CodCuenta = " + CodCuenta.ToString();
+            }
             sql = sql + " order by CodDeuda Desc ";
             return cDb.ExecuteDataTable(sql);
         }

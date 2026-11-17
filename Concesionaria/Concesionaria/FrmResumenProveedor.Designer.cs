@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkObligatorio = new System.Windows.Forms.CheckBox();
             this.txtProveedor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dpFecha = new System.Windows.Forms.DateTimePicker();
@@ -45,6 +46,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.chkObligatorio);
             this.groupBox1.Controls.Add(this.txtProveedor);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.dpFecha);
@@ -62,6 +64,16 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Listado de Resumen Proveedor";
+            // 
+            // chkObligatorio
+            // 
+            this.chkObligatorio.AutoSize = true;
+            this.chkObligatorio.Location = new System.Drawing.Point(516, 28);
+            this.chkObligatorio.Name = "chkObligatorio";
+            this.chkObligatorio.Size = new System.Drawing.Size(96, 21);
+            this.chkObligatorio.TabIndex = 75;
+            this.chkObligatorio.Text = "Obligatorio";
+            this.chkObligatorio.UseVisualStyleBackColor = true;
             // 
             // txtProveedor
             // 
@@ -90,7 +102,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Image = global::Concesionaria.Properties.Resources.cancel;
-            this.btnEliminar.Location = new System.Drawing.Point(516, 18);
+            this.btnEliminar.Location = new System.Drawing.Point(618, 19);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(34, 30);
             this.btnEliminar.TabIndex = 53;
@@ -184,5 +196,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtProveedor;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox chkObligatorio;
     }
 }
