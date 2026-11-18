@@ -248,5 +248,20 @@ namespace Concesionaria
             cFunciones fun = new Clases.cFunciones();
             fun.LlenarCombo(cmb_CodPeriodo, "PeriodoPago", "Nombre", "CodPeriodo");
         }
+
+        private void btnCrearCuentas_Click_1(object sender, EventArgs e)
+        {
+            if (txtCodigo.Text !="")
+            {
+                Principal.CodProveedor = Convert.ToInt32(txtCodigo.Text);
+                FRMcUENTApROVEEDOR frm = new FRMcUENTApROVEEDOR();
+                frm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Debe crear el proveedor ");
+            }
+            
+        }
     }
 }

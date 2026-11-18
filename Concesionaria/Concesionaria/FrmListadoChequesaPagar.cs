@@ -71,7 +71,7 @@ namespace Concesionaria
             trdo = fun.TablaaFechas(trdo, "FechaPago");
             //  trdo = fun.TablaaMiles(trdo, "Saldo");
             Grilla.DataSource = trdo;
-            string Col = "0;10;30;30;10;10;10";
+            string Col = "0;10;25;25;10;10;10;10";
             fun.AnchoColumnas(Grilla, Col);
           //  Grilla.Columns[8].HeaderText = "Fecha Pago";
          //   Grilla.Columns[11].HeaderText = "Fecha Vto";

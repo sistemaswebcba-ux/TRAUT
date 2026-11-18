@@ -50,10 +50,10 @@
             this.btnNuevoTipoPago = new System.Windows.Forms.Button();
             this.btnNuevoPeriodoPago = new System.Windows.Forms.Button();
             this.Grupo = new System.Windows.Forms.GroupBox();
-            this.txt_Telefono = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.txt_Email = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.txt_Telefono = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.BarraBotones.SuspendLayout();
             this.Grupo.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +66,7 @@
             this.btnBorrarProveedor.TabIndex = 16;
             this.btnBorrarProveedor.Text = "Borrar Proveedor";
             this.btnBorrarProveedor.UseVisualStyleBackColor = true;
+            this.btnBorrarProveedor.Visible = false;
             this.btnBorrarProveedor.Click += new System.EventHandler(this.btnBorrarProveedor_Click);
             // 
             // BarraBotones
@@ -210,6 +211,7 @@
             this.btnCrearCuentas.TabIndex = 4;
             this.btnCrearCuentas.Text = "Cuentas";
             this.btnCrearCuentas.UseVisualStyleBackColor = true;
+            this.btnCrearCuentas.Click += new System.EventHandler(this.btnCrearCuentas_Click_1);
             // 
             // cmb_CodTipoPago
             // 
@@ -283,22 +285,6 @@
             this.Grupo.TabStop = false;
             this.Grupo.Text = "Informaci{on de Proveedores";
             // 
-            // txt_Telefono
-            // 
-            this.txt_Telefono.Location = new System.Drawing.Point(105, 118);
-            this.txt_Telefono.Name = "txt_Telefono";
-            this.txt_Telefono.Size = new System.Drawing.Size(200, 23);
-            this.txt_Telefono.TabIndex = 54;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1, 121);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 17);
-            this.label4.TabIndex = 53;
-            this.label4.Text = "Teléfono";
-            // 
             // txt_Email
             // 
             this.txt_Email.Location = new System.Drawing.Point(105, 147);
@@ -314,6 +300,22 @@
             this.label5.Size = new System.Drawing.Size(42, 17);
             this.label5.TabIndex = 55;
             this.label5.Text = "Email";
+            // 
+            // txt_Telefono
+            // 
+            this.txt_Telefono.Location = new System.Drawing.Point(105, 118);
+            this.txt_Telefono.Name = "txt_Telefono";
+            this.txt_Telefono.Size = new System.Drawing.Size(200, 23);
+            this.txt_Telefono.TabIndex = 54;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(1, 121);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 17);
+            this.label4.TabIndex = 53;
+            this.label4.Text = "Teléfono";
             // 
             // FrmAbmProveedor
             // 

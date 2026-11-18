@@ -27,7 +27,7 @@ namespace Concesionaria.Clases
             string sql = "select c.CodCheque,c.FechaVencimiento, ";
             sql = sql + "(select (cli.Nombre + ' ' + cli.Apellido)  from Cliente cli where cli.CodCliente =c.CodCliente) as Nombre ";
             sql = sql + ",(select bb.Nombre from Banco bb where bb.CodBanco =c.CodBanco) as Banco ";
-            sql = sql + ",c.Importe,c.Fecha, c.FechaPago";
+            sql = sql + ",c.Importe,c.Fecha, c.FechaPago, c.NroCheque ";
          //   sql = sql + "(select a.Patente from auto a where a.CodAuto = c.CodAuto) as Patente";
          //   sql = sql + ",(select a.Descripcion from auto a where a.CodAuto = c.CodAuto) as Descripcion";
             
