@@ -29,8 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtTranferencia = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtEfectivo = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.txtProveedor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,8 +47,6 @@
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.Grilla = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtEfectivo = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -52,6 +55,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnRegistrar);
             this.groupBox1.Controls.Add(this.tabControl1);
             this.groupBox1.Controls.Add(this.txtProveedor);
             this.groupBox1.Controls.Add(this.label1);
@@ -71,6 +75,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Listado de Resumen Proveedor";
             // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.Location = new System.Drawing.Point(686, 436);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(75, 36);
+            this.btnRegistrar.TabIndex = 76;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -78,20 +92,56 @@
             this.tabControl1.Location = new System.Drawing.Point(17, 278);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(748, 106);
+            this.tabControl1.Size = new System.Drawing.Size(748, 152);
             this.tabControl1.TabIndex = 75;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.tabPage1.Controls.Add(this.txtTranferencia);
+            this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.txtEfectivo);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(740, 77);
+            this.tabPage1.Size = new System.Drawing.Size(740, 123);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Efectivo";
+            // 
+            // txtTranferencia
+            // 
+            this.txtTranferencia.Location = new System.Drawing.Point(352, 15);
+            this.txtTranferencia.Name = "txtTranferencia";
+            this.txtTranferencia.Size = new System.Drawing.Size(165, 23);
+            this.txtTranferencia.TabIndex = 77;
+            this.txtTranferencia.Leave += new System.EventHandler(this.txtTranferencia_Leave);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(250, 18);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 17);
+            this.label5.TabIndex = 76;
+            this.label5.Text = "Transferencia";
+            // 
+            // txtEfectivo
+            // 
+            this.txtEfectivo.Location = new System.Drawing.Point(79, 15);
+            this.txtEfectivo.Name = "txtEfectivo";
+            this.txtEfectivo.Size = new System.Drawing.Size(165, 23);
+            this.txtEfectivo.TabIndex = 75;
+            this.txtEfectivo.Leave += new System.EventHandler(this.txtEfectivo_Leave);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(15, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 17);
+            this.label3.TabIndex = 74;
+            this.label3.Text = "Efectivo";
             // 
             // tabPage2
             // 
@@ -99,9 +149,9 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(740, 77);
+            this.tabPage2.Size = new System.Drawing.Size(740, 85);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Cheques";
             // 
             // txtProveedor
             // 
@@ -196,22 +246,6 @@
             this.label2.TabIndex = 40;
             this.label2.Text = "Fecha ";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 18);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 17);
-            this.label3.TabIndex = 74;
-            this.label3.Text = "Importe";
-            // 
-            // txtEfectivo
-            // 
-            this.txtEfectivo.Location = new System.Drawing.Point(76, 15);
-            this.txtEfectivo.Name = "txtEfectivo";
-            this.txtEfectivo.Size = new System.Drawing.Size(165, 23);
-            this.txtEfectivo.TabIndex = 75;
-            // 
             // FrmOrdenPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -249,5 +283,8 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TextBox txtEfectivo;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtTranferencia;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnRegistrar;
     }
 }

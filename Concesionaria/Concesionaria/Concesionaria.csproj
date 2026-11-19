@@ -128,6 +128,7 @@
     <Compile Include="Clases\cMovimiento.cs" />
     <Compile Include="Clases\cMovimientoCaja.cs" />
     <Compile Include="Clases\cMovimientoProveedor.cs" />
+    <Compile Include="Clases\cOrdenPago.cs" />
     <Compile Include="Clases\cPago.cs" />
     <Compile Include="Clases\cPagoCheque.cs" />
     <Compile Include="Clases\cPagoIntereses.cs" />
