@@ -14,7 +14,7 @@ namespace Concesionaria.Clases
             string sql = "insert into OrdenPago(";
             sql = sql + " Fecha,Efectivo,Tranferencia,Total)";
             sql = sql + " values (" + "'" + Fecha.ToShortDateString() + "'";
-            sql = sql + "." + Efectivo.ToString().Replace(",", ".");
+            sql = sql + "," + Efectivo.ToString().Replace(",", ".");
             sql = sql + "," + Tranferencia.ToString().Replace(",", ".");
             sql = sql + "," + Total.ToString().Replace(",", ".");
             sql = sql + ")";

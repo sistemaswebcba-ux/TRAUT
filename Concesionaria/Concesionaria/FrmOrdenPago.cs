@@ -100,6 +100,9 @@ namespace Concesionaria
                 Int32 CodOrden = 0;
                 Int32 CodDeuda = 0;
                 Int32 CodPago = 0;
+                Int32 CodCuentaProveedor = 0;
+                if (Grilla.Rows.Count > 2)
+                    CodCuentaProveedor = GetCodCuentaProveedorxCodDeuda(Convert.ToInt32(Grilla.Rows[0].Cells[0].Value));
                 cOrdenPago Orden = new cOrdenPago();
                 try
                 {
@@ -117,10 +120,13 @@ namespace Concesionaria
                         SaldoDeuda = fun.ToDouble(Grilla.Rows[i].Cells[4].Value.ToString());
                         Deuda.ActualizarSaldo(con, Transaccion, CodDeuda, SaldoDeuda, CodPago);
                     }
+                    Transaccion.Commit();
+                    con.Close();
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-
+                    Transaccion.Rollback();
+                    con.Close();
                     throw;
                 }
             }
@@ -141,6 +147,22 @@ namespace Concesionaria
             cFunciones fun = new Clases.cFunciones();
             if (txtTranferencia.Text != "")
                 txtTranferencia.Text = fun.SepararDecimales(txtTranferencia.Text);
+        }
+
+        private Int32 GetCodCuentaProveedorxCodDeuda(Int32 CodDeuda)
+        {
+            Int32 CodCuentaProveedor = 0;
+            cDeudaProveedor Deuda = new Clases.cDeudaProveedor();
+            DataTable trdo = Deuda.GetDeudaxCodigo(CodDeuda);
+            if (trdo.Rows.Count >0)
+            {
+                if (trdo.Rows[0]["CodCuentaProveedor"].ToString ()!="")
+                {
+                    CodCuentaProveedor = Convert.ToInt32(trdo.Rows[0]["CodCuentaProveedor"].ToString());
+                }
+            }
+            return CodCuentaProveedor;
+
         }
     }
 }
