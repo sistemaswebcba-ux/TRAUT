@@ -53,10 +53,12 @@ namespace Concesionaria
                     txtTranferencia.Text = fun.SepararDecimales(Tranferencia.ToString());
                 if (Total >0)
                     txtTotal.Text = fun.SepararDecimales(Total.ToString());
-            }
-
+            } 
+            string Col = "40;40;20";
             DataTable tbDetalle = Orden.GetDetalleOrdenxCodigo(CodOrden);
+            tbDetalle = fun.TablaaMiles(tbDetalle, "Importe");
             Grilla.DataSource = tbDetalle;
+            fun.AnchoColumnas(Grilla, Col);
         }
 
         private void CargarProveedor(Int32 CodProveedor)
