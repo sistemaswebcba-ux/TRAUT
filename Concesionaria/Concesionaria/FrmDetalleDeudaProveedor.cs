@@ -19,7 +19,13 @@ namespace Concesionaria
 
         private void FrmDetalleDeudaProveedor_Load(object sender, EventArgs e)
         {
-           
+            Int32 CodProveedor = Convert.ToInt32(Principal.CodProveedor);
+            CargarProveedor(CodProveedor);
+            CararCuentasxProveedor(CodProveedor);
+        }
+
+        private void Buscar()
+        {
             Int32 CodProveedor = Convert.ToInt32(Principal.CodProveedor);
             CargarProveedor(CodProveedor);
             CararCuentasxProveedor(CodProveedor);
@@ -66,7 +72,7 @@ namespace Concesionaria
 
         private void btnBuscarCompra_Click(object sender, EventArgs e)
         {
-          
+            Buscar();
         }
 
         private void btnPagar_Click(object sender, EventArgs e)
@@ -106,8 +112,14 @@ namespace Concesionaria
                 Deudas = Deudas + ")";
                 Principal.ListadoDeuda = Deudas;
                 FrmOrdenPago frm = new Concesionaria.FrmOrdenPago();
-                frm.Show();
+                frm.FormClosing += new FormClosingEventHandler(form_FormClosing);
+                frm.ShowDialog();
             }
+        }
+
+        private void form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Buscar();
         }
     }
 }

@@ -134,6 +134,14 @@ namespace Concesionaria.Clases
             cDb.EjecutarNonQueryTransaccion(con, Transaccion,sql);
         }
 
+        public void ActuaizarSaldoRestandoTran(SqlConnection con, SqlTransaction Transaccion, Int32 CodCuenta, Double Importe)
+        {
+            string sql = " update CuentaProveedor ";
+            sql = sql + " set Saldo=Saldo + " + Importe.ToString().Replace(",", ".");
+            sql = sql + " where CodCuenta=" + CodCuenta.ToString();
+            cDb.EjecutarNonQueryTransaccion(con, Transaccion, sql);
+        }
+
         public void BorrrarCuenta(Int32 CodCuenta)
         {
             string sql = "delete from CuentaProveedor ";

@@ -73,6 +73,8 @@ namespace Concesionaria
             cFunciones fun = new cFunciones();
             cPagoProveedor pago = new Clases.cPagoProveedor();
             cDeudaProveedor Deuda = new cDeudaProveedor();
+            cCuentaProveedor Cuenta = new cCuentaProveedor();
+            cMovimientoProveedor movProv = new cMovimientoProveedor();
             if (txtEfectivo.Text !="")
             {
                 Efectivo = fun.ToDouble(txtEfectivo.Text);
@@ -100,8 +102,9 @@ namespace Concesionaria
                 Int32 CodOrden = 0;
                 Int32 CodDeuda = 0;
                 Int32 CodPago = 0;
+                Double ImporteTotalPagado = 0;
                 Int32 CodCuentaProveedor = 0;
-                if (Grilla.Rows.Count > 2)
+                if (Grilla.Rows.Count > 1)
                     CodCuentaProveedor = GetCodCuentaProveedorxCodDeuda(Convert.ToInt32(Grilla.Rows[0].Cells[0].Value));
                 cOrdenPago Orden = new cOrdenPago();
                 try
@@ -109,6 +112,16 @@ namespace Concesionaria
                     //inserto el pago 
                     //averiguar si el pago es solo x una cuenta
                     //de proveedor, ya que si pago dos cuentas distantas
+                    ImporteTotalPagado = Efectivo + Tranferencia;
+                    CodPago = pago.Insertar(con, Transaccion, dpFecha.Value, ImporteTotalPagado, Concepto, 0, null, CodCuentaProveedor);
+                    double SaldoAnterior = Cuenta.GetSaldo(CodCuentaProveedor);
+                    Double SaldoCuentaProv = movProv.GetSaldo(CodCuentaProveedor);
+                    SaldoCuentaProv = SaldoCuentaProv - ImporteTotalPagado;
+                    movProv.InsertarTran(con, Transaccion, CodCuentaProveedor, dpFecha.Value , Concepto, 0, ImporteTotalPagado, SaldoCuentaProv, 0, CodPago, SaldoAnterior);
+                    Cuenta.ActuaizarSaldoTran(con, Transaccion, CodCuentaProveedor, SaldoCuentaProv);
+                  
+                    //Cuenta.ActuaizarSaldoRestandoTran(con, Transaccion, CodCuentaProveedor, -1 * ImporteTotalPagado);
+                   
                     CodPago = pago.Insertar(con, Transaccion, dpFecha.Value, Efectivo, Concepto, 0, null, CodCuentaProveedor);
                     //grabo la orden
                     CodOrden = Orden.Insertar(con, Transaccion, dpFecha.Value, Efectivo, Tranferencia, Total);
@@ -122,12 +135,16 @@ namespace Concesionaria
                     }
                     Transaccion.Commit();
                     con.Close();
+                    MessageBox.Show("Datos grabados corectamente");
+                    this.Close();
                 }
                 catch (Exception ex)
                 {
+                    MessageBox.Show("Hubo un error en el proceso de grabacion");
+                    MessageBox.Show(ex.Message.ToString()); 
                     Transaccion.Rollback();
                     con.Close();
-                    throw;
+                   
                 }
             }
 
