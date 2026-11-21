@@ -77,6 +77,7 @@ namespace Concesionaria
 
         private void btnPagar_Click(object sender, EventArgs e)
         {
+            Principal.CodOrden = null;
             int i = 0, b = 0;  
             int Filas = Grilla.Rows.Count;
             string Deudas = "";

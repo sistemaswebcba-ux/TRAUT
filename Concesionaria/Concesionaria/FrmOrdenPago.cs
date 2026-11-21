@@ -20,8 +20,43 @@ namespace Concesionaria
 
         private void FrmOrdenPago_Load(object sender, EventArgs e)
         {
-            CargarProveedor(Convert.ToInt32(Principal.CodProveedor));
-            CargarDeudas();
+            
+            if (Principal.CodOrden !=null)
+            {
+                BuscarOrden(Convert.ToInt32 (Principal.CodOrden));
+            }
+            else
+            {
+                CargarProveedor(Convert.ToInt32(Principal.CodProveedor));
+                CargarDeudas();
+            }
+           
+           
+        }
+
+        private void BuscarOrden (Int32 CodOrden)
+        {
+            cFunciones fun = new cFunciones();
+            cOrdenPago Orden = new cOrdenPago();
+            DataTable trdo = Orden.GetOrdenxCodigo(CodOrden);
+            Double Efectivo = 0;
+            Double Tranferencia = 0;
+            Double Total = 0;
+            if (trdo.Rows.Count >0)
+            {
+                Efectivo = Convert.ToDouble(trdo.Rows[0]["Efectivo"]);
+                Tranferencia = Convert.ToDouble(trdo.Rows[0]["Tranferencia"]);
+                Total = Convert.ToDouble(trdo.Rows[0]["Total"]);
+                if (Efectivo > 0)
+                    txtEfectivo.Text = fun.SepararDecimales(Efectivo.ToString ());
+                if (Tranferencia>0)
+                    txtTranferencia.Text = fun.SepararDecimales(Tranferencia.ToString());
+                if (Total >0)
+                    txtTotal.Text = fun.SepararDecimales(Total.ToString());
+            }
+
+            DataTable tbDetalle = Orden.GetDetalleOrdenxCodigo(CodOrden);
+            Grilla.DataSource = tbDetalle;
         }
 
         private void CargarProveedor(Int32 CodProveedor)
@@ -104,6 +139,7 @@ namespace Concesionaria
                 Int32 CodPago = 0;
                 Double ImporteTotalPagado = 0;
                 Int32 CodCuentaProveedor = 0;
+                Double Importe = 0;
                 if (Grilla.Rows.Count > 1)
                     CodCuentaProveedor = GetCodCuentaProveedorxCodDeuda(Convert.ToInt32(Grilla.Rows[0].Cells[0].Value));
                 cOrdenPago Orden = new cOrdenPago();
@@ -124,12 +160,13 @@ namespace Concesionaria
                    
                     CodPago = pago.Insertar(con, Transaccion, dpFecha.Value, Efectivo, Concepto, 0, null, CodCuentaProveedor);
                     //grabo la orden
-                    CodOrden = Orden.Insertar(con, Transaccion, dpFecha.Value, Efectivo, Tranferencia, Total);
+                    CodOrden = Orden.Insertar(con, Transaccion, dpFecha.Value, Efectivo, Tranferencia, Total, CodCuentaProveedor);
                     //grabo el detalle 
                     for (int i = 0; i < Grilla.Rows.Count -1; i++)
                     {
                         CodDeuda = Convert.ToInt32(Grilla.Rows[i].Cells[0].Value);
-                        Orden.InsertarDetalle(con, Transaccion, CodOrden, CodDeuda);
+                        Importe = fun.ToDouble(Grilla.Rows[i].Cells[3].Value.ToString());
+                        Orden.InsertarDetalle(con, Transaccion, CodOrden, CodDeuda,Importe);
                         SaldoDeuda = fun.ToDouble(Grilla.Rows[i].Cells[4].Value.ToString());
                         Deuda.ActualizarSaldo(con, Transaccion, CodDeuda, SaldoDeuda, CodPago);
                     }

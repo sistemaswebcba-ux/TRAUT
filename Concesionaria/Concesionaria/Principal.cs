@@ -48,6 +48,7 @@ namespace Concesionaria
         public static DateTime Fecha;
         public static string ConceptoCaja;
         public static string ListadoDeuda = "";
+        public static Int32? CodOrden;
         public Principal()
         {
             InitializeComponent();
